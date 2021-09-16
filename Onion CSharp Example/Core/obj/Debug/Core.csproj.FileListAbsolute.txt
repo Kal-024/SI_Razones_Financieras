@@ -46,3 +46,10 @@ D:\source\repos\TareaCsharp\Core\obj\Debug\Core.csprojAssemblyReference.cache
 D:\source\repos\TareaCsharp\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
 D:\source\repos\TareaCsharp\Core\obj\Debug\Core.exe
 D:\source\repos\TareaCsharp\Core\obj\Debug\Core.pdb
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Core\bin\Debug\Core.exe.config
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Core\bin\Debug\Core.exe
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Core\bin\Debug\Core.pdb
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Core\obj\Debug\Core.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Core\obj\Debug\Core.exe
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Core\obj\Debug\Core.pdb

@@ -75,3 +75,14 @@ D:\source\repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.csproj.Cor
 D:\source\repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.csproj.CopyComplete
 D:\source\repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.exe
 D:\source\repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.pdb
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Infraestructure\bin\Debug\Infraestructure.exe.config
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Infraestructure\bin\Debug\Infraestructure.exe
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Infraestructure\bin\Debug\Infraestructure.pdb
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Infraestructure\bin\Debug\Core.exe
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Infraestructure\bin\Debug\Core.pdb
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Infraestructure\bin\Debug\Core.exe.config
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Infraestructure\obj\Debug\Infraestructure.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Infraestructure\obj\Debug\Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Infraestructure\obj\Debug\Infraestructure.csproj.CopyComplete
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Infraestructure\obj\Debug\Infraestructure.exe
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Infraestructure\obj\Debug\Infraestructure.pdb
