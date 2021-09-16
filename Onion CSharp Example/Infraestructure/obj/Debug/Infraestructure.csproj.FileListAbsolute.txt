@@ -1,0 +1,77 @@
+C:\Users\Sistemas-13\source\repos\SalesApp\Infraestructure\obj\Debug\Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\Sistemas-13\source\repos\SalesApp\Infraestructure\obj\Debug\Infraestructure.csprojAssemblyReference.cache
+C:\Users\Sistemas-13\source\repos\SalesApp\Infraestructure\bin\Debug\Infraestructure.exe.config
+C:\Users\Sistemas-13\source\repos\SalesApp\Infraestructure\bin\Debug\Infraestructure.exe
+C:\Users\Sistemas-13\source\repos\SalesApp\Infraestructure\bin\Debug\Infraestructure.pdb
+C:\Users\Sistemas-13\source\repos\SalesApp\Infraestructure\bin\Debug\Core.exe
+C:\Users\Sistemas-13\source\repos\SalesApp\Infraestructure\bin\Debug\Core.pdb
+C:\Users\Sistemas-13\source\repos\SalesApp\Infraestructure\bin\Debug\Core.exe.config
+C:\Users\Sistemas-13\source\repos\SalesApp\Infraestructure\obj\Debug\Infraestructure.csproj.CopyComplete
+C:\Users\Sistemas-13\source\repos\SalesApp\Infraestructure\obj\Debug\Infraestructure.exe
+C:\Users\Sistemas-13\source\repos\SalesApp\Infraestructure\obj\Debug\Infraestructure.pdb
+C:\Users\Yasser\Source\Repos\SalesApp\Infraestructure\bin\Debug\Infraestructure.exe.config
+C:\Users\Yasser\Source\Repos\SalesApp\Infraestructure\bin\Debug\Infraestructure.exe
+C:\Users\Yasser\Source\Repos\SalesApp\Infraestructure\bin\Debug\Infraestructure.pdb
+C:\Users\Yasser\Source\Repos\SalesApp\Infraestructure\bin\Debug\Core.exe
+C:\Users\Yasser\Source\Repos\SalesApp\Infraestructure\bin\Debug\Core.pdb
+C:\Users\Yasser\Source\Repos\SalesApp\Infraestructure\bin\Debug\Core.exe.config
+C:\Users\Yasser\Source\Repos\SalesApp\Infraestructure\obj\Debug\Infraestructure.csproj.AssemblyReference.cache
+C:\Users\Yasser\Source\Repos\SalesApp\Infraestructure\obj\Debug\Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\Yasser\Source\Repos\SalesApp\Infraestructure\obj\Debug\Infraestructure.csproj.CopyComplete
+C:\Users\Yasser\Source\Repos\SalesApp\Infraestructure\obj\Debug\Infraestructure.exe
+C:\Users\Yasser\Source\Repos\SalesApp\Infraestructure\obj\Debug\Infraestructure.pdb
+F:\SalesApp\Infraestructure\bin\Debug\Infraestructure.exe.config
+F:\SalesApp\Infraestructure\bin\Debug\Infraestructure.exe
+F:\SalesApp\Infraestructure\bin\Debug\Infraestructure.pdb
+F:\SalesApp\Infraestructure\bin\Debug\Core.exe
+F:\SalesApp\Infraestructure\bin\Debug\Core.pdb
+F:\SalesApp\Infraestructure\bin\Debug\Core.exe.config
+F:\SalesApp\Infraestructure\obj\Debug\Infraestructure.csprojAssemblyReference.cache
+F:\SalesApp\Infraestructure\obj\Debug\Infraestructure.csproj.CoreCompileInputs.cache
+F:\SalesApp\Infraestructure\obj\Debug\Infraestructure.csproj.CopyComplete
+F:\SalesApp\Infraestructure\obj\Debug\Infraestructure.exe
+F:\SalesApp\Infraestructure\obj\Debug\Infraestructure.pdb
+C:\Users\LENOVO\Documents\Uziel\Git repos\TareaCsharp\Infraestructure\bin\Debug\Infraestructure.exe.config
+C:\Users\LENOVO\Documents\Uziel\Git repos\TareaCsharp\Infraestructure\bin\Debug\Infraestructure.exe
+C:\Users\LENOVO\Documents\Uziel\Git repos\TareaCsharp\Infraestructure\bin\Debug\Infraestructure.pdb
+C:\Users\LENOVO\Documents\Uziel\Git repos\TareaCsharp\Infraestructure\bin\Debug\Core.exe
+C:\Users\LENOVO\Documents\Uziel\Git repos\TareaCsharp\Infraestructure\bin\Debug\Core.pdb
+C:\Users\LENOVO\Documents\Uziel\Git repos\TareaCsharp\Infraestructure\bin\Debug\Core.exe.config
+C:\Users\LENOVO\Documents\Uziel\Git repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.csprojAssemblyReference.cache
+C:\Users\LENOVO\Documents\Uziel\Git repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Documents\Uziel\Git repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.csproj.CopyComplete
+C:\Users\LENOVO\Documents\Uziel\Git repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.exe
+C:\Users\LENOVO\Documents\Uziel\Git repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.pdb
+C:\Users\LENOVO\source\repos\TareaCsharp\Infraestructure\bin\Debug\Infraestructure.exe.config
+C:\Users\LENOVO\source\repos\TareaCsharp\Infraestructure\bin\Debug\Infraestructure.exe
+C:\Users\LENOVO\source\repos\TareaCsharp\Infraestructure\bin\Debug\Infraestructure.pdb
+C:\Users\LENOVO\source\repos\TareaCsharp\Infraestructure\bin\Debug\Core.exe
+C:\Users\LENOVO\source\repos\TareaCsharp\Infraestructure\bin\Debug\Core.pdb
+C:\Users\LENOVO\source\repos\TareaCsharp\Infraestructure\bin\Debug\Core.exe.config
+C:\Users\LENOVO\source\repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.csprojAssemblyReference.cache
+C:\Users\LENOVO\source\repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.csproj.CopyComplete
+C:\Users\LENOVO\source\repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.exe
+C:\Users\LENOVO\source\repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.pdb
+C:\Users\Usuario\Documents\MyData\C#_Task\TareaCsharp\Infraestructure\bin\Debug\Infraestructure.exe.config
+C:\Users\Usuario\Documents\MyData\C#_Task\TareaCsharp\Infraestructure\bin\Debug\Infraestructure.exe
+C:\Users\Usuario\Documents\MyData\C#_Task\TareaCsharp\Infraestructure\bin\Debug\Infraestructure.pdb
+C:\Users\Usuario\Documents\MyData\C#_Task\TareaCsharp\Infraestructure\bin\Debug\Core.exe
+C:\Users\Usuario\Documents\MyData\C#_Task\TareaCsharp\Infraestructure\bin\Debug\Core.pdb
+C:\Users\Usuario\Documents\MyData\C#_Task\TareaCsharp\Infraestructure\bin\Debug\Core.exe.config
+C:\Users\Usuario\Documents\MyData\C#_Task\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\MyData\C#_Task\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\MyData\C#_Task\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.csproj.CopyComplete
+C:\Users\Usuario\Documents\MyData\C#_Task\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.exe
+C:\Users\Usuario\Documents\MyData\C#_Task\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.pdb
+D:\source\repos\TareaCsharp\Infraestructure\bin\Debug\Infraestructure.exe.config
+D:\source\repos\TareaCsharp\Infraestructure\bin\Debug\Infraestructure.exe
+D:\source\repos\TareaCsharp\Infraestructure\bin\Debug\Infraestructure.pdb
+D:\source\repos\TareaCsharp\Infraestructure\bin\Debug\Core.exe
+D:\source\repos\TareaCsharp\Infraestructure\bin\Debug\Core.pdb
+D:\source\repos\TareaCsharp\Infraestructure\bin\Debug\Core.exe.config
+D:\source\repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.csprojAssemblyReference.cache
+D:\source\repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.csproj.CoreCompileInputs.cache
+D:\source\repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.csproj.CopyComplete
+D:\source\repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.exe
+D:\source\repos\TareaCsharp\Infraestructure\obj\Debug\Infraestructure.pdb

@@ -1,0 +1,2 @@
+C:\Users\Sistemas-13\source\repos\SalesApp\SalesApp\obj\Debug\SalesApp.csprojAssemblyReference.cache
+C:\Users\Sistemas-13\source\repos\SalesApp\SalesApp\obj\Debug\SalesApp.csproj.CoreCompileInputs.cache
