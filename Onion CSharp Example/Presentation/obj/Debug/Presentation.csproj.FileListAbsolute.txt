@@ -136,3 +136,25 @@ D:\source\repos\TareaCsharp\Presentation\obj\Debug\Presentation.exe
 D:\source\repos\TareaCsharp\Presentation\obj\Debug\Presentation.pdb
 C:\Users\LENOVO\source\repos\TareaCsharp\Presentation\obj\Debug\Presentation.frmClientAU.resources
 C:\Users\LENOVO\source\repos\TareaCsharp\Presentation\obj\Debug\Presentation.frmClients.resources
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\bin\Debug\Presentation.exe.config
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\bin\Debug\Presentation.exe
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\bin\Debug\Presentation.pdb
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\bin\Debug\Core.exe
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\bin\Debug\Infraestructure.exe
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\bin\Debug\Core.pdb
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\bin\Debug\Core.exe.config
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\bin\Debug\Infraestructure.pdb
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\bin\Debug\Infraestructure.exe.config
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.frmClientAU.resources
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.frmClients.resources
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.frmProductAU.resources
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.frmProductos.resources
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.ProductDetails.resources
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.csproj.GenerateResource.cache
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.csproj.CopyComplete
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.exe
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.pdb
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.FrmMain.resources
