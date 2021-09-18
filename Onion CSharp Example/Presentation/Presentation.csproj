@@ -47,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCuentas.Designer.cs">
+      <DependentUpon>FrmCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIngresoP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIngresoP.Designer.cs">
+      <DependentUpon>FrmIngresoP.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,14 +89,50 @@
     <Compile Include="frmProductos.Designer.cs">
       <DependentUpon>frmProductos.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductDetails.cs">
+    <Compile Include="InicioPresentacion.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ProductDetails.Designer.cs">
-      <DependentUpon>ProductDetails.cs</DependentUpon>
+    <Compile Include="InicioPresentacion.Designer.cs">
+      <DependentUpon>InicioPresentacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UcAnalisisH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcAnalisisH.Designer.cs">
+      <DependentUpon>UcAnalisisH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcAnalisisV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcAnalisisV.Designer.cs">
+      <DependentUpon>UcAnalisisV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcBalanceG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcBalanceG.Designer.cs">
+      <DependentUpon>UcBalanceG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcEstadoR.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcEstadoR.Designer.cs">
+      <DependentUpon>UcEstadoR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcRazonesF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcRazonesF.Designer.cs">
+      <DependentUpon>UcRazonesF.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmCuentas.resx">
+      <DependentUpon>FrmCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIngresoP.resx">
+      <DependentUpon>FrmIngresoP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,8 +148,8 @@
     <EmbeddedResource Include="frmProductos.resx">
       <DependentUpon>frmProductos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProductDetails.resx">
-      <DependentUpon>ProductDetails.cs</DependentUpon>
+    <EmbeddedResource Include="InicioPresentacion.resx">
+      <DependentUpon>InicioPresentacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -113,6 +161,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UcAnalisisH.resx">
+      <DependentUpon>UcAnalisisH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcAnalisisV.resx">
+      <DependentUpon>UcAnalisisV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcBalanceG.resx">
+      <DependentUpon>UcBalanceG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcEstadoR.resx">
+      <DependentUpon>UcEstadoR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcRazonesF.resx">
+      <DependentUpon>UcRazonesF.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

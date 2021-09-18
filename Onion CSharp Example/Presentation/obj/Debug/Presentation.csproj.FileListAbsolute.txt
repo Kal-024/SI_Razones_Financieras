@@ -150,7 +150,6 @@ C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation
 C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.frmClients.resources
 C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.frmProductAU.resources
 C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.frmProductos.resources
-C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.ProductDetails.resources
 C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.Properties.Resources.resources
 C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.csproj.GenerateResource.cache
 C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
@@ -158,3 +157,11 @@ C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation
 C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.exe
 C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.pdb
 C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.FrmMain.resources
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.InicioPresentacion.resources
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.FrmCuentas.resources
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.FrmIngresoP.resources
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.UcBalanceG.resources
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.UcEstadoR.resources
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.UcAnalisisV.resources
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.UcAnalisisH.resources
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\Onion CSharp Example\Presentation\obj\Debug\Presentation.UcRazonesF.resources
