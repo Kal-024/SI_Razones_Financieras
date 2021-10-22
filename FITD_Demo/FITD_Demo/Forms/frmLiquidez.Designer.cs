@@ -54,6 +54,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.txtComprasCredito = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.ntfSaved = new System.Windows.Forms.NotifyIcon(this.components);
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtInventario = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.SuspendLayout();
             // 
             // btnSave
@@ -178,7 +180,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(49, 193);
+            this.label4.Location = new System.Drawing.Point(49, 256);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(115, 18);
             this.label4.TabIndex = 15;
@@ -186,7 +188,7 @@
             // 
             // txtInventarioI
             // 
-            this.txtInventarioI.Location = new System.Drawing.Point(52, 214);
+            this.txtInventarioI.Location = new System.Drawing.Point(52, 277);
             this.txtInventarioI.Name = "txtInventarioI";
             this.txtInventarioI.Size = new System.Drawing.Size(220, 31);
             this.txtInventarioI.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -294,7 +296,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(49, 319);
+            this.label3.Location = new System.Drawing.Point(49, 382);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(250, 18);
             this.label3.TabIndex = 29;
@@ -302,7 +304,7 @@
             // 
             // txtCMVendidas
             // 
-            this.txtCMVendidas.Location = new System.Drawing.Point(52, 340);
+            this.txtCMVendidas.Location = new System.Drawing.Point(52, 403);
             this.txtCMVendidas.Name = "txtCMVendidas";
             this.txtCMVendidas.Size = new System.Drawing.Size(220, 31);
             this.txtCMVendidas.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -323,7 +325,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(49, 256);
+            this.label9.Location = new System.Drawing.Point(49, 319);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(110, 18);
             this.label9.TabIndex = 27;
@@ -331,7 +333,7 @@
             // 
             // txtInventarioF
             // 
-            this.txtInventarioF.Location = new System.Drawing.Point(52, 277);
+            this.txtInventarioF.Location = new System.Drawing.Point(52, 340);
             this.txtInventarioF.Name = "txtInventarioF";
             this.txtInventarioF.Size = new System.Drawing.Size(220, 31);
             this.txtInventarioF.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -410,7 +412,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(231, 386);
+            this.label11.Location = new System.Drawing.Point(399, 382);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(141, 18);
             this.label11.TabIndex = 35;
@@ -418,7 +420,7 @@
             // 
             // txtComprasCredito
             // 
-            this.txtComprasCredito.Location = new System.Drawing.Point(234, 407);
+            this.txtComprasCredito.Location = new System.Drawing.Point(402, 403);
             this.txtComprasCredito.Name = "txtComprasCredito";
             this.txtComprasCredito.Size = new System.Drawing.Size(220, 31);
             this.txtComprasCredito.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -443,11 +445,42 @@
             this.ntfSaved.Text = "FITD";
             this.ntfSaved.Visible = true;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(49, 193);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(75, 18);
+            this.label12.TabIndex = 37;
+            this.label12.Text = "Inventario:";
+            // 
+            // txtInventario
+            // 
+            this.txtInventario.Location = new System.Drawing.Point(52, 214);
+            this.txtInventario.Name = "txtInventario";
+            this.txtInventario.Size = new System.Drawing.Size(220, 31);
+            this.txtInventario.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txtInventario.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtInventario.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtInventario.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtInventario.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.txtInventario.StateCommon.Border.Rounding = 20;
+            this.txtInventario.StateCommon.Border.Width = 1;
+            this.txtInventario.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.txtInventario.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInventario.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.txtInventario.TabIndex = 36;
+            // 
             // frmLiquidez
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 511);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.txtInventario);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtComprasCredito);
             this.Controls.Add(this.label7);
@@ -505,5 +538,7 @@
         private System.Windows.Forms.Label label11;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtComprasCredito;
         private System.Windows.Forms.NotifyIcon ntfSaved;
+        private System.Windows.Forms.Label label12;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtInventario;
     }
 }

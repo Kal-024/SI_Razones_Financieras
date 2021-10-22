@@ -1,6 +1,6 @@
 ﻿namespace FITD_Demo.Forms
 {
-    partial class ViewMain
+    partial class frmRegister
     {
         /// <summary>
         /// Required designer variable.
@@ -29,164 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewMain));
-            this.txtRazonPC = new System.Windows.Forms.TextBox();
-            this.txtRazonE = new System.Windows.Forms.TextBox();
-            this.txtSolvencia = new System.Windows.Forms.TextBox();
-            this.txtCapitalT = new System.Windows.Forms.TextBox();
-            this.txtRotacionInv = new System.Windows.Forms.TextBox();
-            this.txtPruebaA = new System.Windows.Forms.TextBox();
-            this.txtRotacionPagarCP = new System.Windows.Forms.TextBox();
-            this.txtRotacionC = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegister));
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.txtNombre = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblProyecto = new System.Windows.Forms.Label();
+            this.btnStarted = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.ntfSaved = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
-            // 
-            // txtRazonPC
-            // 
-            this.txtRazonPC.Location = new System.Drawing.Point(111, 84);
-            this.txtRazonPC.Name = "txtRazonPC";
-            this.txtRazonPC.Size = new System.Drawing.Size(100, 20);
-            this.txtRazonPC.TabIndex = 0;
-            // 
-            // txtRazonE
-            // 
-            this.txtRazonE.Location = new System.Drawing.Point(111, 119);
-            this.txtRazonE.Name = "txtRazonE";
-            this.txtRazonE.Size = new System.Drawing.Size(100, 20);
-            this.txtRazonE.TabIndex = 1;
-            // 
-            // txtSolvencia
-            // 
-            this.txtSolvencia.Location = new System.Drawing.Point(111, 190);
-            this.txtSolvencia.Name = "txtSolvencia";
-            this.txtSolvencia.Size = new System.Drawing.Size(100, 20);
-            this.txtSolvencia.TabIndex = 3;
-            // 
-            // txtCapitalT
-            // 
-            this.txtCapitalT.Location = new System.Drawing.Point(111, 155);
-            this.txtCapitalT.Name = "txtCapitalT";
-            this.txtCapitalT.Size = new System.Drawing.Size(100, 20);
-            this.txtCapitalT.TabIndex = 2;
-            // 
-            // txtRotacionInv
-            // 
-            this.txtRotacionInv.Location = new System.Drawing.Point(398, 119);
-            this.txtRotacionInv.Name = "txtRotacionInv";
-            this.txtRotacionInv.Size = new System.Drawing.Size(100, 20);
-            this.txtRotacionInv.TabIndex = 5;
-            // 
-            // txtPruebaA
-            // 
-            this.txtPruebaA.Location = new System.Drawing.Point(398, 84);
-            this.txtPruebaA.Name = "txtPruebaA";
-            this.txtPruebaA.Size = new System.Drawing.Size(100, 20);
-            this.txtPruebaA.TabIndex = 4;
-            // 
-            // txtRotacionPagarCP
-            // 
-            this.txtRotacionPagarCP.Location = new System.Drawing.Point(398, 190);
-            this.txtRotacionPagarCP.Name = "txtRotacionPagarCP";
-            this.txtRotacionPagarCP.Size = new System.Drawing.Size(100, 20);
-            this.txtRotacionPagarCP.TabIndex = 7;
-            // 
-            // txtRotacionC
-            // 
-            this.txtRotacionC.Location = new System.Drawing.Point(398, 155);
-            this.txtRotacionC.Name = "txtRotacionC";
-            this.txtRotacionC.Size = new System.Drawing.Size(100, 20);
-            this.txtRotacionC.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 91);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Pasivo - Capital";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 126);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Endeudamiento";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 193);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Solvencia";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 158);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Capital Trabajo";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(282, 190);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 13);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Cuentas * Pagar a CP";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(287, 158);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 13);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Rotacion Cartera";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(287, 122);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(105, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Rotacion Inventarios";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(321, 87);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 13);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Prueba Acida";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(63, 24);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(526, 39);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "VERSION DEMO FITD TOOLKIT";
             // 
             // kryptonPalette1
             // 
@@ -313,33 +165,151 @@
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.ButtonEdgeInset = 10;
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
             // 
-            // ViewMain
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblTitle.Location = new System.Drawing.Point(77, 33);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(247, 50);
+            this.lblTitle.TabIndex = 7;
+            this.lblTitle.Text = "The FITD Toolkit For\r\nYour Company is HERE!";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(82, 214);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(281, 32);
+            this.txtNombre.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txtNombre.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtNombre.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtNombre.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtNombre.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.txtNombre.StateCommon.Border.Rounding = 20;
+            this.txtNombre.StateCommon.Border.Width = 1;
+            this.txtNombre.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.txtNombre.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.txtNombre.TabIndex = 10;
+            this.txtNombre.Text = "Ingrese el Nombre de su Proyecto";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblNombre.Location = new System.Drawing.Point(23, 179);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(118, 17);
+            this.lblNombre.TabIndex = 11;
+            this.lblNombre.Text = "¿Es primera vez?";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(135, 417);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 12;
+            // 
+            // lblProyecto
+            // 
+            this.lblProyecto.AutoSize = true;
+            this.lblProyecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblProyecto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblProyecto.Location = new System.Drawing.Point(23, 388);
+            this.lblProyecto.Name = "lblProyecto";
+            this.lblProyecto.Size = new System.Drawing.Size(145, 17);
+            this.lblProyecto.TabIndex = 13;
+            this.lblProyecto.Text = "Ya tengo un Proyecto";
+            // 
+            // btnStarted
+            // 
+            this.btnStarted.Location = new System.Drawing.Point(118, 299);
+            this.btnStarted.Name = "btnStarted";
+            this.btnStarted.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnStarted.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnStarted.OverrideDefault.Back.ColorAngle = 45F;
+            this.btnStarted.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnStarted.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnStarted.OverrideDefault.Border.ColorAngle = 45F;
+            this.btnStarted.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnStarted.OverrideDefault.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnStarted.OverrideDefault.Border.Rounding = 20;
+            this.btnStarted.OverrideDefault.Border.Width = 1;
+            this.btnStarted.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnStarted.Size = new System.Drawing.Size(155, 43);
+            this.btnStarted.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnStarted.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnStarted.StateCommon.Back.ColorAngle = 45F;
+            this.btnStarted.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnStarted.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnStarted.StateCommon.Border.ColorAngle = 45F;
+            this.btnStarted.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnStarted.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnStarted.StateCommon.Border.Rounding = 20;
+            this.btnStarted.StateCommon.Border.Width = 1;
+            this.btnStarted.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnStarted.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnStarted.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStarted.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnStarted.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnStarted.StatePressed.Back.ColorAngle = 135F;
+            this.btnStarted.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnStarted.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnStarted.StatePressed.Border.ColorAngle = 135F;
+            this.btnStarted.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnStarted.StatePressed.Border.Rounding = 20;
+            this.btnStarted.StatePressed.Border.Width = 1;
+            this.btnStarted.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnStarted.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnStarted.StateTracking.Back.ColorAngle = 135F;
+            this.btnStarted.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnStarted.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnStarted.StateTracking.Border.ColorAngle = 135F;
+            this.btnStarted.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnStarted.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnStarted.StateTracking.Border.Rounding = 20;
+            this.btnStarted.StateTracking.Border.Width = 1;
+            this.btnStarted.TabIndex = 14;
+            this.btnStarted.Values.Text = "Comenzar";
+            this.btnStarted.Click += new System.EventHandler(this.btnStarted_Click);
+            // 
+            // ntfSaved
+            // 
+            this.ntfSaved.BalloonTipText = "Se ha logrado agregar un nuevo Proyecto con exito.";
+            this.ntfSaved.BalloonTipTitle = "¡Guardado!";
+            this.ntfSaved.Icon = ((System.Drawing.Icon)(resources.GetObject("ntfSaved.Icon")));
+            this.ntfSaved.Text = "FITD";
+            this.ntfSaved.Visible = true;
+            // 
+            // frmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 661);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtRotacionPagarCP);
-            this.Controls.Add(this.txtRotacionC);
-            this.Controls.Add(this.txtRotacionInv);
-            this.Controls.Add(this.txtPruebaA);
-            this.Controls.Add(this.txtSolvencia);
-            this.Controls.Add(this.txtCapitalT);
-            this.Controls.Add(this.txtRazonE);
-            this.Controls.Add(this.txtRazonPC);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "ViewMain";
+            this.ClientSize = new System.Drawing.Size(400, 450);
+            this.Controls.Add(this.btnStarted);
+            this.Controls.Add(this.lblProyecto);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.lblTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmRegister";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "frmRegister";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,23 +317,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtRazonPC;
-        private System.Windows.Forms.TextBox txtRazonE;
-        private System.Windows.Forms.TextBox txtSolvencia;
-        private System.Windows.Forms.TextBox txtCapitalT;
-        private System.Windows.Forms.TextBox txtRotacionInv;
-        private System.Windows.Forms.TextBox txtPruebaA;
-        private System.Windows.Forms.TextBox txtRotacionPagarCP;
-        private System.Windows.Forms.TextBox txtRotacionC;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
+        private System.Windows.Forms.Label lblTitle;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtNombre;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblProyecto;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnStarted;
+        private System.Windows.Forms.NotifyIcon ntfSaved;
     }
 }

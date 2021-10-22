@@ -129,7 +129,9 @@ namespace FITD_Demo
 
         private void btnGenerateReport_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.ViewMain());
+            Forms.frmRegister frmR = new Forms.frmRegister();
+            frmR.Show();
+            this.Close();
         }
     }
 }

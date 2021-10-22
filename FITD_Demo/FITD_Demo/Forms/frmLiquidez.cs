@@ -24,6 +24,7 @@ namespace FITD_Demo.Forms
             cmd.Open();
             int activoC = int.Parse(txtActivoC.Text);
             int pasivoC = int.Parse(txtPasivoC.Text);
+            int inventario = int.Parse(txtInventario.Text);
             int inventarioI = int.Parse(txtInventarioI.Text);
             int inventarioF = int.Parse(txtInventarioF.Text);
             int costosMV = int.Parse(txtCMVendidas.Text);
@@ -34,7 +35,7 @@ namespace FITD_Demo.Forms
             int cuentasPagarF = int.Parse(txtCuentasPagarF.Text);
             int comprasCredito = int.Parse(txtComprasCredito.Text);
 
-            SqlCommand query = new SqlCommand("INSERT INTO Liquidez VALUES('"+activoC+"','" + pasivoC + "','" + inventarioI + "','" + inventarioF + "','" + costosMV + "','" + ventasC + "','" + cuentasCobrarI + "','" + cuentasCobrarF + "','" + cuentasPagarI + "','" + cuentasPagarF + "','" + comprasCredito + "')", cmd);
+            SqlCommand query = new SqlCommand("INSERT INTO Liquidez VALUES('"+activoC+"','" + pasivoC + "','" + inventario + "','" + inventarioI + "','" + inventarioF + "','" + costosMV + "','" + ventasC + "','" + cuentasCobrarI + "','" + cuentasCobrarF + "','" + cuentasPagarI + "','" + cuentasPagarF + "','" + comprasCredito + "')", cmd);
             int flag = query.ExecuteNonQuery();
 
             if (flag > 0)

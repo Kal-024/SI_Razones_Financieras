@@ -9,10 +9,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//
+using ComponentFactory.Krypton.Toolkit;
 
 namespace FITD_Demo.Forms
 {
-    public partial class ViewMain : Form
+    public partial class ViewMain : KryptonForm
     {
         SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8; Initial Catalog = FITD; Integrated Security = true");
 
@@ -25,15 +27,38 @@ namespace FITD_Demo.Forms
             PruebaAcida();RotacionInventarios();RotacionCuentasPagarCP();
             RazonEndeudamiento();
             PasivoCapital();
+            //idChecker();
         }
+        /*
+        public void idChecker()
+        {
+            SqlCommand queryId = new SqlCommand("SELECT MAX(R.ReportID) AS ReportID FROM Report AS R", cmd);
+            cmd.Open();
+            SqlDataReader read = queryId.ExecuteReader();
+            if (read.Read())
+            {
+                int repID = int.Parse(read["ReportID"].ToString());
+                txtCapitalT.Text = repID.ToString("0.00");
+            }
+            cmd.Close();
+        }
+        */
 
         #region Razones de Liquidez
+        
         public void CapitalTrabajo()
         {
-            SqlCommand query = new SqlCommand("SELECT L.ActivoCorriente, L.PasivoCirculante FROM Liquidez as L WHERE LiquidezID = @ReportID", cmd);
+            cmd.Open();
+            string queryId = "SELECT MAX(R.ReportID) AS ReportID FROM Report AS R";            
+            SqlCommand command = new SqlCommand(queryId, cmd);
+
+            int repID = Convert.ToInt32(command.ExecuteScalar());            
+            cmd.Close();
+
+            SqlCommand query = new SqlCommand("EXEC SP_CapitalTrabajo '" + repID + "'", cmd);
             //parametro 1 debe asignarle al numero de reporte al que se agregue
             //Fijar un metodo de menu de gestion para distintos reportes....
-            query.Parameters.AddWithValue("@ReportID", 1);
+            //query.Parameters.AddWithValue("@ReportID", reportID);
             cmd.Open();
 
             SqlDataReader record = query.ExecuteReader();
@@ -54,9 +79,16 @@ namespace FITD_Demo.Forms
 
         public void IndiceSolvencia()
         {
-            
-                SqlCommand query = new SqlCommand("SELECT L.ActivoCorriente, L.PasivoCirculante FROM Liquidez as L WHERE LiquidezID = @ReportID", cmd);
-                query.Parameters.AddWithValue("@ReportID", 1);
+            cmd.Open();
+            string queryId = "SELECT MAX(R.ReportID) AS ReportID FROM Report AS R";
+            SqlCommand command = new SqlCommand(queryId, cmd);
+
+            int repID = Convert.ToInt32(command.ExecuteScalar());
+            cmd.Close();
+
+            //Usamos el SP de Capital de trabajo ya que para esta razon ocupamos los mismo datos
+            SqlCommand query = new SqlCommand("EXEC SP_CapitalTrabajo '" + repID + "'", cmd);
+                
                 cmd.Open();
 
                 SqlDataReader record = query.ExecuteReader();
@@ -81,15 +113,21 @@ namespace FITD_Demo.Forms
 
         public void PruebaAcida()
         {
-            SqlCommand query = new SqlCommand("SELECT L.ActivoCorriente,((L.InventarioInicial + L.InventarioFinal) / 2) as Inventarios , L.PasivoCirculante from Liquidez as L WHERE LiquidezID = @ReportID", cmd);
-            query.Parameters.AddWithValue("@ReportID", 1);
+            cmd.Open();
+            string queryId = "SELECT MAX(R.ReportID) AS ReportID FROM Report AS R";
+            SqlCommand command = new SqlCommand(queryId, cmd);
+
+            int repID = Convert.ToInt32(command.ExecuteScalar());
+            cmd.Close();
+
+            SqlCommand query = new SqlCommand("EXEC SP_PruebAcida '" + repID + "'", cmd);
             cmd.Open();
 
             SqlDataReader record = query.ExecuteReader();
             if (record.Read())
             {
                 string AC = record["ActivoCorriente"].ToString();
-                string Inv = record["Inventarios"].ToString();
+                string Inv = record["Inventario"].ToString();
                 string PC = record["PasivoCirculante"].ToString();
 
                 int activoCirculante = int.Parse(AC);
@@ -108,8 +146,14 @@ namespace FITD_Demo.Forms
 
         public void RotacionInventarios()
         {
-            SqlCommand query = new SqlCommand("SELECT L.CostosMercanciasVendidas, ((L.InventarioInicial + L.InventarioFinal) / 2) as Inventarios FROM Liquidez as L WHERE LiquidezID = @ReportID", cmd);
-            query.Parameters.AddWithValue("@ReportID", 1);
+            cmd.Open();
+            string queryId = "SELECT MAX(R.ReportID) AS ReportID FROM Report AS R";
+            SqlCommand command = new SqlCommand(queryId, cmd);
+
+            int repID = Convert.ToInt32(command.ExecuteScalar());
+            cmd.Close();
+
+            SqlCommand query = new SqlCommand("EXEC SP_RotacionInvetario '" + repID + "'", cmd);
             cmd.Open();
 
             SqlDataReader record = query.ExecuteReader();
@@ -123,17 +167,29 @@ namespace FITD_Demo.Forms
                 if (inventarios > 0)
                 {
                     //La respuesta da en Meses por lo tanto se divide entre los 12 meses hábiles...
-                    decimal rotacionInventario = (12 / (costosMV / inventarios));
-                    txtRotacionInv.Text = rotacionInventario.ToString("0.00");
-                }else { MessageBox.Show("Debe tener un total de Inventarios mayor a cero para continuar"); }
+                    decimal rotacionInventario = (costosMV / inventarios);
+                    if(rotacionInventario > 0)
+                    {
+                        decimal rotacionInventarioMeses = (12 / rotacionInventario);
+                        txtRotacionInv.Text = rotacionInventarioMeses.ToString("0.00");
+                    }
+                    else { MessageBox.Show("Debe tener una rotacion de Inventarios mayor a cero para continuar"); }
+                }
+                else { MessageBox.Show("Debe tener un total de Inventarios mayor a cero para continuar"); }
             }
             cmd.Close();
         }
 
         public void RotacionCartera()
         {
-            SqlCommand query = new SqlCommand("SELECT L.VentasCredito, ((L.CuentasPorCobrarInicial + L.CuentasPorCobrarFinal) / 2) as PromedioCuentasCobrar FROM Liquidez as L WHERE LiquidezID = @ReportID", cmd);
-            query.Parameters.AddWithValue("@ReportID", 1);
+            cmd.Open();
+            string queryId = "SELECT MAX(R.ReportID) AS ReportID FROM Report AS R";
+            SqlCommand command = new SqlCommand(queryId, cmd);
+
+            int repID = Convert.ToInt32(command.ExecuteScalar());
+            cmd.Close();
+
+            SqlCommand query = new SqlCommand("EXEC SP_RotacionCartera '" + repID + "'", cmd);
             cmd.Open();
 
             SqlDataReader record = query.ExecuteReader();
@@ -164,8 +220,14 @@ namespace FITD_Demo.Forms
 
         public void RotacionCuentasPagarCP()
         {
-            SqlCommand query = new SqlCommand("SELECT L.ComprasCredito, ((L.CuentasPorPagarInicial + L.CuentasPorPagarFinal) / 2) as PromedioCuentasPagar FROM Liquidez as L WHERE LiquidezID = @ReportID", cmd);
-            query.Parameters.AddWithValue("@ReportID", 1);
+            cmd.Open();
+            string queryId = "SELECT MAX(R.ReportID) AS ReportID FROM Report AS R";
+            SqlCommand command = new SqlCommand(queryId, cmd);
+
+            int repID = Convert.ToInt32(command.ExecuteScalar());
+            cmd.Close();
+
+            SqlCommand query = new SqlCommand("EXEC SP_RotacionCuentasPagarCP '" + repID + "'", cmd);
             cmd.Open();
 
             SqlDataReader record = query.ExecuteReader();
@@ -198,8 +260,14 @@ namespace FITD_Demo.Forms
         #region Razones de Endeudamiento
         public void RazonEndeudamiento()
         {
-            SqlCommand query = new SqlCommand("SELECT D.PasivoTotal, D.ActivoTotal FROM Endeudamiento as D WHERE EndeudamientoID = @ReportID", cmd);
-            query.Parameters.AddWithValue("@ReportID", 1);
+            cmd.Open();
+            string queryId = "SELECT MAX(R.ReportID) AS ReportID FROM Report AS R";
+            SqlCommand command = new SqlCommand(queryId, cmd);
+
+            int repID = Convert.ToInt32(command.ExecuteScalar());
+            cmd.Close();
+
+            SqlCommand query = new SqlCommand("EXEC SP_RazonEndeudamiento '" + repID + "'", cmd);
             cmd.Open();
 
             SqlDataReader record = query.ExecuteReader();
@@ -222,8 +290,14 @@ namespace FITD_Demo.Forms
 
         public void PasivoCapital()
         {
-            SqlCommand query = new SqlCommand("SELECT D.PasivoLargoPlazo, D.Capital FROM Endeudamiento as D WHERE EndeudamientoID = @ReportID", cmd);
-            query.Parameters.AddWithValue("@ReportID", 1);
+            cmd.Open();
+            string queryId = "SELECT MAX(R.ReportID) AS ReportID FROM Report AS R";
+            SqlCommand command = new SqlCommand(queryId, cmd);
+
+            int repID = Convert.ToInt32(command.ExecuteScalar());
+            cmd.Close();
+
+            SqlCommand query = new SqlCommand("EXEC SP_PasivoCapital '" + repID + "'", cmd);
             cmd.Open();
 
             SqlDataReader record = query.ExecuteReader();
@@ -246,5 +320,36 @@ namespace FITD_Demo.Forms
 
 
         #endregion
+
+        public void MBU()
+        {
+            cmd.Open();
+            string queryId = "SELECT MAX(R.ReportID) AS ReportID FROM Report AS R";
+            SqlCommand command = new SqlCommand(queryId, cmd);
+
+            int repID = Convert.ToInt32(command.ExecuteScalar());
+            cmd.Close();
+
+            SqlCommand query = new SqlCommand("EXEC SP_PasivoCapital '" + repID + "'", cmd);
+            cmd.Open();
+
+            SqlDataReader record = query.ExecuteReader();
+            if (record.Read())
+            {
+                string V = record["Ventas"].ToString();
+                string C = record["Costos"].ToString();
+
+                double ventas = Convert.ToDouble(V);
+                double costos = Convert.ToDouble(C);
+                if (ventas > 0)
+                {
+                    double MBU = ((ventas - costos) / ventas);
+                    //txtMBU.Text = MBU.ToString();
+                }
+                else { MessageBox.Show("Debe tener Ventas mayor a cero para continuar"); }
+
+                cmd.Close();
+            }
+        }
     }
 }
