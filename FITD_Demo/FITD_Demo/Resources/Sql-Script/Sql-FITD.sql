@@ -104,7 +104,7 @@ EXEC SP_PasivoCapital 1
 
 
 /*Procedimiento de almacenado para calcular el Margen Bruto de Utilidad*/
-ALTER PROCEDURE SP_MBU @ReportID int as
+CREATE PROCEDURE SP_MBU @ReportID int as
 select DISTINCT R.Ventas, R.Costos from Rentabilidad as R inner join Report as RR on R.RentabilidadID = RR.RentabilidadID WHERE RR.ReportID = @ReportID group by R.Ventas,R.Costos,RR.RentabilidadID
 
 EXEC SP_MBU 1
@@ -113,9 +113,10 @@ select * from Rentabilidad
 
 
 
-
-
-
+SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L
+SELECT MAX(R.RentabilidadID) as RentabilidadID FROM Rentabilidad AS R
+SELECT MAX(E.EndeudamientoID) as EndeudamientoID FROM Endeudamiento AS E
+select * from Report
 /*
 insert into Liquidez values(45000000,18000000,25000000,13500000,20000000,87000000,455000000,13000000,9150000,2020000,850250,22750000)
 insert into Endeudamiento values(98500,9000,35600,28000)

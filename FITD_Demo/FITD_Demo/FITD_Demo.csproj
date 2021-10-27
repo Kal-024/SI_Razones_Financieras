@@ -206,6 +206,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="f_logoSmall.ico" />
+    <None Include="Resources\backGround.jpg" />
+    <None Include="Resources\Formulas\razonPasivoCapital.png" />
+    <None Include="Resources\Formulas\razonEndeudamiento.png" />
+    <None Include="Resources\Formulas\rotacionCuentasCobrar.png" />
+    <None Include="Resources\Formulas\rotacionCartera.jpg" />
+    <None Include="Resources\Formulas\rotacionInventario.png" />
+    <None Include="Resources\Formulas\pruebaAcida.png" />
+    <None Include="Resources\Formulas\indiceSolvencia.jpg" />
+    <None Include="Resources\Formulas\capitalTrabajo.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

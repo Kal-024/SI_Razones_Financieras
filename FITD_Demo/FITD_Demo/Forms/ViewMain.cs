@@ -27,6 +27,8 @@ namespace FITD_Demo.Forms
             PruebaAcida();RotacionInventarios();RotacionCuentasPagarCP();
             RazonEndeudamiento();
             PasivoCapital();
+            RotacionCartera();
+            PasivoCapital();
             //idChecker();
         }
         /*
@@ -120,7 +122,7 @@ namespace FITD_Demo.Forms
             int repID = Convert.ToInt32(command.ExecuteScalar());
             cmd.Close();
 
-            SqlCommand query = new SqlCommand("EXEC SP_PruebAcida '" + repID + "'", cmd);
+            SqlCommand query = new SqlCommand("EXEC SP_PruebaAcida '" + repID + "'", cmd);
             cmd.Open();
 
             SqlDataReader record = query.ExecuteReader();
@@ -153,7 +155,7 @@ namespace FITD_Demo.Forms
             int repID = Convert.ToInt32(command.ExecuteScalar());
             cmd.Close();
 
-            SqlCommand query = new SqlCommand("EXEC SP_RotacionInvetario '" + repID + "'", cmd);
+            SqlCommand query = new SqlCommand("EXEC SP_RotacionInventario '" + repID + "'", cmd);
             cmd.Open();
 
             SqlDataReader record = query.ExecuteReader();
