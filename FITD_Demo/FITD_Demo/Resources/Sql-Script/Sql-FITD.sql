@@ -103,11 +103,33 @@ SELECT D.PasivoLargoPlazo, D.Capital FROM Endeudamiento as D inner join Report a
 EXEC SP_PasivoCapital 1
 
 
-/*Procedimiento de almacenado para calcular el Margen Bruto de Utilidad*/
+/*Procedimiento de almacenado para las Razones de Rentabilidad*/
 CREATE PROCEDURE SP_MBU @ReportID int as
 select DISTINCT R.Ventas, R.Costos from Rentabilidad as R inner join Report as RR on R.RentabilidadID = RR.RentabilidadID WHERE RR.ReportID = @ReportID group by R.Ventas,R.Costos,RR.RentabilidadID
 
 EXEC SP_MBU 1
+
+
+CREATE PROCEDURE SP_MUP @ReportID int as
+Select R.UtilidadNeta as Utilidad, R.Ventas from Rentabilidad as R inner join Report as RR on R.RentabilidadID = RR.RentabilidadID where RR.ReportID = @ReportID group by R.UtilidadNeta,R.Ventas
+
+EXEC SP_MUP 1
+
+
+CREATE PROCEDURE SP_RotacionActivosALP @ReportID int as
+Select R.Ventas, R.TotalActivos from Rentabilidad as R inner join Report as RR on R.RentabilidadID = RR.RentabilidadID where RR.ReportID = @ReportID group by R.Ventas,R.TotalActivos
+
+EXEC SP_RotacionActivosALP 1
+
+
+CREATE PROCEDURE SP_ROA @ReportID int as
+Select R.UtilidadNeta, R.TotalActivos from Rentabilidad as R inner join Report as RR on R.RentabilidadID = RR.RentabilidadID where RR.ReportID = @ReportID group by R.UtilidadNeta,R.TotalActivos
+
+EXEC SP_ROA 1
+
+
+CREATE PROCEDURE SP_RendimientoCapitalComun @ReportID int as
+Select R. from Rentabilidad as R
 
 select * from Rentabilidad
 

@@ -40,16 +40,16 @@
             this.btnLiquidez = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnAddReport = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlChildForm = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.picBLogo = new System.Windows.Forms.PictureBox();
+            this.pnlChildForm = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlSideMenu.SuspendLayout();
             this.pnlSubMenuReport.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.pnlChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBLogo)).BeginInit();
+            this.pnlChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -625,15 +625,16 @@
             this.panel1.Size = new System.Drawing.Size(250, 100);
             this.panel1.TabIndex = 0;
             // 
-            // pnlChildForm
+            // label1
             // 
-            this.pnlChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.pnlChildForm.Controls.Add(this.pictureBox1);
-            this.pnlChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlChildForm.Location = new System.Drawing.Point(250, 0);
-            this.pnlChildForm.Name = "pnlChildForm";
-            this.pnlChildForm.Size = new System.Drawing.Size(684, 511);
-            this.pnlChildForm.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(72, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(162, 25);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "   R Financieras";
             // 
             // lblTitle
             // 
@@ -646,17 +647,6 @@
             this.lblTitle.TabIndex = 8;
             this.lblTitle.Text = "   FITD Toolkit \r\n  Analizador de ";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(72, 62);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 25);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "   R Financieras";
-            // 
             // picBLogo
             // 
             this.picBLogo.Image = global::FITD_Demo.Properties.Resources.f_logoMedium;
@@ -665,6 +655,16 @@
             this.picBLogo.Size = new System.Drawing.Size(66, 67);
             this.picBLogo.TabIndex = 1;
             this.picBLogo.TabStop = false;
+            // 
+            // pnlChildForm
+            // 
+            this.pnlChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.pnlChildForm.Controls.Add(this.pictureBox1);
+            this.pnlChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlChildForm.Location = new System.Drawing.Point(250, 0);
+            this.pnlChildForm.Name = "pnlChildForm";
+            this.pnlChildForm.Size = new System.Drawing.Size(684, 511);
+            this.pnlChildForm.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -694,8 +694,8 @@
             this.pnlSubMenuReport.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.pnlChildForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picBLogo)).EndInit();
+            this.pnlChildForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

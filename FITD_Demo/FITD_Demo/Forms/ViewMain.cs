@@ -21,14 +21,15 @@ namespace FITD_Demo.Forms
         public ViewMain()
         {
             InitializeComponent();
-            RotacionCuentasPagarCP();
+            //Razones de Liquidez
             CapitalTrabajo();
             IndiceSolvencia();
-            PruebaAcida();RotacionInventarios();RotacionCuentasPagarCP();
+            PruebaAcida();
+            RotacionInventarios();RotacionCartera();RotacionCuentasPagarCP();
+            //Razones de Endeudamiento
             RazonEndeudamiento();
             PasivoCapital();
-            RotacionCartera();
-            PasivoCapital();
+            //Razones de Rentabilidad
             MBU();
             MUP();
             RotacionActivoALP();
@@ -59,7 +60,7 @@ namespace FITD_Demo.Forms
                 double pasivoCirculante = Convert.ToDouble(PC);
 
                 double capitalTrabajo = (activoCirculante - pasivoCirculante);
-                txtCapitalT.Text = capitalTrabajo.ToString("0.00"); //textBox para imprimir resultado
+                txtCapitalT.Text = Math.Round(capitalTrabajo,4).ToString("0.00"); //textBox para imprimir resultado
                 
             }
             cmd.Close();
@@ -91,7 +92,7 @@ namespace FITD_Demo.Forms
                     if (pasivoCirculante > 0)
                     {
                         double razonCorriente = (activoCirculante / pasivoCirculante);
-                        txtSolvencia.Text = razonCorriente.ToString("0.00"); //textBox para imprimir resultado
+                        txtSolvencia.Text = Math.Round(razonCorriente,4).ToString("0.00"); //textBox para imprimir resultado
                     }
                     else { MessageBox.Show("Debe tener un Pasivo Circulante mayor a cero para Continuar"); }
                 }
@@ -125,7 +126,7 @@ namespace FITD_Demo.Forms
                 if (pasivoCirculante > 0)
                 {
                     double pruebaAcida = (activoCirculante - inventarios) / pasivoCirculante;
-                    txtPruebaA.Text = pruebaAcida.ToString("0.00");
+                    txtPruebaA.Text = Math.Round(pruebaAcida,4).ToString("0.00");
                 }
                 else { MessageBox.Show("Debe tener un Pasivo Circualante mayor a cero"); }
             }
@@ -159,7 +160,7 @@ namespace FITD_Demo.Forms
                     if(rotacionInventario > 0)
                     {
                         double rotacionInventarioMeses = (12 / rotacionInventario);
-                        txtRotacionInv.Text = rotacionInventarioMeses.ToString("0.00");
+                        txtRotacionInv.Text = Math.Round(rotacionInventarioMeses,1).ToString("0.00");
                     }
                     else { MessageBox.Show("Debe tener una rotacion de Inventarios mayor a cero para continuar"); }
                 }
@@ -196,7 +197,7 @@ namespace FITD_Demo.Forms
                     if (rotacionCartera > 0)
                     {
                         double rotacionCarteraDias = (360 / rotacionCartera);
-                        txtRotacionC.Text = rotacionCarteraDias.ToString("0.00");
+                        txtRotacionC.Text = Math.Round(rotacionCarteraDias).ToString("0.00");
                     }
                     else { MessageBox.Show("Su rotacion de Cartera fue de exactamente cero, Revise correctamente su Informacion!"); }
                     
@@ -234,7 +235,7 @@ namespace FITD_Demo.Forms
                     if (rotacionCuentasPagarCP > 0)
                     {
                         double rotacionCuentasPagarCPDias = (360 / rotacionCuentasPagarCP);
-                        txtRotacionPagarCP.Text = rotacionCuentasPagarCPDias.ToString("0.00");
+                        txtRotacionPagarCP.Text = Math.Round(rotacionCuentasPagarCPDias).ToString("0.00");
                     }
                     else { MessageBox.Show("Su rotacion de Cuentas por pagar a Corto Plazo fue de exactamente cero, Revise correctamente su Informacion!"); }
 
@@ -269,7 +270,7 @@ namespace FITD_Demo.Forms
                 if (activoTotal > 0)
                 {
                     double razonEndeudamientoPorcentual = (pasivoTotal / activoTotal) * (100);
-                    txtRazonE.Text = razonEndeudamientoPorcentual.ToString("0.00");
+                    txtRazonE.Text = Math.Round(razonEndeudamientoPorcentual,2).ToString("0.00");
                 }
                 else { MessageBox.Show("Sus Activos Totales deben ser mayores a cero para continuar"); }
             }
@@ -299,7 +300,7 @@ namespace FITD_Demo.Forms
                 if (capital > 0)
                 {
                     double razonPasivoCapital = (pasivoLargoPlazo / capital);
-                    txtRazonPC.Text = razonPasivoCapital.ToString("0.00");
+                    txtRazonPC.Text = Math.Round(razonPasivoCapital,2).ToString("0.00");
                 }
                 else { MessageBox.Show("Su Capital debe ser mayor a cero para continuar"); }
             }
@@ -309,6 +310,7 @@ namespace FITD_Demo.Forms
 
         #endregion
 
+        #region Razones de Rentabilidad
         public void MBU()
         {
             cmd.Open();
@@ -332,7 +334,7 @@ namespace FITD_Demo.Forms
                 if (ventas > 0)
                 {
                     double MBU = ((ventas - costos) / ventas);
-                    txtMBU.Text = MBU.ToString();
+                    txtMBU.Text = Math.Round(MBU,2).ToString();
                 }
                 else { MessageBox.Show("Debe tener Ventas mayor a cero para continuar"); }
                 cmd.Close();
@@ -363,7 +365,7 @@ namespace FITD_Demo.Forms
                 if (ventas > 0)
                 {
                     double MPU = (utilidad / ventas);
-                    txtMUP.Text = MPU.ToString();
+                    txtMUP.Text = Math.Round(MPU,2).ToString();
                 }
                 else { MessageBox.Show("Debe tener Ventas mayor a cero para continuar"); }
             }
@@ -396,7 +398,7 @@ namespace FITD_Demo.Forms
                     if (rotacionActivo > 0)
                     {
                         double rotacionActivoTotal = (360 / rotacionActivo);
-                        txtRotacionActivoALP.Text = rotacionActivoTotal.ToString();
+                        txtRotacionActivoALP.Text = Math.Round(rotacionActivoTotal).ToString();
                     }
                     else { MessageBox.Show("Debe tener una rotacion de Activos total mayor a cero para continuar"); }
                 }
@@ -429,11 +431,14 @@ namespace FITD_Demo.Forms
                 if (totalActivos > 0)
                 {
                     double ROA = (utilidadNeta / totalActivos) * 100;
-                    txtRoa.Text = ROA.ToString();
+                    //Resultado redondeado a 2 decimale por motivos de porcentaje
+                    txtRoa.Text = Math.Round(ROA,2).ToString();
                 }
                 else { MessageBox.Show("Debe tener Activos totales mayor a cero para continuar"); }
             }
             cmd.Close();
         }
+
+        #endregion
     }
 }

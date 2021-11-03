@@ -93,6 +93,8 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.txtRoa = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -105,7 +107,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -119,57 +123,73 @@
             // 
             this.txtRazonPC.Location = new System.Drawing.Point(48, 97);
             this.txtRazonPC.Name = "txtRazonPC";
+            this.txtRazonPC.ReadOnly = true;
             this.txtRazonPC.Size = new System.Drawing.Size(123, 20);
             this.txtRazonPC.TabIndex = 0;
+            this.txtRazonPC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtRazonE
             // 
             this.txtRazonE.Location = new System.Drawing.Point(31, 97);
             this.txtRazonE.Name = "txtRazonE";
+            this.txtRazonE.ReadOnly = true;
             this.txtRazonE.Size = new System.Drawing.Size(125, 20);
             this.txtRazonE.TabIndex = 1;
+            this.txtRazonE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtSolvencia
             // 
             this.txtSolvencia.Location = new System.Drawing.Point(48, 91);
             this.txtSolvencia.Name = "txtSolvencia";
+            this.txtSolvencia.ReadOnly = true;
             this.txtSolvencia.Size = new System.Drawing.Size(123, 20);
             this.txtSolvencia.TabIndex = 3;
+            this.txtSolvencia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtCapitalT
             // 
             this.txtCapitalT.Location = new System.Drawing.Point(32, 91);
             this.txtCapitalT.Name = "txtCapitalT";
+            this.txtCapitalT.ReadOnly = true;
             this.txtCapitalT.Size = new System.Drawing.Size(124, 20);
             this.txtCapitalT.TabIndex = 2;
+            this.txtCapitalT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtRotacionInv
             // 
             this.txtRotacionInv.Location = new System.Drawing.Point(31, 95);
             this.txtRotacionInv.Name = "txtRotacionInv";
+            this.txtRotacionInv.ReadOnly = true;
             this.txtRotacionInv.Size = new System.Drawing.Size(125, 20);
             this.txtRotacionInv.TabIndex = 5;
+            this.txtRotacionInv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtPruebaA
             // 
             this.txtPruebaA.Location = new System.Drawing.Point(43, 95);
             this.txtPruebaA.Name = "txtPruebaA";
+            this.txtPruebaA.ReadOnly = true;
             this.txtPruebaA.Size = new System.Drawing.Size(115, 20);
             this.txtPruebaA.TabIndex = 4;
+            this.txtPruebaA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtRotacionPagarCP
             // 
             this.txtRotacionPagarCP.Location = new System.Drawing.Point(31, 95);
             this.txtRotacionPagarCP.Name = "txtRotacionPagarCP";
+            this.txtRotacionPagarCP.ReadOnly = true;
             this.txtRotacionPagarCP.Size = new System.Drawing.Size(138, 20);
             this.txtRotacionPagarCP.TabIndex = 7;
+            this.txtRotacionPagarCP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtRotacionC
             // 
             this.txtRotacionC.Location = new System.Drawing.Point(27, 91);
             this.txtRotacionC.Name = "txtRotacionC";
+            this.txtRotacionC.ReadOnly = true;
             this.txtRotacionC.Size = new System.Drawing.Size(138, 20);
             this.txtRotacionC.TabIndex = 6;
+            this.txtRotacionC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -573,6 +593,7 @@
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.label30);
             this.panel7.Location = new System.Drawing.Point(982, 489);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(190, 160);
@@ -592,6 +613,7 @@
             // panel9
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.label29);
             this.panel9.Location = new System.Drawing.Point(786, 489);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(190, 160);
@@ -747,8 +769,10 @@
             // 
             this.txtMBU.Location = new System.Drawing.Point(32, 99);
             this.txtMBU.Name = "txtMBU";
+            this.txtMBU.ReadOnly = true;
             this.txtMBU.Size = new System.Drawing.Size(125, 20);
             this.txtMBU.TabIndex = 38;
+            this.txtMBU.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label23
             // 
@@ -773,8 +797,10 @@
             // 
             this.txtMUP.Location = new System.Drawing.Point(35, 99);
             this.txtMUP.Name = "txtMUP";
+            this.txtMUP.ReadOnly = true;
             this.txtMUP.Size = new System.Drawing.Size(125, 20);
             this.txtMUP.TabIndex = 41;
+            this.txtMUP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label25
             // 
@@ -799,8 +825,10 @@
             // 
             this.txtRotacionActivoALP.Location = new System.Drawing.Point(33, 99);
             this.txtRotacionActivoALP.Name = "txtRotacionActivoALP";
+            this.txtRotacionActivoALP.ReadOnly = true;
             this.txtRotacionActivoALP.Size = new System.Drawing.Size(125, 20);
             this.txtRotacionActivoALP.TabIndex = 44;
+            this.txtRotacionActivoALP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label27
             // 
@@ -825,8 +853,30 @@
             // 
             this.txtRoa.Location = new System.Drawing.Point(36, 99);
             this.txtRoa.Name = "txtRoa";
+            this.txtRoa.ReadOnly = true;
             this.txtRoa.Size = new System.Drawing.Size(125, 20);
             this.txtRoa.TabIndex = 47;
+            this.txtRoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(-1, 0);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(186, 18);
+            this.label29.TabIndex = 49;
+            this.label29.Text = "Rendimiento del C. Comun";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(28, 0);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(130, 18);
+            this.label30.TabIndex = 50;
+            this.label30.Text = "Utilidad por acción";
             // 
             // ViewMain
             // 
@@ -875,8 +925,12 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.panel11.ResumeLayout(false);
@@ -959,5 +1013,7 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.TextBox txtRoa;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label29;
     }
 }

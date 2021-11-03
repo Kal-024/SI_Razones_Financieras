@@ -15,7 +15,7 @@ namespace FITD_Demo.Forms
 {
     public partial class frmRegister : KryptonForm
     {
-        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8; Initial Catalog = FITD; Integrated Security = true");
+        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION; Initial Catalog = FITD; Integrated Security = true");
         public frmRegister()
         {
             InitializeComponent();
@@ -33,30 +33,24 @@ namespace FITD_Demo.Forms
 
         private void SuppplierID()
         {
-            SqlCommand query3 = new SqlCommand("SELECT MAX(E.EndeudamientoID) as EndeudamientoID FROM Endeudamiento AS E", cmd);
             cmd.Open();
-            SqlDataReader record3 = query3.ExecuteReader();
-            int endeudamiento = int.Parse(record3["EndeudamientoID"].ToString());
+            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L";
+            SqlCommand command = new SqlCommand(queryId, cmd);
+            int liquidez = Convert.ToInt32(command.ExecuteScalar());
             cmd.Close();
 
-            SqlCommand query2 = new SqlCommand("SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L", cmd);
             cmd.Open();
-            SqlDataReader record = query2.ExecuteReader();
-            int liquidez = int.Parse(record["LiquidezID"].ToString());
+            string queryId2 = "SELECT MAX(E.EndeudamientoID) as EndeudamientoID FROM Endeudamiento AS E";
+            SqlCommand command2 = new SqlCommand(queryId2, cmd);
+            int endeudamiento = Convert.ToInt32(command2.ExecuteScalar());
             cmd.Close();
-            
-            SqlCommand query4 = new SqlCommand("SELECT MAX(R.RentabilidadID) as RentabilidadID FROM Rentabilidad AS R", cmd);
+
             cmd.Open();
-            SqlDataReader record4 = query4.ExecuteReader();
-            int rentabilidad = int.Parse(record4["RentabilidadID"].ToString());
+            string queryId3 = "SELECT MAX(R.RentabilidadID) as RentabilidadID FROM Rentabilidad AS R";
+            SqlCommand command3 = new SqlCommand(queryId3, cmd);
+            int rentabilidad = Convert.ToInt32(command3.ExecuteScalar());
             cmd.Close();
-            
 
-
-            //int liquidez = int.Parse(l);
-            //int endeudamiento = int.Parse(e);
-            //int rentabilidad = int.Parse(r);
-            
             cmd.Open();
             string ReportName = txtNombre.Text;
             SqlCommand query = new SqlCommand("INSERT INTO Report VALUES ('" + ReportName + "','" + liquidez + "','" + endeudamiento + "','" + rentabilidad + "')", cmd);
