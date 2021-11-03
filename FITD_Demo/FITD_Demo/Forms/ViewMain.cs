@@ -29,6 +29,10 @@ namespace FITD_Demo.Forms
             PasivoCapital();
             RotacionCartera();
             PasivoCapital();
+            MBU();
+            MUP();
+            RotacionActivoALP();
+            ROA();
         }
  
         #region Razones de Liquidez
@@ -314,7 +318,7 @@ namespace FITD_Demo.Forms
             int repID = Convert.ToInt32(command.ExecuteScalar());
             cmd.Close();
 
-            SqlCommand query = new SqlCommand("EXEC SP_PasivoCapital '" + repID + "'", cmd);
+            SqlCommand query = new SqlCommand("EXEC SP_MBU '" + repID + "'", cmd);
             cmd.Open();
 
             SqlDataReader record = query.ExecuteReader();
@@ -328,12 +332,108 @@ namespace FITD_Demo.Forms
                 if (ventas > 0)
                 {
                     double MBU = ((ventas - costos) / ventas);
-                    //txtMBU.Text = MBU.ToString();
+                    txtMBU.Text = MBU.ToString();
                 }
                 else { MessageBox.Show("Debe tener Ventas mayor a cero para continuar"); }
-
                 cmd.Close();
             }
+            
+        }
+
+        public void MUP()
+        {
+            cmd.Open();
+            string queryId = "SELECT MAX(R.RentabilidadID) as RentabilidadID FROM Rentabilidad AS R";
+            SqlCommand command = new SqlCommand(queryId, cmd);
+
+            int repID = Convert.ToInt32(command.ExecuteScalar());
+            cmd.Close();
+
+            SqlCommand query = new SqlCommand("EXEC SP_MUP '" + repID + "'", cmd);
+            cmd.Open();
+
+            SqlDataReader record = query.ExecuteReader();
+            if (record.Read())
+            {
+                string U = record["Utilidad"].ToString();
+                string V = record["Ventas"].ToString();
+
+                double utilidad = Convert.ToDouble(U);
+                double ventas = Convert.ToDouble(V);
+                if (ventas > 0)
+                {
+                    double MPU = (utilidad / ventas);
+                    txtMUP.Text = MPU.ToString();
+                }
+                else { MessageBox.Show("Debe tener Ventas mayor a cero para continuar"); }
+            }
+            cmd.Close();
+        }
+
+        public void RotacionActivoALP()
+        {
+            cmd.Open();
+            string queryId = "SELECT MAX(R.RentabilidadID) as RentabilidadID FROM Rentabilidad AS R";
+            SqlCommand command = new SqlCommand(queryId, cmd);
+
+            int repID = Convert.ToInt32(command.ExecuteScalar());
+            cmd.Close();
+
+            SqlCommand query = new SqlCommand("EXEC SP_RotacionActivosALP '" + repID + "'", cmd);
+            cmd.Open();
+
+            SqlDataReader record = query.ExecuteReader();
+            if (record.Read())
+            {
+                string V = record["Ventas"].ToString();
+                string TA = record["TotalActivos"].ToString();
+
+                double ventas = Convert.ToDouble(V);
+                double totalActivos = Convert.ToDouble(TA);
+                if (totalActivos > 0)
+                {
+                    double rotacionActivo = (ventas / totalActivos);
+                    if (rotacionActivo > 0)
+                    {
+                        double rotacionActivoTotal = (360 / rotacionActivo);
+                        txtRotacionActivoALP.Text = rotacionActivoTotal.ToString();
+                    }
+                    else { MessageBox.Show("Debe tener una rotacion de Activos total mayor a cero para continuar"); }
+                }
+                else { MessageBox.Show("Debe tener un Total de Activo mayor a cero para continuar"); }
+            }
+            cmd.Close();
+        }
+
+        public void ROA()
+        {
+            cmd.Open();
+            string queryId = "SELECT MAX(R.RentabilidadID) as RentabilidadID FROM Rentabilidad AS R";
+            SqlCommand command = new SqlCommand(queryId, cmd);
+
+            int repID = Convert.ToInt32(command.ExecuteScalar());
+            cmd.Close();
+
+            SqlCommand query = new SqlCommand("EXEC SP_ROA '" + repID + "'", cmd);
+            cmd.Open();
+
+            SqlDataReader record = query.ExecuteReader();
+            if (record.Read())
+            {
+                string U = record["UtilidadNeta"].ToString();
+                string TA = record["TotalActivos"].ToString();
+
+                double utilidadNeta = Convert.ToDouble(U);
+                double totalActivos = Convert.ToDouble(TA);
+
+                if (totalActivos > 0)
+                {
+                    double ROA = (utilidadNeta / totalActivos) * 100;
+                    txtRoa.Text = ROA.ToString();
+                }
+                else { MessageBox.Show("Debe tener Activos totales mayor a cero para continuar"); }
+            }
+            cmd.Close();
         }
     }
 }
