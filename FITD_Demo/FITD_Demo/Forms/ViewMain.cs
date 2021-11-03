@@ -16,7 +16,7 @@ namespace FITD_Demo.Forms
 {
     public partial class ViewMain : KryptonForm
     {
-        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8; Initial Catalog = FITD; Integrated Security = true");
+        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION; Initial Catalog = FITD; Integrated Security = true");
 
         public ViewMain()
         {
@@ -36,16 +36,13 @@ namespace FITD_Demo.Forms
         public void CapitalTrabajo()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(R.ReportID) AS ReportID FROM Report AS R";            
+            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L";            
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());            
             cmd.Close();
 
             SqlCommand query = new SqlCommand("EXEC SP_CapitalTrabajo '" + repID + "'", cmd);
-            //parametro 1 debe asignarle al numero de reporte al que se agregue
-            //Fijar un metodo de menu de gestion para distintos reportes....
-            //query.Parameters.AddWithValue("@ReportID", reportID);
             cmd.Open();
 
             SqlDataReader record = query.ExecuteReader();
@@ -54,10 +51,10 @@ namespace FITD_Demo.Forms
                 string AC = record["ActivoCorriente"].ToString();
                 string PC = record["PasivoCirculante"].ToString();
 
-                int activoCirculante = int.Parse(AC);
-                int pasivoCirculante = int.Parse(PC);
+                double activoCirculante = Convert.ToDouble(AC);
+                double pasivoCirculante = Convert.ToDouble(PC);
 
-                decimal capitalTrabajo = (activoCirculante - pasivoCirculante);
+                double capitalTrabajo = (activoCirculante - pasivoCirculante);
                 txtCapitalT.Text = capitalTrabajo.ToString("0.00"); //textBox para imprimir resultado
                 
             }
@@ -67,7 +64,7 @@ namespace FITD_Demo.Forms
         public void IndiceSolvencia()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(R.ReportID) AS ReportID FROM Report AS R";
+            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
@@ -84,12 +81,12 @@ namespace FITD_Demo.Forms
                     string AC = record["ActivoCorriente"].ToString();
                     string PC = record["PasivoCirculante"].ToString();
 
-                    int activoCirculante = int.Parse(AC);
-                    int pasivoCirculante = int.Parse(PC);
+                    double activoCirculante = Convert.ToDouble(AC);
+                    double pasivoCirculante = Convert.ToDouble(PC);
                     //validacion del pasivo mayor a cero
                     if (pasivoCirculante > 0)
                     {
-                        decimal razonCorriente = (activoCirculante / pasivoCirculante);
+                        double razonCorriente = (activoCirculante / pasivoCirculante);
                         txtSolvencia.Text = razonCorriente.ToString("0.00"); //textBox para imprimir resultado
                     }
                     else { MessageBox.Show("Debe tener un Pasivo Circulante mayor a cero para Continuar"); }
@@ -101,7 +98,7 @@ namespace FITD_Demo.Forms
         public void PruebaAcida()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(R.ReportID) AS ReportID FROM Report AS R";
+            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
@@ -117,13 +114,13 @@ namespace FITD_Demo.Forms
                 string Inv = record["Inventario"].ToString();
                 string PC = record["PasivoCirculante"].ToString();
 
-                int activoCirculante = int.Parse(AC);
-                int inventarios = int.Parse(Inv);
-                int pasivoCirculante = int.Parse(PC);
+                double activoCirculante = Convert.ToDouble(AC);
+                double inventarios = Convert.ToDouble(Inv);
+                double pasivoCirculante = Convert.ToDouble(PC);
 
                 if (pasivoCirculante > 0)
                 {
-                    decimal pruebaAcida = (activoCirculante - inventarios) / pasivoCirculante;
+                    double pruebaAcida = (activoCirculante - inventarios) / pasivoCirculante;
                     txtPruebaA.Text = pruebaAcida.ToString("0.00");
                 }
                 else { MessageBox.Show("Debe tener un Pasivo Circualante mayor a cero"); }
@@ -134,7 +131,7 @@ namespace FITD_Demo.Forms
         public void RotacionInventarios()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(R.ReportID) AS ReportID FROM Report AS R";
+            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
@@ -149,15 +146,15 @@ namespace FITD_Demo.Forms
                 string CMV = record["CostosMercanciasVendidas"].ToString();
                 string Inv = record["Inventarios"].ToString();
 
-                int costosMV = int.Parse(CMV);
-                int inventarios = int.Parse(Inv);
+                double costosMV = Convert.ToDouble(CMV);
+                double inventarios = Convert.ToDouble(Inv);
                 if (inventarios > 0)
                 {
                     //La respuesta da en Meses por lo tanto se divide entre los 12 meses hábiles...
-                    decimal rotacionInventario = (costosMV / inventarios);
+                    double rotacionInventario = (costosMV / inventarios);
                     if(rotacionInventario > 0)
                     {
-                        decimal rotacionInventarioMeses = (12 / rotacionInventario);
+                        double rotacionInventarioMeses = (12 / rotacionInventario);
                         txtRotacionInv.Text = rotacionInventarioMeses.ToString("0.00");
                     }
                     else { MessageBox.Show("Debe tener una rotacion de Inventarios mayor a cero para continuar"); }
@@ -170,7 +167,7 @@ namespace FITD_Demo.Forms
         public void RotacionCartera()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(R.ReportID) AS ReportID FROM Report AS R";
+            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
@@ -185,16 +182,16 @@ namespace FITD_Demo.Forms
                 string VC = record["VentasCredito"].ToString();
                 string PCC = record["PromedioCuentasCobrar"].ToString();
 
-                int ventasCredito = int.Parse(VC);
-                int promedioCuentasCobrar = int.Parse(PCC);
+                double ventasCredito = Convert.ToDouble(VC);
+                double promedioCuentasCobrar = Convert.ToDouble(PCC);
 
                 if (promedioCuentasCobrar > 0)
                 {
                     //La respuesta es en dia por lo tanto lo dividimo entre los 360 dias que tiene un año fiscal
-                    decimal rotacionCartera = (ventasCredito / promedioCuentasCobrar);
+                    double rotacionCartera = (ventasCredito / promedioCuentasCobrar);
                     if (rotacionCartera > 0)
                     {
-                        decimal rotacionCarteraDias = (360 / rotacionCartera);
+                        double rotacionCarteraDias = (360 / rotacionCartera);
                         txtRotacionC.Text = rotacionCarteraDias.ToString("0.00");
                     }
                     else { MessageBox.Show("Su rotacion de Cartera fue de exactamente cero, Revise correctamente su Informacion!"); }
@@ -208,7 +205,7 @@ namespace FITD_Demo.Forms
         public void RotacionCuentasPagarCP()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(R.ReportID) AS ReportID FROM Report AS R";
+            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
@@ -223,16 +220,16 @@ namespace FITD_Demo.Forms
                 string CC = record["ComprasCredito"].ToString();
                 string PCP = record["PromedioCuentasPagar"].ToString();
 
-                int comprasCredito = int.Parse(CC);
-                int promedioCuentasPagar = int.Parse(PCP);
+                double comprasCredito = Convert.ToDouble(CC);
+                double promedioCuentasPagar = Convert.ToDouble(PCP);
 
                 if (promedioCuentasPagar > 0)
                 {
                     //La respuesta es en dia por lo tanto lo dividimo entre los 360 dias que tiene un año fiscal
-                    decimal rotacionCuentasPagarCP = (comprasCredito / promedioCuentasPagar);
+                    double rotacionCuentasPagarCP = (comprasCredito / promedioCuentasPagar);
                     if (rotacionCuentasPagarCP > 0)
                     {
-                        decimal rotacionCuentasPagarCPDias = (360 / rotacionCuentasPagarCP);
+                        double rotacionCuentasPagarCPDias = (360 / rotacionCuentasPagarCP);
                         txtRotacionPagarCP.Text = rotacionCuentasPagarCPDias.ToString("0.00");
                     }
                     else { MessageBox.Show("Su rotacion de Cuentas por pagar a Corto Plazo fue de exactamente cero, Revise correctamente su Informacion!"); }
@@ -248,7 +245,7 @@ namespace FITD_Demo.Forms
         public void RazonEndeudamiento()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(R.ReportID) AS ReportID FROM Report AS R";
+            string queryId = "SELECT MAX(E.EndeudamientoID) as EndeudamientoID FROM Endeudamiento AS E";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
@@ -263,11 +260,11 @@ namespace FITD_Demo.Forms
                 string PT = record["PasivoTotal"].ToString();
                 string AT = record["ActivoTotal"].ToString();
 
-                int pasivoTotal = int.Parse(PT);
-                int activoTotal = int.Parse(AT);
+                double pasivoTotal = Convert.ToDouble(PT);
+                double activoTotal = Convert.ToDouble(AT);
                 if (activoTotal > 0)
                 {
-                    decimal razonEndeudamientoPorcentual = (pasivoTotal / activoTotal) * (100);
+                    double razonEndeudamientoPorcentual = (pasivoTotal / activoTotal) * (100);
                     txtRazonE.Text = razonEndeudamientoPorcentual.ToString("0.00");
                 }
                 else { MessageBox.Show("Sus Activos Totales deben ser mayores a cero para continuar"); }
@@ -278,7 +275,7 @@ namespace FITD_Demo.Forms
         public void PasivoCapital()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(R.ReportID) AS ReportID FROM Report AS R";
+            string queryId = "SELECT MAX(E.EndeudamientoID) as EndeudamientoID FROM Endeudamiento AS E";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
@@ -293,11 +290,11 @@ namespace FITD_Demo.Forms
                 string PLP = record["PasivoLargoPlazo"].ToString();
                 string C = record["Capital"].ToString();
 
-                int pasivoLargoPlazo = int.Parse(PLP);
-                int capital = int.Parse(C);
+                double pasivoLargoPlazo = Convert.ToDouble(PLP);
+                double capital = Convert.ToDouble(C);
                 if (capital > 0)
                 {
-                    decimal razonPasivoCapital = (pasivoLargoPlazo / capital);
+                    double razonPasivoCapital = (pasivoLargoPlazo / capital);
                     txtRazonPC.Text = razonPasivoCapital.ToString("0.00");
                 }
                 else { MessageBox.Show("Su Capital debe ser mayor a cero para continuar"); }
@@ -311,7 +308,7 @@ namespace FITD_Demo.Forms
         public void MBU()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(R.ReportID) AS ReportID FROM Report AS R";
+            string queryId = "SELECT MAX(R.RentabilidadID) as RentabilidadID FROM Rentabilidad AS R";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
