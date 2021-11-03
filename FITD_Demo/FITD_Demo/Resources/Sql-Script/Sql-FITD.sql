@@ -7,37 +7,37 @@ use FITD
 
 Create table Liquidez(
 LiquidezID int primary key identity (1, 1) not null,
-ActivoCorriente int null,
-PasivoCirculante int null,
-Inventario int null,
-InventarioInicial int null,
-InventarioFinal int null,
-CostosMercanciasVendidas int null,
-VentasCredito int null,
-CuentasPorCobrarInicial int null,
-CuentasPorCobrarFinal int null,
-CuentasPorPagarInicial int null,
-CuentasPorPagarFinal int null,
-ComprasCredito int null)
+ActivoCorriente money null,
+PasivoCirculante money null,
+Inventario money null,
+InventarioInicial money null,
+InventarioFinal money null,
+CostosMercanciasVendidas money null,
+VentasCredito money null,
+CuentasPorCobrarInicial money null,
+CuentasPorCobrarFinal money null,
+CuentasPorPagarInicial money null,
+CuentasPorPagarFinal money null,
+ComprasCredito money null)
 
 ---select * from Liquidez
 
 Create table Endeudamiento(
 EndeudamientoID int primary key identity(1, 1) not null,
-ActivoTotal int null,
-PasivoTotal int null,
-PasivoLargoPlazo int null,
-Capital int null)
+ActivoTotal money null,
+PasivoTotal money null,
+PasivoLargoPlazo money null,
+Capital money null)
 
 ---select * from Endeudamiento
 
 
 Create table Rentabilidad(
 RentabilidadID int primary key identity (1, 1) not null,
-Ventas int null,
-Costos int null,
-TotalActivos int null,
-UtilidadNeta int null)
+Ventas money null,
+Costos money null,
+TotalActivos money null,
+UtilidadNeta money null)
 
 ---select * from Rentabilidad
 

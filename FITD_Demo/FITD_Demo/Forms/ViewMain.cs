@@ -29,23 +29,8 @@ namespace FITD_Demo.Forms
             PasivoCapital();
             RotacionCartera();
             PasivoCapital();
-            //idChecker();
         }
-        /*
-        public void idChecker()
-        {
-            SqlCommand queryId = new SqlCommand("SELECT MAX(R.ReportID) AS ReportID FROM Report AS R", cmd);
-            cmd.Open();
-            SqlDataReader read = queryId.ExecuteReader();
-            if (read.Read())
-            {
-                int repID = int.Parse(read["ReportID"].ToString());
-                txtCapitalT.Text = repID.ToString("0.00");
-            }
-            cmd.Close();
-        }
-        */
-
+ 
         #region Razones de Liquidez
         
         public void CapitalTrabajo()
