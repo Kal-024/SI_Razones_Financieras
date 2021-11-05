@@ -50,7 +50,7 @@ EndeudamientoID int null,
 RentabilidadID int null)
 
 
-/*Agregando las llaves foraneas y relaciones*/
+/*Agregando las llaves foraneas y relaciones
 Alter table Report
 add foreign key (LiquidezID) References Liquidez(LiquidezID)
 
@@ -58,7 +58,7 @@ Alter table Report
 add foreign key (EndeudamientoID) References Endeudamiento(EndeudamientoID)
 
 Alter table Report
-add foreign key (RentabilidadID) References Rentabilidad(RentabilidadID)
+add foreign key (RentabilidadID) References Rentabilidad(RentabilidadID)*/
 
 /*Agregando algunos procesos de almacenados para el correcto funcionamiento de las peticiones por parte del programa FITD y mitigacion de errores en el query de la misma*/
 
@@ -139,6 +139,7 @@ SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L
 SELECT MAX(R.RentabilidadID) as RentabilidadID FROM Rentabilidad AS R
 SELECT MAX(E.EndeudamientoID) as EndeudamientoID FROM Endeudamiento AS E
 select * from Report
+
 /*
 insert into Liquidez values(45000000,18000000,25000000,13500000,20000000,87000000,455000000,13000000,9150000,2020000,850250,22750000)
 insert into Endeudamiento values(98500,9000,35600,28000)

@@ -34,7 +34,7 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.txtNombre = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbProyects = new System.Windows.Forms.ComboBox();
             this.lblProyecto = new System.Windows.Forms.Label();
             this.btnStarted = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.ntfSaved = new System.Windows.Forms.NotifyIcon(this.components);
@@ -207,20 +207,21 @@
             this.lblNombre.TabIndex = 11;
             this.lblNombre.Text = "¿Es primera vez?";
             // 
-            // comboBox1
+            // cmbProyects
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(135, 417);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 12;
+            this.cmbProyects.FormattingEnabled = true;
+            this.cmbProyects.Location = new System.Drawing.Point(118, 402);
+            this.cmbProyects.Name = "cmbProyects";
+            this.cmbProyects.Size = new System.Drawing.Size(191, 21);
+            this.cmbProyects.TabIndex = 12;
+            this.cmbProyects.Text = "Si, tengo uno guardado";
             // 
             // lblProyecto
             // 
             this.lblProyecto.AutoSize = true;
             this.lblProyecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblProyecto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblProyecto.Location = new System.Drawing.Point(23, 388);
+            this.lblProyecto.Location = new System.Drawing.Point(23, 373);
             this.lblProyecto.Name = "lblProyecto";
             this.lblProyecto.Size = new System.Drawing.Size(145, 17);
             this.lblProyecto.TabIndex = 13;
@@ -228,7 +229,7 @@
             // 
             // btnStarted
             // 
-            this.btnStarted.Location = new System.Drawing.Point(118, 299);
+            this.btnStarted.Location = new System.Drawing.Point(118, 274);
             this.btnStarted.Name = "btnStarted";
             this.btnStarted.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.btnStarted.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
@@ -301,10 +302,11 @@
             this.ClientSize = new System.Drawing.Size(400, 450);
             this.Controls.Add(this.btnStarted);
             this.Controls.Add(this.lblProyecto);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbProyects);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblTitle);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegister";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
@@ -320,7 +322,7 @@
         private System.Windows.Forms.Label lblTitle;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtNombre;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbProyects;
         private System.Windows.Forms.Label lblProyecto;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnStarted;
         private System.Windows.Forms.NotifyIcon ntfSaved;

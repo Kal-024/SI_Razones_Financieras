@@ -19,16 +19,19 @@ namespace FITD_Demo.Forms
         public frmRegister()
         {
             InitializeComponent();
+            LoadComboBox();
         }
 
         private void btnStarted_Click(object sender, EventArgs e)
         {
-            SuppplierID();
-
-            //Abriendo el Form Main
-            ViewMain viewM = new ViewMain();
-            viewM.Show();
-            this.Close();
+            if (!txtNombre.Text.Contains("Ingrese el Nombre de su Proyecto"))
+            {
+                SuppplierID();
+            }
+            else
+            {
+                LoadSelected();
+            }
         }
 
         private void SuppplierID()
@@ -61,14 +64,43 @@ namespace FITD_Demo.Forms
             }
             else { MessageBox.Show("Ups!!, ha ocurrido un error al crear un nuevo Proyecto"); }
             cmd.Close();
-
-            Cleanner();
+            int reportID = liquidez;
+            ViewMain viewM = new ViewMain(reportID);
+            viewM.Show();
+            this.Close();
         }
 
-        private void Cleanner()
+        public void LoadComboBox()
         {
-            txtNombre.Text = "";
+            SqlCommand loadC = new SqlCommand("SELECT R.Nombre FROM Report as R", cmd);
+            cmd.Open();
+
+            SqlDataReader register = loadC.ExecuteReader();
+            while (register.Read())
+            {
+                cmbProyects.Items.Add(register["Nombre"].ToString());
+            }
+
+            cmd.Close();
         }
-        
+
+        public void LoadSelected()
+        {
+            string nombre = cmbProyects.GetItemText(cmbProyects.SelectedItem);
+            SqlCommand loadSelected = new SqlCommand("SELECT R.ReportID FROM Report as R where R.Nombre = '" + nombre + "'", cmd);
+            cmd.Open();
+
+            SqlDataReader reader = loadSelected.ExecuteReader();
+            while (reader.Read())
+            {
+                int reportID = int.Parse(reader["ReportID"].ToString());
+
+                ViewMain viewM = new ViewMain(reportID);
+                viewM.Show();
+                this.Close();
+            }
+
+            cmd.Close();
+        }
     }
 }

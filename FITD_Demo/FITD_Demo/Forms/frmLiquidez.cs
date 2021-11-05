@@ -14,6 +14,7 @@ namespace FITD_Demo.Forms
     public partial class frmLiquidez : Form
     {
         SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION; Initial Catalog = FITD; Integrated Security = true");
+        
         public frmLiquidez()
         {
             InitializeComponent();
@@ -64,6 +65,7 @@ namespace FITD_Demo.Forms
             txtInventarioI.Text = "";
             txtPasivoC.Text = "";
             txtVentasCredito.Text = "";
+            txtInventario.Text = "";
         }
     }
 }

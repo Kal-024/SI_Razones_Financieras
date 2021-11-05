@@ -18,8 +18,9 @@ namespace FITD_Demo.Forms
     {
         SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION; Initial Catalog = FITD; Integrated Security = true");
 
-        public ViewMain()
+        public ViewMain(int reportID)
         {
+            this.reportID = reportID;
             InitializeComponent();
             //Razones de Liquidez
             CapitalTrabajo();
@@ -35,13 +36,15 @@ namespace FITD_Demo.Forms
             RotacionActivoALP();
             ROA();
         }
+
+        int reportID;
  
         #region Razones de Liquidez
         
         public void CapitalTrabajo()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L";            
+            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L INNER JOIN Report as RR on L.LiquidezID = RR.LiquidezID WHERE RR.EndeudamientoID = '" + reportID + "'";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());            
@@ -69,7 +72,7 @@ namespace FITD_Demo.Forms
         public void IndiceSolvencia()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L";
+            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L INNER JOIN Report as RR on L.LiquidezID = RR.LiquidezID WHERE RR.EndeudamientoID = '" + reportID + "'";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
@@ -103,7 +106,7 @@ namespace FITD_Demo.Forms
         public void PruebaAcida()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L";
+            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L INNER JOIN Report as RR on L.LiquidezID = RR.LiquidezID WHERE RR.EndeudamientoID = '" + reportID + "'";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
@@ -136,7 +139,7 @@ namespace FITD_Demo.Forms
         public void RotacionInventarios()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L";
+            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L INNER JOIN Report as RR on L.LiquidezID = RR.LiquidezID WHERE RR.EndeudamientoID = '" + reportID + "'";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
@@ -172,7 +175,7 @@ namespace FITD_Demo.Forms
         public void RotacionCartera()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L";
+            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L INNER JOIN Report as RR on L.LiquidezID = RR.LiquidezID WHERE RR.EndeudamientoID = '" + reportID + "'";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
@@ -210,7 +213,7 @@ namespace FITD_Demo.Forms
         public void RotacionCuentasPagarCP()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L";
+            string queryId = "SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L INNER JOIN Report as RR on L.LiquidezID = RR.LiquidezID WHERE RR.EndeudamientoID = '" + reportID + "'";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
@@ -250,7 +253,7 @@ namespace FITD_Demo.Forms
         public void RazonEndeudamiento()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(E.EndeudamientoID) as EndeudamientoID FROM Endeudamiento AS E";
+            string queryId = "SELECT MAX(E.EndeudamientoID) as EndeudamientoID FROM Endeudamiento as E INNER JOIN Report as RR on E.EndeudamientoID = RR.RentabilidadID WHERE RR.EndeudamientoID = '" + reportID + "'";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
@@ -280,7 +283,7 @@ namespace FITD_Demo.Forms
         public void PasivoCapital()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(E.EndeudamientoID) as EndeudamientoID FROM Endeudamiento AS E";
+            string queryId = "SELECT MAX(E.EndeudamientoID) as EndeudamientoID FROM Endeudamiento as E INNER JOIN Report as RR on E.EndeudamientoID = RR.RentabilidadID WHERE RR.EndeudamientoID = '" + reportID + "'";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
@@ -314,7 +317,7 @@ namespace FITD_Demo.Forms
         public void MBU()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(R.RentabilidadID) as RentabilidadID FROM Rentabilidad AS R";
+            string queryId = "SELECT MAX(R.RentabilidadID) as RentabilidadID FROM Rentabilidad AS R INNER JOIN Report as RR on R.RentabilidadID = RR.RentabilidadID WHERE RR.RentabilidadID = '" + reportID + "'";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
@@ -345,7 +348,7 @@ namespace FITD_Demo.Forms
         public void MUP()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(R.RentabilidadID) as RentabilidadID FROM Rentabilidad AS R";
+            string queryId = "SELECT MAX(R.RentabilidadID) as RentabilidadID FROM Rentabilidad AS R INNER JOIN Report as RR on R.RentabilidadID = RR.RentabilidadID WHERE RR.RentabilidadID = '" + reportID + "'";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
@@ -375,7 +378,7 @@ namespace FITD_Demo.Forms
         public void RotacionActivoALP()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(R.RentabilidadID) as RentabilidadID FROM Rentabilidad AS R";
+            string queryId = "SELECT MAX(R.RentabilidadID) as RentabilidadID FROM Rentabilidad AS R INNER JOIN Report as RR on R.RentabilidadID = RR.RentabilidadID WHERE RR.RentabilidadID = '" + reportID + "'";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
@@ -410,7 +413,7 @@ namespace FITD_Demo.Forms
         public void ROA()
         {
             cmd.Open();
-            string queryId = "SELECT MAX(R.RentabilidadID) as RentabilidadID FROM Rentabilidad AS R";
+            string queryId = "SELECT MAX(R.RentabilidadID) as RentabilidadID FROM Rentabilidad AS R INNER JOIN Report as RR on R.RentabilidadID = RR.RentabilidadID WHERE RR.RentabilidadID = '" + reportID + "'";
             SqlCommand command = new SqlCommand(queryId, cmd);
 
             int repID = Convert.ToInt32(command.ExecuteScalar());
