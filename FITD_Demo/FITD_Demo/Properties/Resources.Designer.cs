@@ -22,7 +22,7 @@ namespace FITD_Demo.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace FITD_Demo.Properties {
         ///   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FITD_Demo.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace FITD_Demo.Properties {
         ///   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace FITD_Demo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _833432 {
+        public static System.Drawing.Bitmap _833432 {
             get {
                 object obj = ResourceManager.GetObject("833432", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace FITD_Demo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap backGround {
+        public static System.Drawing.Bitmap backGround {
             get {
                 object obj = ResourceManager.GetObject("backGround", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +83,7 @@ namespace FITD_Demo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap capitalTrabajo {
+        public static System.Drawing.Bitmap capitalTrabajo {
             get {
                 object obj = ResourceManager.GetObject("capitalTrabajo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -91,9 +91,19 @@ namespace FITD_Demo.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        public static byte[] DATOSDERAZONESDELIQUIDEZPARAPROYECTODECURSO {
+            get {
+                object obj = ResourceManager.GetObject("DATOSDERAZONESDELIQUIDEZPARAPROYECTODECURSO", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap f_logoMedium {
+        public static System.Drawing.Bitmap f_logoMedium {
             get {
                 object obj = ResourceManager.GetObject("f_logoMedium", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +113,7 @@ namespace FITD_Demo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap indiceSolvencia {
+        public static System.Drawing.Bitmap indiceSolvencia {
             get {
                 object obj = ResourceManager.GetObject("indiceSolvencia", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +123,7 @@ namespace FITD_Demo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logoIcon {
+        public static System.Drawing.Bitmap logoIcon {
             get {
                 object obj = ResourceManager.GetObject("logoIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,7 +133,7 @@ namespace FITD_Demo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap mc_green {
+        public static System.Drawing.Bitmap mc_green {
             get {
                 object obj = ResourceManager.GetObject("mc-green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +143,7 @@ namespace FITD_Demo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap mc_red {
+        public static System.Drawing.Bitmap mc_red {
             get {
                 object obj = ResourceManager.GetObject("mc-red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +153,7 @@ namespace FITD_Demo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap mc_yellw {
+        public static System.Drawing.Bitmap mc_yellw {
             get {
                 object obj = ResourceManager.GetObject("mc-yellw", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +163,7 @@ namespace FITD_Demo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pruebaAcida {
+        public static System.Drawing.Bitmap pruebaAcida {
             get {
                 object obj = ResourceManager.GetObject("pruebaAcida", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +173,7 @@ namespace FITD_Demo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap razonEndeudamiento {
+        public static System.Drawing.Bitmap razonEndeudamiento {
             get {
                 object obj = ResourceManager.GetObject("razonEndeudamiento", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +183,7 @@ namespace FITD_Demo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap razonPasivoCapital {
+        public static System.Drawing.Bitmap razonPasivoCapital {
             get {
                 object obj = ResourceManager.GetObject("razonPasivoCapital", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +193,7 @@ namespace FITD_Demo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rotacionCartera {
+        public static System.Drawing.Bitmap rotacionCartera {
             get {
                 object obj = ResourceManager.GetObject("rotacionCartera", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +203,7 @@ namespace FITD_Demo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rotacionCuentasCobrar {
+        public static System.Drawing.Bitmap rotacionCuentasCobrar {
             get {
                 object obj = ResourceManager.GetObject("rotacionCuentasCobrar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -203,7 +213,7 @@ namespace FITD_Demo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rotacionInventario {
+        public static System.Drawing.Bitmap rotacionInventario {
             get {
                 object obj = ResourceManager.GetObject("rotacionInventario", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +223,7 @@ namespace FITD_Demo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap sign_error_icon {
+        public static System.Drawing.Bitmap sign_error_icon {
             get {
                 object obj = ResourceManager.GetObject("sign-error-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +233,7 @@ namespace FITD_Demo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap sign_error_icon1 {
+        public static System.Drawing.Bitmap sign_error_icon1 {
             get {
                 object obj = ResourceManager.GetObject("sign-error-icon1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -233,7 +243,7 @@ namespace FITD_Demo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Usability_testing_amico {
+        public static System.Drawing.Bitmap Usability_testing_amico {
             get {
                 object obj = ResourceManager.GetObject("Usability testing-amico", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

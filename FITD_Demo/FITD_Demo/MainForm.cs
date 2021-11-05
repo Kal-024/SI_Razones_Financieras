@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -119,11 +121,37 @@ namespace FITD_Demo
 
         private void OpenDoc()
         {
-            string path = @"C:\Users\Usuario\source\repos\FITD_Demo\FITD_Demo\Resources\DATOSDERAZONESDELIQUIDEZPARAPROYECTODECURSO.docx";
-            ProcessStartInfo psi = new ProcessStartInfo();
-            psi.FileName = "WINWORD.EXE";
-            psi.Arguments = path;
-            Process.Start(psi);
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+
+                string path = openFileDialog.FileName;
+                ProcessStartInfo psi = new ProcessStartInfo();
+                psi.FileName = "WINWORD.EXE";
+                psi.Arguments = path;
+                Process.Start(psi);
+            }
+            /*
+            int id = 1;
+            string sql = "SELECT D.CONTENIDO FROM DOCUMENTOS as D WHERE D.ID = '" + id + "'";
+            SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION; Initial Catalog = FITD; Integrated Security = true");
+            cmd.Open();
+            try
+            {
+                SqlCommand command = new SqlCommand(sql, cmd);
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    reader.Read();
+                    MemoryStream ms = new MemoryStream((byte[])reader["CONTENIDO"]);
+                    Bitmap bm = new Bitmap(ms);
+                    picBLogo.Image = bm;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }*/
         }
 #endregion
 
