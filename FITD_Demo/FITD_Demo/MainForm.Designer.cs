@@ -679,7 +679,6 @@
             // 
             // openFileDialog
             // 
-            this.openFileDialog.FileName = "openFileDialog1";
             this.openFileDialog.Filter = "Docs(*.docx)|*.docx|All (*.)|*.";
             // 
             // MainForm
