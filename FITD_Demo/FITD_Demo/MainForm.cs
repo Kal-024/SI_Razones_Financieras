@@ -123,7 +123,7 @@ namespace FITD_Demo
         {
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-
+                //string path = @"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources";
                 string path = openFileDialog.FileName;
                 ProcessStartInfo psi = new ProcessStartInfo();
                 psi.FileName = "WINWORD.EXE";
