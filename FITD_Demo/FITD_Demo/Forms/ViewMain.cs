@@ -38,7 +38,7 @@ namespace FITD_Demo.Forms
         }
 
         int reportID;
- 
+
         #region Razones de Liquidez
         
         public void CapitalTrabajo()
@@ -64,7 +64,6 @@ namespace FITD_Demo.Forms
 
                 double capitalTrabajo = (activoCirculante - pasivoCirculante);
                 txtCapitalT.Text = Math.Round(capitalTrabajo,4).ToString("0.00"); //textBox para imprimir resultado
-                
             }
             cmd.Close();
         }
@@ -443,5 +442,28 @@ namespace FITD_Demo.Forms
         }
 
         #endregion
+
+
+        private void btnVerInforme_Click(object sender, EventArgs e)
+        {
+            frmDetails fDetails = new frmDetails
+            {
+                Size = new Size(1350, 768)
+            };
+            //Mandando la informacion adquirida desde este form a frmDetails
+            fDetails.Show();
+            fDetails.lblCapitalTrabajo.Text = txtCapitalT.Text;
+            fDetails.lblIndiceSolvencia.Text = txtSolvencia.Text;
+            fDetails.lblPruebaAcida.Text = txtPruebaA.Text;
+            fDetails.lblRotacionInventario.Text = txtRotacionInv.Text;
+            fDetails.lblRotacionCartera.Text = txtRotacionC.Text;
+            fDetails.lblRotacionCuentasPagarACP.Text = txtRotacionPagarCP.Text;
+            fDetails.lblRazonEndeudamiento.Text = txtRazonE.Text;
+            fDetails.lblPasivoCapital.Text = txtRazonPC.Text;
+            fDetails.lblMbu.Text = txtMBU.Text;
+            fDetails.lblMup.Text = txtMUP.Text;
+            fDetails.lblRotacionActivosALP.Text = txtRotacionActivoALP.Text;
+            fDetails.lblRoa.Text = txtRoa.Text;
+        }
     }
 }

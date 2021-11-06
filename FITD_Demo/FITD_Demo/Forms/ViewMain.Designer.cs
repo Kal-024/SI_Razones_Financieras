@@ -67,12 +67,25 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label30 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.txtRotacionActivoALP = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.label29 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txtMUP = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.txtRoa = new System.Windows.Forms.TextBox();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.txtMBU = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -82,19 +95,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtMBU = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.txtMUP = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.txtRotacionActivoALP = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.txtRoa = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
+            this.btnVerInforme = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -599,6 +600,16 @@
             this.panel7.Size = new System.Drawing.Size(190, 160);
             this.panel7.TabIndex = 27;
             // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(28, 0);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(130, 18);
+            this.label30.TabIndex = 50;
+            this.label30.Text = "Utilidad por acción";
+            // 
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -610,6 +621,34 @@
             this.panel8.Size = new System.Drawing.Size(180, 160);
             this.panel8.TabIndex = 23;
             // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(14, 106);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(13, 13);
+            this.label25.TabIndex = 45;
+            this.label25.Text = "=";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(20, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(152, 18);
+            this.label26.TabIndex = 43;
+            this.label26.Text = "Rotacion ActivoT ALP";
+            // 
+            // txtRotacionActivoALP
+            // 
+            this.txtRotacionActivoALP.Location = new System.Drawing.Point(33, 99);
+            this.txtRotacionActivoALP.Name = "txtRotacionActivoALP";
+            this.txtRotacionActivoALP.ReadOnly = true;
+            this.txtRotacionActivoALP.Size = new System.Drawing.Size(125, 20);
+            this.txtRotacionActivoALP.TabIndex = 44;
+            this.txtRotacionActivoALP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // panel9
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -618,6 +657,16 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(190, 160);
             this.panel9.TabIndex = 26;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(-1, 0);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(186, 18);
+            this.label29.TabIndex = 49;
+            this.label29.Text = "Rendimiento del C. Comun";
             // 
             // panel10
             // 
@@ -630,6 +679,34 @@
             this.panel10.Size = new System.Drawing.Size(190, 160);
             this.panel10.TabIndex = 24;
             // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(16, 106);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(13, 13);
+            this.label23.TabIndex = 42;
+            this.label23.Text = "=";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(16, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(154, 18);
+            this.label24.TabIndex = 40;
+            this.label24.Text = "Margen de Utilidad Op";
+            // 
+            // txtMUP
+            // 
+            this.txtMUP.Location = new System.Drawing.Point(35, 99);
+            this.txtMUP.Name = "txtMUP";
+            this.txtMUP.ReadOnly = true;
+            this.txtMUP.Size = new System.Drawing.Size(125, 20);
+            this.txtMUP.TabIndex = 41;
+            this.txtMUP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -640,6 +717,34 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(190, 160);
             this.panel11.TabIndex = 25;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(17, 106);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(13, 13);
+            this.label27.TabIndex = 48;
+            this.label27.Text = "=";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(72, 0);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(40, 18);
+            this.label28.TabIndex = 46;
+            this.label28.Text = "ROA";
+            // 
+            // txtRoa
+            // 
+            this.txtRoa.Location = new System.Drawing.Point(36, 99);
+            this.txtRoa.Name = "txtRoa";
+            this.txtRoa.ReadOnly = true;
+            this.txtRoa.Size = new System.Drawing.Size(125, 20);
+            this.txtRoa.TabIndex = 47;
+            this.txtRoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel12
             // 
@@ -652,6 +757,15 @@
             this.panel12.Size = new System.Drawing.Size(190, 160);
             this.panel12.TabIndex = 22;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 106);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(13, 13);
+            this.label4.TabIndex = 39;
+            this.label4.Text = "=";
+            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -661,6 +775,15 @@
             this.label21.Size = new System.Drawing.Size(170, 18);
             this.label21.TabIndex = 30;
             this.label21.Text = "Margen Bruto de Utilidad";
+            // 
+            // txtMBU
+            // 
+            this.txtMBU.Location = new System.Drawing.Point(32, 99);
+            this.txtMBU.Name = "txtMBU";
+            this.txtMBU.ReadOnly = true;
+            this.txtMBU.Size = new System.Drawing.Size(125, 20);
+            this.txtMBU.TabIndex = 38;
+            this.txtMBU.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label10
             // 
@@ -756,127 +879,65 @@
             this.label20.TabIndex = 33;
             this.label20.Text = "Razones de Rentabilidad";
             // 
-            // label4
+            // btnVerInforme
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 106);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(13, 13);
-            this.label4.TabIndex = 39;
-            this.label4.Text = "=";
-            // 
-            // txtMBU
-            // 
-            this.txtMBU.Location = new System.Drawing.Point(32, 99);
-            this.txtMBU.Name = "txtMBU";
-            this.txtMBU.ReadOnly = true;
-            this.txtMBU.Size = new System.Drawing.Size(125, 20);
-            this.txtMBU.TabIndex = 38;
-            this.txtMBU.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(16, 106);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(13, 13);
-            this.label23.TabIndex = 42;
-            this.label23.Text = "=";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(16, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(154, 18);
-            this.label24.TabIndex = 40;
-            this.label24.Text = "Margen de Utilidad Op";
-            // 
-            // txtMUP
-            // 
-            this.txtMUP.Location = new System.Drawing.Point(35, 99);
-            this.txtMUP.Name = "txtMUP";
-            this.txtMUP.ReadOnly = true;
-            this.txtMUP.Size = new System.Drawing.Size(125, 20);
-            this.txtMUP.TabIndex = 41;
-            this.txtMUP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(14, 106);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(13, 13);
-            this.label25.TabIndex = 45;
-            this.label25.Text = "=";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(20, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(152, 18);
-            this.label26.TabIndex = 43;
-            this.label26.Text = "Rotacion ActivoT ALP";
-            // 
-            // txtRotacionActivoALP
-            // 
-            this.txtRotacionActivoALP.Location = new System.Drawing.Point(33, 99);
-            this.txtRotacionActivoALP.Name = "txtRotacionActivoALP";
-            this.txtRotacionActivoALP.ReadOnly = true;
-            this.txtRotacionActivoALP.Size = new System.Drawing.Size(125, 20);
-            this.txtRotacionActivoALP.TabIndex = 44;
-            this.txtRotacionActivoALP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(17, 106);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(13, 13);
-            this.label27.TabIndex = 48;
-            this.label27.Text = "=";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(72, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(40, 18);
-            this.label28.TabIndex = 46;
-            this.label28.Text = "ROA";
-            // 
-            // txtRoa
-            // 
-            this.txtRoa.Location = new System.Drawing.Point(36, 99);
-            this.txtRoa.Name = "txtRoa";
-            this.txtRoa.ReadOnly = true;
-            this.txtRoa.Size = new System.Drawing.Size(125, 20);
-            this.txtRoa.TabIndex = 47;
-            this.txtRoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(-1, 0);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(186, 18);
-            this.label29.TabIndex = 49;
-            this.label29.Text = "Rendimiento del C. Comun";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(28, 0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(130, 18);
-            this.label30.TabIndex = 50;
-            this.label30.Text = "Utilidad por acción";
+            this.btnVerInforme.Location = new System.Drawing.Point(533, 338);
+            this.btnVerInforme.Name = "btnVerInforme";
+            this.btnVerInforme.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnVerInforme.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnVerInforme.OverrideDefault.Back.ColorAngle = 45F;
+            this.btnVerInforme.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnVerInforme.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnVerInforme.OverrideDefault.Border.ColorAngle = 45F;
+            this.btnVerInforme.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnVerInforme.OverrideDefault.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnVerInforme.OverrideDefault.Border.Rounding = 20;
+            this.btnVerInforme.OverrideDefault.Border.Width = 1;
+            this.btnVerInforme.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnVerInforme.Size = new System.Drawing.Size(155, 43);
+            this.btnVerInforme.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnVerInforme.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnVerInforme.StateCommon.Back.ColorAngle = 45F;
+            this.btnVerInforme.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnVerInforme.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnVerInforme.StateCommon.Border.ColorAngle = 45F;
+            this.btnVerInforme.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnVerInforme.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnVerInforme.StateCommon.Border.Rounding = 20;
+            this.btnVerInforme.StateCommon.Border.Width = 1;
+            this.btnVerInforme.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnVerInforme.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnVerInforme.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerInforme.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnVerInforme.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnVerInforme.StatePressed.Back.ColorAngle = 135F;
+            this.btnVerInforme.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(145)))), ((int)(((byte)(198)))));
+            this.btnVerInforme.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(121)))), ((int)(((byte)(206)))));
+            this.btnVerInforme.StatePressed.Border.ColorAngle = 135F;
+            this.btnVerInforme.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnVerInforme.StatePressed.Border.Rounding = 20;
+            this.btnVerInforme.StatePressed.Border.Width = 1;
+            this.btnVerInforme.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnVerInforme.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnVerInforme.StateTracking.Back.ColorAngle = 135F;
+            this.btnVerInforme.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
+            this.btnVerInforme.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
+            this.btnVerInforme.StateTracking.Border.ColorAngle = 135F;
+            this.btnVerInforme.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnVerInforme.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnVerInforme.StateTracking.Border.Rounding = 20;
+            this.btnVerInforme.StateTracking.Border.Width = 1;
+            this.btnVerInforme.TabIndex = 34;
+            this.btnVerInforme.Values.Text = "Ver Informe";
+            this.btnVerInforme.Click += new System.EventHandler(this.btnVerInforme_Click);
             // 
             // ViewMain
             // 
@@ -884,6 +945,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.btnVerInforme);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.label10);
@@ -949,15 +1011,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtRazonPC;
-        private System.Windows.Forms.TextBox txtRazonE;
-        private System.Windows.Forms.TextBox txtSolvencia;
-        private System.Windows.Forms.TextBox txtCapitalT;
-        private System.Windows.Forms.TextBox txtRotacionInv;
-        private System.Windows.Forms.TextBox txtPruebaA;
-        private System.Windows.Forms.TextBox txtRotacionPagarCP;
-        private System.Windows.Forms.TextBox txtRotacionC;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
@@ -1003,17 +1056,26 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtMBU;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox txtMUP;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox txtRotacionActivoALP;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox txtRoa;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnVerInforme;
+        public System.Windows.Forms.TextBox txtCapitalT;
+        public System.Windows.Forms.TextBox txtRazonPC;
+        public System.Windows.Forms.TextBox txtRazonE;
+        public System.Windows.Forms.TextBox txtSolvencia;
+        public System.Windows.Forms.TextBox txtRotacionInv;
+        public System.Windows.Forms.TextBox txtPruebaA;
+        public System.Windows.Forms.TextBox txtRotacionPagarCP;
+        public System.Windows.Forms.TextBox txtRotacionC;
+        public System.Windows.Forms.TextBox txtMBU;
+        public System.Windows.Forms.TextBox txtMUP;
+        public System.Windows.Forms.TextBox txtRotacionActivoALP;
+        public System.Windows.Forms.TextBox txtRoa;
     }
 }

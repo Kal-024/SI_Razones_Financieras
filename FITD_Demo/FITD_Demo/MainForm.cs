@@ -21,11 +21,6 @@ namespace FITD_Demo
             CustomizeDesign();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         #region Customize Dynamic Menus
         private void CustomizeDesign()
         {
@@ -158,7 +153,7 @@ namespace FITD_Demo
         private void btnGenerateReport_Click(object sender, EventArgs e)
         {
             Forms.frmRegister frmR = new Forms.frmRegister();
-            frmR.Show();           
+            frmR.Show();
         }
     }
 }

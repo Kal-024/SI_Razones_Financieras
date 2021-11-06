@@ -694,7 +694,6 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.pnlSideMenu.ResumeLayout(false);
             this.pnlSubMenuReport.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

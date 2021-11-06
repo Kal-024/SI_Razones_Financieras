@@ -16,7 +16,7 @@ namespace FITD_Demo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TrialStage());
+            Application.Run(new TrialForm());
         }
     }
 }

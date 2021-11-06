@@ -64,6 +64,7 @@ namespace FITD_Demo.Forms
             }
             else { MessageBox.Show("Ups!!, ha ocurrido un error al crear un nuevo Proyecto"); }
             cmd.Close();
+
             int reportID = liquidez;
             ViewMain viewM = new ViewMain(reportID);
             viewM.Show();

@@ -42,9 +42,10 @@ C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\F
 C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.Forms.frmRentabilidad.resources
 C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.Forms.ViewMain.resources
 C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.MainForm.resources
-C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.TrialStage.resources
 C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.Properties.Resources.resources
 C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.csproj.GenerateResource.cache
 C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.exe
 C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.pdb
+C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.TrialForm.resources
+C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.Forms.frmDetails.resources
