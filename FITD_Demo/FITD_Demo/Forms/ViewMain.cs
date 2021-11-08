@@ -452,8 +452,26 @@ namespace FITD_Demo.Forms
             };
             //Mandando la informacion adquirida desde este form a frmDetails
             fDetails.Show();
-            fDetails.lblCapitalTrabajo.Text = txtCapitalT.Text;
-            fDetails.lblIndiceSolvencia.Text = txtSolvencia.Text;
+            //lbl capital trabajo
+            double CAPITALTRABAJO = Convert.ToDouble(txtCapitalT.Text);
+            if (CAPITALTRABAJO < 100)
+            {
+                fDetails.txtCapitalTrabajo.Text = "¿Precaución!, su capital de trabajo" + txtCapitalT.Text + " esta muy por debajo de lo ideal \n recomendamos tomar acciones operacionales y administrativas";
+            }
+            else if (CAPITALTRABAJO == 0)
+            {
+                fDetails.txtCapitalTrabajo.Text = "¿Advertencia!, su capital de trabajo es practicamente nula \n por lo que no tienes excedente al momento del apalancamiento \n recomendamos tomar acciones operacionales urgentemente";
+            }
+            else if (CAPITALTRABAJO < 0)
+            {
+                fDetails.txtCapitalTrabajo.Text = "¿Alerta!, no tienes capital de trabajo \n por lo que no tienes lo suficiente para pagar todas tus cuentas \n recomendamos tomar acciones operacionales urgentemente";
+            }
+            else if (CAPITALTRABAJO > 100)
+            {
+                fDetails.txtCapitalTrabajo.Text = "¡Enhorabuena!, su capital de trabajo de " + txtCapitalT.Text + " afirma cuentas con los activos suficientes para cubrir su apalancamiento a corto plazo";
+                fDetails.pbCapitaTrabajo.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgLiquidez.png");
+            }
+            //fDetails.lblTitulo.Text = txtSolvencia.Text;
             fDetails.lblPruebaAcida.Text = txtPruebaA.Text;
             fDetails.lblRotacionInventario.Text = txtRotacionInv.Text;
             fDetails.lblRotacionCartera.Text = txtRotacionC.Text;
