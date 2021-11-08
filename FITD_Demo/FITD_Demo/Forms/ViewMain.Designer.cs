@@ -66,14 +66,10 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label30 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.txtRotacionActivoALP = new System.Windows.Forms.TextBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label29 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -108,9 +104,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -591,32 +585,13 @@
             this.label14.TabIndex = 32;
             this.label14.Text = "Rotación de Inventarios";
             // 
-            // panel7
-            // 
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.label30);
-            this.panel7.Location = new System.Drawing.Point(982, 489);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(190, 160);
-            this.panel7.TabIndex = 27;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(28, 0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(130, 18);
-            this.label30.TabIndex = 50;
-            this.label30.Text = "Utilidad por acción";
-            // 
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.label25);
             this.panel8.Controls.Add(this.label26);
             this.panel8.Controls.Add(this.txtRotacionActivoALP);
-            this.panel8.Location = new System.Drawing.Point(404, 489);
+            this.panel8.Location = new System.Drawing.Point(796, 489);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(180, 160);
             this.panel8.TabIndex = 23;
@@ -649,32 +624,13 @@
             this.txtRotacionActivoALP.TabIndex = 44;
             this.txtRotacionActivoALP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // panel9
-            // 
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.label29);
-            this.panel9.Location = new System.Drawing.Point(786, 489);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(190, 160);
-            this.panel9.TabIndex = 26;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(-1, 0);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(186, 18);
-            this.label29.TabIndex = 49;
-            this.label29.Text = "Rendimiento del C. Comun";
-            // 
             // panel10
             // 
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.label23);
             this.panel10.Controls.Add(this.label24);
             this.panel10.Controls.Add(this.txtMUP);
-            this.panel10.Location = new System.Drawing.Point(208, 489);
+            this.panel10.Location = new System.Drawing.Point(600, 489);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(190, 160);
             this.panel10.TabIndex = 24;
@@ -713,7 +669,7 @@
             this.panel11.Controls.Add(this.label27);
             this.panel11.Controls.Add(this.label28);
             this.panel11.Controls.Add(this.txtRoa);
-            this.panel11.Location = new System.Drawing.Point(590, 489);
+            this.panel11.Location = new System.Drawing.Point(982, 489);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(190, 160);
             this.panel11.TabIndex = 25;
@@ -752,7 +708,7 @@
             this.panel12.Controls.Add(this.label4);
             this.panel12.Controls.Add(this.label21);
             this.panel12.Controls.Add(this.txtMBU);
-            this.panel12.Location = new System.Drawing.Point(12, 489);
+            this.panel12.Location = new System.Drawing.Point(404, 489);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(190, 160);
             this.panel12.TabIndex = 22;
@@ -951,11 +907,9 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel2);
@@ -987,12 +941,8 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.panel11.ResumeLayout(false);
@@ -1031,9 +981,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel12;
@@ -1062,8 +1010,6 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label29;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnVerInforme;
         public System.Windows.Forms.TextBox txtCapitalT;
         public System.Windows.Forms.TextBox txtRazonPC;

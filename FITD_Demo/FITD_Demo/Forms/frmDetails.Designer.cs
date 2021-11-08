@@ -32,12 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDetails));
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.lblCapitalTrabajo = new System.Windows.Forms.Label();
-            this.lblRazonEndeudamiento = new System.Windows.Forms.Label();
-            this.lblRotacionActivosALP = new System.Windows.Forms.Label();
-            this.lblMbu = new System.Windows.Forms.Label();
-            this.lblRoa = new System.Windows.Forms.Label();
-            this.lblMup = new System.Windows.Forms.Label();
-            this.lblPasivoCapital = new System.Windows.Forms.Label();
             this.pnlLiquidez = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCapitalTrabajo = new System.Windows.Forms.TextBox();
@@ -48,12 +42,6 @@
             this.pnlRentabilidad = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pnlRoa = new System.Windows.Forms.Panel();
-            this.pnlMbu = new System.Windows.Forms.Panel();
-            this.pnlActivosALP = new System.Windows.Forms.Panel();
-            this.pnlMup = new System.Windows.Forms.Panel();
-            this.pnlPasivoCapital = new System.Windows.Forms.Panel();
-            this.pnlRazonEndeudamiento = new System.Windows.Forms.Panel();
             this.txtIndiceSolvencia = new System.Windows.Forms.TextBox();
             this.pbIndiceSolvencia = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -67,26 +55,46 @@
             this.txtRotacionCartera = new System.Windows.Forms.TextBox();
             this.pbRotacionCartera = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlLiquidez2 = new System.Windows.Forms.Panel();
             this.txtRotacionCuentasxpagarCP = new System.Windows.Forms.TextBox();
             this.pbCuentasPagar = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.txtPasivoCapital = new System.Windows.Forms.TextBox();
+            this.txtEndeudamiento = new System.Windows.Forms.TextBox();
+            this.pbPasivoCapital = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pbEndeudamiento = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtRoa = new System.Windows.Forms.TextBox();
+            this.pbROA = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtRotacionActivosALP = new System.Windows.Forms.TextBox();
+            this.pbRotacionActivosALP = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtMup = new System.Windows.Forms.TextBox();
+            this.pbMUP = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtMub = new System.Windows.Forms.TextBox();
+            this.pbMBU = new System.Windows.Forms.PictureBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.pnlLiquidez.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCapitaTrabajo)).BeginInit();
             this.pnlEndeudamiento.SuspendLayout();
             this.pnlRentabilidad.SuspendLayout();
-            this.pnlRoa.SuspendLayout();
-            this.pnlMbu.SuspendLayout();
-            this.pnlActivosALP.SuspendLayout();
-            this.pnlMup.SuspendLayout();
-            this.pnlPasivoCapital.SuspendLayout();
-            this.pnlRazonEndeudamiento.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIndiceSolvencia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPruebaAcida)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRotacionInventario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRotacionCartera)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.pnlLiquidez2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCuentasPagar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPasivoCapital)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEndeudamiento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbROA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRotacionActivosALP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMUP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMBU)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -199,72 +207,6 @@
             this.lblCapitalTrabajo.TabIndex = 6;
             this.lblCapitalTrabajo.Text = "Capital de Trabajo";
             // 
-            // lblRazonEndeudamiento
-            // 
-            this.lblRazonEndeudamiento.AutoSize = true;
-            this.lblRazonEndeudamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblRazonEndeudamiento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblRazonEndeudamiento.Location = new System.Drawing.Point(35, 12);
-            this.lblRazonEndeudamiento.Name = "lblRazonEndeudamiento";
-            this.lblRazonEndeudamiento.Size = new System.Drawing.Size(152, 17);
-            this.lblRazonEndeudamiento.TabIndex = 7;
-            this.lblRazonEndeudamiento.Text = "Razon Endeudamiento";
-            // 
-            // lblRotacionActivosALP
-            // 
-            this.lblRotacionActivosALP.AutoSize = true;
-            this.lblRotacionActivosALP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblRotacionActivosALP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblRotacionActivosALP.Location = new System.Drawing.Point(31, 9);
-            this.lblRotacionActivosALP.Name = "lblRotacionActivosALP";
-            this.lblRotacionActivosALP.Size = new System.Drawing.Size(143, 17);
-            this.lblRotacionActivosALP.TabIndex = 10;
-            this.lblRotacionActivosALP.Text = "Rotacion Activos ALP";
-            // 
-            // lblMbu
-            // 
-            this.lblMbu.AutoSize = true;
-            this.lblMbu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblMbu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblMbu.Location = new System.Drawing.Point(84, 9);
-            this.lblMbu.Name = "lblMbu";
-            this.lblMbu.Size = new System.Drawing.Size(38, 17);
-            this.lblMbu.TabIndex = 13;
-            this.lblMbu.Text = "MBU";
-            // 
-            // lblRoa
-            // 
-            this.lblRoa.AutoSize = true;
-            this.lblRoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblRoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblRoa.Location = new System.Drawing.Point(91, 9);
-            this.lblRoa.Name = "lblRoa";
-            this.lblRoa.Size = new System.Drawing.Size(38, 17);
-            this.lblRoa.TabIndex = 15;
-            this.lblRoa.Text = "ROA";
-            // 
-            // lblMup
-            // 
-            this.lblMup.AutoSize = true;
-            this.lblMup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblMup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblMup.Location = new System.Drawing.Point(91, 10);
-            this.lblMup.Name = "lblMup";
-            this.lblMup.Size = new System.Drawing.Size(38, 17);
-            this.lblMup.TabIndex = 18;
-            this.lblMup.Text = "MUP";
-            // 
-            // lblPasivoCapital
-            // 
-            this.lblPasivoCapital.AutoSize = true;
-            this.lblPasivoCapital.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblPasivoCapital.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblPasivoCapital.Location = new System.Drawing.Point(62, 11);
-            this.lblPasivoCapital.Name = "lblPasivoCapital";
-            this.lblPasivoCapital.Size = new System.Drawing.Size(97, 17);
-            this.lblPasivoCapital.TabIndex = 16;
-            this.lblPasivoCapital.Text = "Pasivo Capital";
-            // 
             // pnlLiquidez
             // 
             this.pnlLiquidez.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
@@ -286,7 +228,7 @@
             this.pnlLiquidez.Controls.Add(this.panel1);
             this.pnlLiquidez.Location = new System.Drawing.Point(3, 1);
             this.pnlLiquidez.Name = "pnlLiquidez";
-            this.pnlLiquidez.Size = new System.Drawing.Size(1329, 240);
+            this.pnlLiquidez.Size = new System.Drawing.Size(1319, 240);
             this.pnlLiquidez.TabIndex = 19;
             // 
             // label2
@@ -314,7 +256,7 @@
             // 
             // pbCapitaTrabajo
             // 
-            this.pbCapitaTrabajo.Location = new System.Drawing.Point(17, 111);
+            this.pbCapitaTrabajo.Location = new System.Drawing.Point(17, 118);
             this.pbCapitaTrabajo.Name = "pbCapitaTrabajo";
             this.pbCapitaTrabajo.Size = new System.Drawing.Size(64, 64);
             this.pbCapitaTrabajo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -330,11 +272,17 @@
             // 
             // pnlEndeudamiento
             // 
-            this.pnlEndeudamiento.Controls.Add(this.pnlPasivoCapital);
-            this.pnlEndeudamiento.Controls.Add(this.pnlRazonEndeudamiento);
-            this.pnlEndeudamiento.Location = new System.Drawing.Point(765, 246);
+            this.pnlEndeudamiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.pnlEndeudamiento.Controls.Add(this.label10);
+            this.pnlEndeudamiento.Controls.Add(this.txtPasivoCapital);
+            this.pnlEndeudamiento.Controls.Add(this.pbEndeudamiento);
+            this.pnlEndeudamiento.Controls.Add(this.txtEndeudamiento);
+            this.pnlEndeudamiento.Controls.Add(this.label9);
+            this.pnlEndeudamiento.Controls.Add(this.pbPasivoCapital);
+            this.pnlEndeudamiento.Controls.Add(this.label8);
+            this.pnlEndeudamiento.Location = new System.Drawing.Point(672, 246);
             this.pnlEndeudamiento.Name = "pnlEndeudamiento";
-            this.pnlEndeudamiento.Size = new System.Drawing.Size(567, 224);
+            this.pnlEndeudamiento.Size = new System.Drawing.Size(650, 232);
             this.pnlEndeudamiento.TabIndex = 22;
             // 
             // panel1
@@ -346,15 +294,25 @@
             // 
             // pnlRentabilidad
             // 
+            this.pnlRentabilidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.pnlRentabilidad.Controls.Add(this.label15);
+            this.pnlRentabilidad.Controls.Add(this.txtRoa);
             this.pnlRentabilidad.Controls.Add(this.panel5);
+            this.pnlRentabilidad.Controls.Add(this.pbROA);
             this.pnlRentabilidad.Controls.Add(this.panel6);
-            this.pnlRentabilidad.Controls.Add(this.pnlRoa);
-            this.pnlRentabilidad.Controls.Add(this.pnlMbu);
-            this.pnlRentabilidad.Controls.Add(this.pnlActivosALP);
-            this.pnlRentabilidad.Controls.Add(this.pnlMup);
+            this.pnlRentabilidad.Controls.Add(this.label11);
+            this.pnlRentabilidad.Controls.Add(this.txtMub);
+            this.pnlRentabilidad.Controls.Add(this.txtRotacionActivosALP);
+            this.pnlRentabilidad.Controls.Add(this.label14);
+            this.pnlRentabilidad.Controls.Add(this.pbRotacionActivosALP);
+            this.pnlRentabilidad.Controls.Add(this.pbMBU);
+            this.pnlRentabilidad.Controls.Add(this.label12);
+            this.pnlRentabilidad.Controls.Add(this.label13);
+            this.pnlRentabilidad.Controls.Add(this.txtMup);
+            this.pnlRentabilidad.Controls.Add(this.pbMUP);
             this.pnlRentabilidad.Location = new System.Drawing.Point(3, 480);
             this.pnlRentabilidad.Name = "pnlRentabilidad";
-            this.pnlRentabilidad.Size = new System.Drawing.Size(1329, 240);
+            this.pnlRentabilidad.Size = new System.Drawing.Size(1319, 240);
             this.pnlRentabilidad.TabIndex = 22;
             // 
             // panel5
@@ -370,54 +328,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(200, 256);
             this.panel6.TabIndex = 20;
-            // 
-            // pnlRoa
-            // 
-            this.pnlRoa.Controls.Add(this.lblRoa);
-            this.pnlRoa.Location = new System.Drawing.Point(887, 4);
-            this.pnlRoa.Name = "pnlRoa";
-            this.pnlRoa.Size = new System.Drawing.Size(215, 235);
-            this.pnlRoa.TabIndex = 26;
-            // 
-            // pnlMbu
-            // 
-            this.pnlMbu.Controls.Add(this.lblMbu);
-            this.pnlMbu.Location = new System.Drawing.Point(224, 4);
-            this.pnlMbu.Name = "pnlMbu";
-            this.pnlMbu.Size = new System.Drawing.Size(215, 235);
-            this.pnlMbu.TabIndex = 24;
-            // 
-            // pnlActivosALP
-            // 
-            this.pnlActivosALP.Controls.Add(this.lblRotacionActivosALP);
-            this.pnlActivosALP.Location = new System.Drawing.Point(669, 4);
-            this.pnlActivosALP.Name = "pnlActivosALP";
-            this.pnlActivosALP.Size = new System.Drawing.Size(215, 235);
-            this.pnlActivosALP.TabIndex = 27;
-            // 
-            // pnlMup
-            // 
-            this.pnlMup.Controls.Add(this.lblMup);
-            this.pnlMup.Location = new System.Drawing.Point(445, 3);
-            this.pnlMup.Name = "pnlMup";
-            this.pnlMup.Size = new System.Drawing.Size(215, 235);
-            this.pnlMup.TabIndex = 28;
-            // 
-            // pnlPasivoCapital
-            // 
-            this.pnlPasivoCapital.Controls.Add(this.lblPasivoCapital);
-            this.pnlPasivoCapital.Location = new System.Drawing.Point(314, 23);
-            this.pnlPasivoCapital.Name = "pnlPasivoCapital";
-            this.pnlPasivoCapital.Size = new System.Drawing.Size(215, 235);
-            this.pnlPasivoCapital.TabIndex = 15;
-            // 
-            // pnlRazonEndeudamiento
-            // 
-            this.pnlRazonEndeudamiento.Controls.Add(this.lblRazonEndeudamiento);
-            this.pnlRazonEndeudamiento.Location = new System.Drawing.Point(50, 29);
-            this.pnlRazonEndeudamiento.Name = "pnlRazonEndeudamiento";
-            this.pnlRazonEndeudamiento.Size = new System.Drawing.Size(215, 235);
-            this.pnlRazonEndeudamiento.TabIndex = 16;
             // 
             // txtIndiceSolvencia
             // 
@@ -508,7 +418,7 @@
             // 
             // pbRotacionInventario
             // 
-            this.pbRotacionInventario.Location = new System.Drawing.Point(565, 111);
+            this.pbRotacionInventario.Location = new System.Drawing.Point(565, 86);
             this.pbRotacionInventario.Name = "pbRotacionInventario";
             this.pbRotacionInventario.Size = new System.Drawing.Size(64, 64);
             this.pbRotacionInventario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -558,19 +468,19 @@
             this.label6.TabIndex = 37;
             this.label6.Text = "Rotación de Cartera";
             // 
-            // panel2
+            // pnlLiquidez2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel2.Controls.Add(this.txtRotacionCuentasxpagarCP);
-            this.panel2.Controls.Add(this.txtRotacionCartera);
-            this.panel2.Controls.Add(this.pbCuentasPagar);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.pbRotacionCartera);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(3, 246);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(660, 232);
-            this.panel2.TabIndex = 23;
+            this.pnlLiquidez2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.pnlLiquidez2.Controls.Add(this.txtRotacionCuentasxpagarCP);
+            this.pnlLiquidez2.Controls.Add(this.txtRotacionCartera);
+            this.pnlLiquidez2.Controls.Add(this.pbCuentasPagar);
+            this.pnlLiquidez2.Controls.Add(this.label7);
+            this.pnlLiquidez2.Controls.Add(this.pbRotacionCartera);
+            this.pnlLiquidez2.Controls.Add(this.label6);
+            this.pnlLiquidez2.Location = new System.Drawing.Point(3, 246);
+            this.pnlLiquidez2.Name = "pnlLiquidez2";
+            this.pnlLiquidez2.Size = new System.Drawing.Size(660, 232);
+            this.pnlLiquidez2.TabIndex = 23;
             // 
             // txtRotacionCuentasxpagarCP
             // 
@@ -604,12 +514,227 @@
             this.label7.TabIndex = 37;
             this.label7.Text = "Rotacion Cuentas x pagar CP";
             // 
+            // txtPasivoCapital
+            // 
+            this.txtPasivoCapital.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.txtPasivoCapital.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPasivoCapital.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPasivoCapital.Location = new System.Drawing.Point(426, 76);
+            this.txtPasivoCapital.Multiline = true;
+            this.txtPasivoCapital.Name = "txtPasivoCapital";
+            this.txtPasivoCapital.ReadOnly = true;
+            this.txtPasivoCapital.Size = new System.Drawing.Size(198, 145);
+            this.txtPasivoCapital.TabIndex = 44;
+            // 
+            // txtEndeudamiento
+            // 
+            this.txtEndeudamiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.txtEndeudamiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEndeudamiento.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEndeudamiento.Location = new System.Drawing.Point(81, 111);
+            this.txtEndeudamiento.Multiline = true;
+            this.txtEndeudamiento.Name = "txtEndeudamiento";
+            this.txtEndeudamiento.ReadOnly = true;
+            this.txtEndeudamiento.Size = new System.Drawing.Size(198, 113);
+            this.txtEndeudamiento.TabIndex = 45;
+            // 
+            // pbPasivoCapital
+            // 
+            this.pbPasivoCapital.Location = new System.Drawing.Point(356, 76);
+            this.pbPasivoCapital.Name = "pbPasivoCapital";
+            this.pbPasivoCapital.Size = new System.Drawing.Size(64, 64);
+            this.pbPasivoCapital.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPasivoCapital.TabIndex = 42;
+            this.pbPasivoCapital.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label8.Location = new System.Drawing.Point(422, 49);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(132, 21);
+            this.label8.TabIndex = 40;
+            this.label8.Text = "Pasivo - Capital";
+            // 
+            // pbEndeudamiento
+            // 
+            this.pbEndeudamiento.Location = new System.Drawing.Point(11, 104);
+            this.pbEndeudamiento.Name = "pbEndeudamiento";
+            this.pbEndeudamiento.Size = new System.Drawing.Size(64, 64);
+            this.pbEndeudamiento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbEndeudamiento.TabIndex = 43;
+            this.pbEndeudamiento.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label9.Location = new System.Drawing.Point(77, 76);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(135, 21);
+            this.label9.TabIndex = 41;
+            this.label9.Text = "Endeudamiento";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label10.Location = new System.Drawing.Point(5, 8);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(326, 31);
+            this.label10.TabIndex = 37;
+            this.label10.Text = "Razon de Endeudamiento";
+            // 
+            // txtRoa
+            // 
+            this.txtRoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.txtRoa.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRoa.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRoa.Location = new System.Drawing.Point(1095, 92);
+            this.txtRoa.Multiline = true;
+            this.txtRoa.Name = "txtRoa";
+            this.txtRoa.ReadOnly = true;
+            this.txtRoa.Size = new System.Drawing.Size(198, 145);
+            this.txtRoa.TabIndex = 48;
+            // 
+            // pbROA
+            // 
+            this.pbROA.Location = new System.Drawing.Point(1025, 92);
+            this.pbROA.Name = "pbROA";
+            this.pbROA.Size = new System.Drawing.Size(64, 64);
+            this.pbROA.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbROA.TabIndex = 47;
+            this.pbROA.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label11.Location = new System.Drawing.Point(1091, 65);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(210, 21);
+            this.label11.TabIndex = 46;
+            this.label11.Text = "Retorno sobre los Activos";
+            // 
+            // txtRotacionActivosALP
+            // 
+            this.txtRotacionActivosALP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.txtRotacionActivosALP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRotacionActivosALP.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRotacionActivosALP.Location = new System.Drawing.Point(775, 92);
+            this.txtRotacionActivosALP.Multiline = true;
+            this.txtRotacionActivosALP.Name = "txtRotacionActivosALP";
+            this.txtRotacionActivosALP.ReadOnly = true;
+            this.txtRotacionActivosALP.Size = new System.Drawing.Size(198, 145);
+            this.txtRotacionActivosALP.TabIndex = 45;
+            // 
+            // pbRotacionActivosALP
+            // 
+            this.pbRotacionActivosALP.Location = new System.Drawing.Point(705, 92);
+            this.pbRotacionActivosALP.Name = "pbRotacionActivosALP";
+            this.pbRotacionActivosALP.Size = new System.Drawing.Size(64, 64);
+            this.pbRotacionActivosALP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRotacionActivosALP.TabIndex = 44;
+            this.pbRotacionActivosALP.TabStop = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label12.Location = new System.Drawing.Point(771, 65);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(183, 21);
+            this.label12.TabIndex = 43;
+            this.label12.Text = "Rotación Activos  ALP";
+            // 
+            // txtMup
+            // 
+            this.txtMup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.txtMup.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMup.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMup.Location = new System.Drawing.Point(398, 95);
+            this.txtMup.Multiline = true;
+            this.txtMup.Name = "txtMup";
+            this.txtMup.ReadOnly = true;
+            this.txtMup.Size = new System.Drawing.Size(288, 145);
+            this.txtMup.TabIndex = 42;
+            // 
+            // pbMUP
+            // 
+            this.pbMUP.Location = new System.Drawing.Point(328, 95);
+            this.pbMUP.Name = "pbMUP";
+            this.pbMUP.Size = new System.Drawing.Size(64, 64);
+            this.pbMUP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMUP.TabIndex = 41;
+            this.pbMUP.TabStop = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label13.Location = new System.Drawing.Point(394, 68);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(292, 21);
+            this.label13.TabIndex = 40;
+            this.label13.Text = "Margen de Utilidades Operacionales";
+            // 
+            // txtMub
+            // 
+            this.txtMub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.txtMub.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMub.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMub.Location = new System.Drawing.Point(87, 95);
+            this.txtMub.Multiline = true;
+            this.txtMub.Name = "txtMub";
+            this.txtMub.ReadOnly = true;
+            this.txtMub.Size = new System.Drawing.Size(198, 113);
+            this.txtMub.TabIndex = 39;
+            // 
+            // pbMBU
+            // 
+            this.pbMBU.Location = new System.Drawing.Point(17, 95);
+            this.pbMBU.Name = "pbMBU";
+            this.pbMBU.Size = new System.Drawing.Size(64, 64);
+            this.pbMBU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMBU.TabIndex = 38;
+            this.pbMBU.TabStop = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label14.Location = new System.Drawing.Point(83, 63);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(206, 21);
+            this.label14.TabIndex = 37;
+            this.label14.Text = "Margen de Utilidad Bruta";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label15.Location = new System.Drawing.Point(11, 11);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(288, 31);
+            this.label15.TabIndex = 46;
+            this.label15.Text = "Razon de Rentabilidad";
+            // 
             // frmDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(1334, 729);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnlLiquidez2);
             this.Controls.Add(this.pnlRentabilidad);
             this.Controls.Add(this.pnlLiquidez);
             this.Controls.Add(this.pnlEndeudamiento);
@@ -622,26 +747,22 @@
             this.pnlLiquidez.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCapitaTrabajo)).EndInit();
             this.pnlEndeudamiento.ResumeLayout(false);
+            this.pnlEndeudamiento.PerformLayout();
             this.pnlRentabilidad.ResumeLayout(false);
-            this.pnlRoa.ResumeLayout(false);
-            this.pnlRoa.PerformLayout();
-            this.pnlMbu.ResumeLayout(false);
-            this.pnlMbu.PerformLayout();
-            this.pnlActivosALP.ResumeLayout(false);
-            this.pnlActivosALP.PerformLayout();
-            this.pnlMup.ResumeLayout(false);
-            this.pnlMup.PerformLayout();
-            this.pnlPasivoCapital.ResumeLayout(false);
-            this.pnlPasivoCapital.PerformLayout();
-            this.pnlRazonEndeudamiento.ResumeLayout(false);
-            this.pnlRazonEndeudamiento.PerformLayout();
+            this.pnlRentabilidad.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIndiceSolvencia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPruebaAcida)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRotacionInventario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRotacionCartera)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnlLiquidez2.ResumeLayout(false);
+            this.pnlLiquidez2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCuentasPagar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPasivoCapital)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEndeudamiento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbROA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRotacionActivosALP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMUP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMBU)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -650,12 +771,6 @@
 
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         public System.Windows.Forms.Label lblCapitalTrabajo;
-        public System.Windows.Forms.Label lblRazonEndeudamiento;
-        public System.Windows.Forms.Label lblRotacionActivosALP;
-        public System.Windows.Forms.Label lblMbu;
-        public System.Windows.Forms.Label lblRoa;
-        public System.Windows.Forms.Label lblMup;
-        public System.Windows.Forms.Label lblPasivoCapital;
         private System.Windows.Forms.Panel pnlLiquidez;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
@@ -663,12 +778,6 @@
         private System.Windows.Forms.Panel pnlRentabilidad;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel pnlPasivoCapital;
-        private System.Windows.Forms.Panel pnlRazonEndeudamiento;
-        private System.Windows.Forms.Panel pnlRoa;
-        private System.Windows.Forms.Panel pnlMbu;
-        private System.Windows.Forms.Panel pnlActivosALP;
-        private System.Windows.Forms.Panel pnlMup;
         public System.Windows.Forms.PictureBox pbCapitaTrabajo;
         public System.Windows.Forms.TextBox txtCapitalTrabajo;
         public System.Windows.Forms.Label label2;
@@ -685,9 +794,29 @@
         public System.Windows.Forms.TextBox txtRotacionCartera;
         public System.Windows.Forms.PictureBox pbRotacionCartera;
         public System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlLiquidez2;
         public System.Windows.Forms.TextBox txtRotacionCuentasxpagarCP;
         public System.Windows.Forms.PictureBox pbCuentasPagar;
         public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label label10;
+        public System.Windows.Forms.TextBox txtPasivoCapital;
+        public System.Windows.Forms.PictureBox pbEndeudamiento;
+        public System.Windows.Forms.TextBox txtEndeudamiento;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.PictureBox pbPasivoCapital;
+        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Label label15;
+        public System.Windows.Forms.TextBox txtRoa;
+        public System.Windows.Forms.PictureBox pbROA;
+        public System.Windows.Forms.Label label11;
+        public System.Windows.Forms.TextBox txtMub;
+        public System.Windows.Forms.TextBox txtRotacionActivosALP;
+        public System.Windows.Forms.Label label14;
+        public System.Windows.Forms.PictureBox pbRotacionActivosALP;
+        public System.Windows.Forms.PictureBox pbMBU;
+        public System.Windows.Forms.Label label12;
+        public System.Windows.Forms.Label label13;
+        public System.Windows.Forms.TextBox txtMup;
+        public System.Windows.Forms.PictureBox pbMUP;
     }
 }

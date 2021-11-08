@@ -515,15 +515,70 @@ namespace FITD_Demo.Forms
 
             #region Rotacion de cuentas por pagar a corto plazo
             double ROTACIONPAGARCP = Convert.ToDouble(txtRotacionPagarCP.Text);
-            fDetails.txtRotacionCuentasxpagarCP.Text = "En promedio puedes pagar todas tus obligaciones (pasivos) en un periodo de " + txtRotacionPagarCP + " dias";
+            fDetails.txtRotacionCuentasxpagarCP.Text = "En promedio puedes pagar todas tus obligaciones (pasivos) en un periodo de " + txtRotacionPagarCP.Text + " dias";
             fDetails.pbCuentasPagar.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgCuentasPagar.png");
             #endregion
-            fDetails.lblRazonEndeudamiento.Text = txtRazonE.Text;
-            fDetails.lblPasivoCapital.Text = txtRazonPC.Text;
-            fDetails.lblMbu.Text = txtMBU.Text;
-            fDetails.lblMup.Text = txtMUP.Text;
-            fDetails.lblRotacionActivosALP.Text = txtRotacionActivoALP.Text;
-            fDetails.lblRoa.Text = txtRoa.Text;
+
+            #region Razon de Endeudamiento
+            double ENDEUDAMIENTO = Convert.ToDouble(txtRazonE.Text);
+            if (ENDEUDAMIENTO > 50)
+            {
+                fDetails.txtEndeudamiento.Text = "¡Advertencia!, su proporción de activos es de un " + txtRazonE.Text + " por lo que se encuentra mayormente financiaco por acreedores o proveedores, por lo tanto su probabilidad de quiebra es alta.\nRecomendamos medidas al respecto";
+                fDetails.pbEndeudamiento.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgEndeudamiento.png");
+            }
+            else
+            {
+                fDetails.txtEndeudamiento.Text = "Usted dispone de un nivel de endeudamiento del " + txtRazonE.Text + " frente a sus activos.\nEsto quiere decir que el apalancamiento no es muy elevado.";
+                fDetails.pbEndeudamiento.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgEndeudamiento.png");
+            }
+            #endregion
+
+            #region Pasivo Capital
+            double PASIVOCAPITAL = Convert.ToDouble(txtRazonPC.Text);
+            if (PASIVOCAPITAL > 1)
+            {
+                fDetails.txtPasivoCapital.Text = "¡Advertencia!, con un " + txtRazonPC.Text + " se encuentra financiado en mayor medida por terceros, lo que se traduce en menor autonomia financiera o un mayor apalancamiento financiero.";
+                fDetails.pbPasivoCapital.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgCapital.png");
+            }
+            else if (PASIVOCAPITAL == 1 || PASIVOCAPITAL < 1)
+            {
+                fDetails.txtPasivoCapital.Text = "Cuenta con un " + txtRazonPC.Text + " de porporcion entre sus activos que fueron financiados por socios y los que fueron financiados por otros terceros.\nPor lo que su apalancamiento financiero es bajo.";
+                fDetails.pbPasivoCapital.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgCapital.png");
+            }
+            fDetails.txtPasivoCapital.Text = "";
+            #endregion
+
+            #region Margen Bruto de Utilidad
+            double MBU = Convert.ToDouble(txtMBU.Text);
+            fDetails.txtMub.Text = "Cuentas con un margen del " + (MBU * 100) + "% luego de haber cancelado los inventarios.";
+            fDetails.pbMBU.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgMBU.png");
+            #endregion
+
+            #region Margen de Utilidades Operacionales
+            double MUP = Convert.ToDouble(txtMUP.Text);
+            if (MUP >= 0)
+            {
+                fDetails.txtMup.Text = "Sus utilidades netas obtenidas por cada venta que se realiza es de " + MUP + "";
+                fDetails.pbMUP.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgMUP.png");
+            }
+            else
+            {
+                fDetails.txtMup.Text = "¡Alerta!, no tiene utilidades obtenidas, con un MUP de: " + MUP + "% esta generando perdidas, recomendado tomar acciones lo antes posible";
+                fDetails.pbMUP.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgMUP.png");
+            }
+            #endregion
+
+            #region Rotacion de Activos a Largo Plazo
+            double ROTACIONACTIVOSALP = Convert.ToDouble(txtRotacionActivoALP.Text);
+            fDetails.txtRotacionActivosALP.Text = "¡Notificacion!, sus activos tardan en generar beneficios (ingresos) en aproximadamente: " + ROTACIONACTIVOSALP;
+            fDetails.pbRotacionActivosALP.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgRALP.png");
+            #endregion
+
+            #region Rendimiento de la Inversio ó Retorno sobre los activos (ROA)
+            double ROA = Convert.ToDouble(txtRoa.Text);
+            fDetails.txtRoa.Text = "¡Notificacion!, sus activos reflejan una rentabilidad aproximada de un " + (ROA * 100);
+            fDetails.pbROA.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgInversion.png");
+            #endregion
         }
     }
 }
