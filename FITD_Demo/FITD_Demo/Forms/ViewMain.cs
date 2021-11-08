@@ -452,30 +452,72 @@ namespace FITD_Demo.Forms
             };
             //Mandando la informacion adquirida desde este form a frmDetails
             fDetails.Show();
-            //lbl capital trabajo
+
+            #region Capital de trabajo
             double CAPITALTRABAJO = Convert.ToDouble(txtCapitalT.Text);
             if (CAPITALTRABAJO < 100)
             {
-                fDetails.txtCapitalTrabajo.Text = "¿Precaución!, su capital de trabajo" + txtCapitalT.Text + " esta muy por debajo de lo ideal \n recomendamos tomar acciones operacionales y administrativas";
+                fDetails.txtCapitalTrabajo.Text = "¿Precaución!, su capital de trabajo" + txtCapitalT.Text + " esta muy por debajo de lo ideal recomendamos tomar acciones operacionales y administrativas";
+                fDetails.pbCapitaTrabajo.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgLiquidez.png");
             }
             else if (CAPITALTRABAJO == 0)
             {
-                fDetails.txtCapitalTrabajo.Text = "¿Advertencia!, su capital de trabajo es practicamente nula \n por lo que no tienes excedente al momento del apalancamiento \n recomendamos tomar acciones operacionales urgentemente";
+                fDetails.txtCapitalTrabajo.Text = "¿Advertencia!, su capital de trabajo :" + txtCapitalT.Text + "es practicamente nula por lo que no tienes excedente al momento del apalancamiento recomendamos tomar acciones operacionales urgentemente";
+                fDetails.pbCapitaTrabajo.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgLiquidez.png");
             }
             else if (CAPITALTRABAJO < 0)
             {
-                fDetails.txtCapitalTrabajo.Text = "¿Alerta!, no tienes capital de trabajo \n por lo que no tienes lo suficiente para pagar todas tus cuentas \n recomendamos tomar acciones operacionales urgentemente";
+                fDetails.txtCapitalTrabajo.Text = "¿Alerta!, no tienes capital de trabajo {" + txtCapitalT.Text + "} por lo que no tienes lo suficiente para pagar todas tus cuentas recomendamos tomar acciones operacionales urgentemente";
+                fDetails.pbCapitaTrabajo.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgLiquidez.png");
             }
             else if (CAPITALTRABAJO > 100)
             {
                 fDetails.txtCapitalTrabajo.Text = "¡Enhorabuena!, su capital de trabajo de " + txtCapitalT.Text + " afirma cuentas con los activos suficientes para cubrir su apalancamiento a corto plazo";
                 fDetails.pbCapitaTrabajo.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgLiquidez.png");
             }
-            //fDetails.lblTitulo.Text = txtSolvencia.Text;
-            fDetails.lblPruebaAcida.Text = txtPruebaA.Text;
-            fDetails.lblRotacionInventario.Text = txtRotacionInv.Text;
-            fDetails.lblRotacionCartera.Text = txtRotacionC.Text;
-            fDetails.lblRotacionCuentasPagarACP.Text = txtRotacionPagarCP.Text;
+            #endregion
+
+            #region Indice de Solvencia
+            double INDICESOLVENCIA = Convert.ToDouble(txtSolvencia.Text);
+            if (INDICESOLVENCIA == 1.5 || INDICESOLVENCIA > 1.5)
+            {
+                fDetails.txtIndiceSolvencia.Text = "¡Enhorabuena! Cuenta con un indice de solvencia OPTIMO de " + txtSolvencia.Text + " por ende puede responder sus obligaciones sin afectar.\nDispone de " + (INDICESOLVENCIA * 100) + "para pagar cada córdoba de su deuda";
+                fDetails.pbIndiceSolvencia.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgSolvencia.png");
+            }else if (INDICESOLVENCIA == 1)
+            {
+                fDetails.txtIndiceSolvencia.Text = "¡Genial! Cuenta con un nivel bueno de indice de solvencia con un: " + txtSolvencia.Text + "\nNo tienes exceso de liquidez por lo que no perderas rentabilidad. \nDispone de " + (INDICESOLVENCIA * 100) + "para pagar cada córdoba de su deuda";
+                fDetails.pbIndiceSolvencia.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgSolvencia.png");
+            }
+            else if (INDICESOLVENCIA < 1)
+            {
+                fDetails.txtIndiceSolvencia.Text = "¡Alerta! Dispones de un indice de solvencia: " + txtSolvencia.Text + " que es menor a 1\nTines un exceso de liquidez por lo tanto estas perdiendo Rentabilidad. \nDispone de " + (INDICESOLVENCIA * 100) + "para pagar cada córdoba de su deuda";
+                fDetails.pbIndiceSolvencia.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgSolvencia.png");
+            }
+            #endregion
+
+            #region Prueba Acida
+            double PRUEBAACIDA = Convert.ToDouble(txtPruebaA.Text);
+            fDetails.txtPruebaAcida.Text = "Este análisis nos dice que por cada córdoba que debes tienes: " + (PRUEBAACIDA * 100) + " para cubrilo SIN disponer del inventario.";
+            fDetails.pbPruebaAcida.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgPrueba.png");
+            #endregion
+
+            #region Rotacion de Inventarios
+            double ROTACIONINVENTARIO = Convert.ToDouble(txtRotacionInv.Text);
+            fDetails.txtRotacionInventario.Text = "Los inventarios se vendieron cada " + txtRotacionInv.Text + " meses en promedio.\nPor ende se concluye que tu inventario solo duró " + txtRotacionInv.Text + "meses en la bodega antes de poder ser vendidos.";
+            fDetails.pbRotacionInventario.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgInventarios.png");
+            #endregion
+
+            #region Rotacion de Cartera
+            double ROTACIONCARTERA = Convert.ToDouble(txtRotacionC.Text);
+            fDetails.txtRotacionCartera.Text = "En promedio todas tus cuentas por cobrar tardan " + txtRotacionC.Text + "en convertirse en efectivo.\nEs el tiempo promedio en el que tus clientes pagaran su deuda.";
+            fDetails.pbRotacionCartera.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgCuentasCobrar.png");
+            #endregion
+
+            #region Rotacion de cuentas por pagar a corto plazo
+            double ROTACIONPAGARCP = Convert.ToDouble(txtRotacionPagarCP.Text);
+            fDetails.txtRotacionCuentasxpagarCP.Text = "En promedio puedes pagar todas tus obligaciones (pasivos) en un periodo de " + txtRotacionPagarCP + " dias";
+            fDetails.pbCuentasPagar.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgCuentasPagar.png");
+            #endregion
             fDetails.lblRazonEndeudamiento.Text = txtRazonE.Text;
             fDetails.lblPasivoCapital.Text = txtRazonPC.Text;
             fDetails.lblMbu.Text = txtMBU.Text;
