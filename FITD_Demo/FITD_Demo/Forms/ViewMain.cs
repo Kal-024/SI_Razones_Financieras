@@ -537,15 +537,14 @@ namespace FITD_Demo.Forms
             double PASIVOCAPITAL = Convert.ToDouble(txtRazonPC.Text);
             if (PASIVOCAPITAL > 1)
             {
-                fDetails.txtPasivoCapital.Text = "¡Advertencia!, con un " + txtRazonPC.Text + " se encuentra financiado en mayor medida por terceros, lo que se traduce en menor autonomia financiera o un mayor apalancamiento financiero.";
+                fDetails.txtPasivoCapital.Text = "¡Advertencia!, con un " + PASIVOCAPITAL + " se encuentra financiado en mayor medida por terceros, lo que se traduce en menor autonomia financiera o un mayor apalancamiento financiero.";
                 fDetails.pbPasivoCapital.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgCapital.png");
             }
             else if (PASIVOCAPITAL == 1 || PASIVOCAPITAL < 1)
             {
-                fDetails.txtPasivoCapital.Text = "Cuenta con un " + txtRazonPC.Text + " de porporcion entre sus activos que fueron financiados por socios y los que fueron financiados por otros terceros.\nPor lo que su apalancamiento financiero es bajo.";
+                fDetails.txtPasivoCapital.Text = "Cuenta con un " + PASIVOCAPITAL + " de porporcion entre sus activos que fueron financiados por socios y los que fueron financiados por otros terceros.\nPor lo que su apalancamiento financiero es bajo.";
                 fDetails.pbPasivoCapital.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgCapital.png");
             }
-            fDetails.txtPasivoCapital.Text = "";
             #endregion
 
             #region Margen Bruto de Utilidad
