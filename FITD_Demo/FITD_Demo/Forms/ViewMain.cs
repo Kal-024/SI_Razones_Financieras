@@ -16,7 +16,7 @@ namespace FITD_Demo.Forms
 {
     public partial class ViewMain : KryptonForm
     {
-        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION; Initial Catalog = FITD; Integrated Security = true");
+        SqlConnection cmd = new SqlConnection("Data Source = TV-236; Initial Catalog = FITD; Integrated Security = true");
 
         public ViewMain(int reportID)
         {
@@ -38,9 +38,9 @@ namespace FITD_Demo.Forms
         }
 
         int reportID;
-
+        String mainPath = @"C:\\Users\\LENOVO\\Desktop\\SI_Razones_Financieras\\FITD_Demo\\FITD_Demo\\Resources\\Formulas\\";
         #region Razones de Liquidez
-        
+
         public void CapitalTrabajo()
         {
             cmd.Open();
@@ -458,22 +458,22 @@ namespace FITD_Demo.Forms
             if (CAPITALTRABAJO < 100)
             {
                 fDetails.txtCapitalTrabajo.Text = "¿Precaución!, su capital de trabajo" + txtCapitalT.Text + " esta muy por debajo de lo ideal recomendamos tomar acciones operacionales y administrativas";
-                fDetails.pbCapitaTrabajo.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgLiquidez.png");
+                fDetails.pbCapitaTrabajo.Image = Image.FromFile(mainPath+"imgLiquidez.png");
             }
             else if (CAPITALTRABAJO == 0)
             {
                 fDetails.txtCapitalTrabajo.Text = "¿Advertencia!, su capital de trabajo :" + txtCapitalT.Text + "es practicamente nula por lo que no tienes excedente al momento del apalancamiento recomendamos tomar acciones operacionales urgentemente";
-                fDetails.pbCapitaTrabajo.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgLiquidez.png");
+                fDetails.pbCapitaTrabajo.Image = Image.FromFile(mainPath +"imgLiquidez.png");
             }
             else if (CAPITALTRABAJO < 0)
             {
                 fDetails.txtCapitalTrabajo.Text = "¿Alerta!, no tienes capital de trabajo {" + txtCapitalT.Text + "} por lo que no tienes lo suficiente para pagar todas tus cuentas recomendamos tomar acciones operacionales urgentemente";
-                fDetails.pbCapitaTrabajo.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgLiquidez.png");
+                fDetails.pbCapitaTrabajo.Image = Image.FromFile(mainPath + "imgLiquidez+.png");
             }
             else if (CAPITALTRABAJO > 100)
             {
                 fDetails.txtCapitalTrabajo.Text = "¡Enhorabuena!, su capital de trabajo de " + txtCapitalT.Text + " afirma cuentas con los activos suficientes para cubrir su apalancamiento a corto plazo";
-                fDetails.pbCapitaTrabajo.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgLiquidez.png");
+                fDetails.pbCapitaTrabajo.Image = Image.FromFile(mainPath + "imgLiquidez.png");
             }
             #endregion
 
@@ -482,41 +482,41 @@ namespace FITD_Demo.Forms
             if (INDICESOLVENCIA == 1.5 || INDICESOLVENCIA > 1.5)
             {
                 fDetails.txtIndiceSolvencia.Text = "¡Enhorabuena! Cuenta con un indice de solvencia OPTIMO de " + txtSolvencia.Text + " por ende puede responder sus obligaciones sin afectar.\nDispone de " + (INDICESOLVENCIA * 100) + "para pagar cada córdoba de su deuda";
-                fDetails.pbIndiceSolvencia.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgSolvencia.png");
-            }else if (INDICESOLVENCIA == 1)
+                fDetails.pbIndiceSolvencia.Image = Image.FromFile(mainPath + "imgSolvencia.png");
+            } else if (INDICESOLVENCIA == 1)
             {
                 fDetails.txtIndiceSolvencia.Text = "¡Genial! Cuenta con un nivel bueno de indice de solvencia con un: " + txtSolvencia.Text + "\nNo tienes exceso de liquidez por lo que no perderas rentabilidad. \nDispone de " + (INDICESOLVENCIA * 100) + "para pagar cada córdoba de su deuda";
-                fDetails.pbIndiceSolvencia.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgSolvencia.png");
+                fDetails.pbIndiceSolvencia.Image = Image.FromFile(mainPath +"imgSolvencia.png");
             }
             else if (INDICESOLVENCIA < 1)
             {
                 fDetails.txtIndiceSolvencia.Text = "¡Alerta! Dispones de un indice de solvencia: " + txtSolvencia.Text + " que es menor a 1\nTines un exceso de liquidez por lo tanto estas perdiendo Rentabilidad. \nDispone de " + (INDICESOLVENCIA * 100) + "para pagar cada córdoba de su deuda";
-                fDetails.pbIndiceSolvencia.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgSolvencia.png");
+                fDetails.pbIndiceSolvencia.Image = Image.FromFile(mainPath+"imgSolvencia.png");
             }
-            #endregion
-
+        #endregion
+      
             #region Prueba Acida
             double PRUEBAACIDA = Convert.ToDouble(txtPruebaA.Text);
             fDetails.txtPruebaAcida.Text = "Este análisis nos dice que por cada córdoba que debes tienes: " + (PRUEBAACIDA * 100) + " para cubrilo SIN disponer del inventario.";
-            fDetails.pbPruebaAcida.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgPrueba.png");
+            fDetails.pbPruebaAcida.Image = Image.FromFile(mainPath +"imgPrueba.png");
             #endregion
 
             #region Rotacion de Inventarios
             double ROTACIONINVENTARIO = Convert.ToDouble(txtRotacionInv.Text);
             fDetails.txtRotacionInventario.Text = "Los inventarios se vendieron cada " + txtRotacionInv.Text + " meses en promedio.\nPor ende se concluye que tu inventario solo duró " + txtRotacionInv.Text + "meses en la bodega antes de poder ser vendidos.";
-            fDetails.pbRotacionInventario.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgInventarios.png");
+            fDetails.pbRotacionInventario.Image = Image.FromFile(mainPath+"imgInventarios.png");
             #endregion
 
             #region Rotacion de Cartera
             double ROTACIONCARTERA = Convert.ToDouble(txtRotacionC.Text);
             fDetails.txtRotacionCartera.Text = "En promedio todas tus cuentas por cobrar tardan " + txtRotacionC.Text + "en convertirse en efectivo.\nEs el tiempo promedio en el que tus clientes pagaran su deuda.";
-            fDetails.pbRotacionCartera.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgCuentasCobrar.png");
+            fDetails.pbRotacionCartera.Image = Image.FromFile(mainPath+ "imgCuentasCobrar.png");
             #endregion
 
             #region Rotacion de cuentas por pagar a corto plazo
             double ROTACIONPAGARCP = Convert.ToDouble(txtRotacionPagarCP.Text);
             fDetails.txtRotacionCuentasxpagarCP.Text = "En promedio puedes pagar todas tus obligaciones (pasivos) en un periodo de " + txtRotacionPagarCP.Text + " dias";
-            fDetails.pbCuentasPagar.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgCuentasPagar.png");
+            fDetails.pbCuentasPagar.Image = Image.FromFile(mainPath +"imgCuentasPagar.png");
             #endregion
 
             #region Razon de Endeudamiento
@@ -524,12 +524,12 @@ namespace FITD_Demo.Forms
             if (ENDEUDAMIENTO > 50)
             {
                 fDetails.txtEndeudamiento.Text = "¡Advertencia!, su proporción de activos es de un " + txtRazonE.Text + " por lo que se encuentra mayormente financiaco por acreedores o proveedores, por lo tanto su probabilidad de quiebra es alta.\nRecomendamos medidas al respecto";
-                fDetails.pbEndeudamiento.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgEndeudamiento.png");
+                fDetails.pbEndeudamiento.Image = Image.FromFile(mainPath + "imgEndeudamiento.png");
             }
             else
             {
                 fDetails.txtEndeudamiento.Text = "Usted dispone de un nivel de endeudamiento del " + txtRazonE.Text + " frente a sus activos.\nEsto quiere decir que el apalancamiento no es muy elevado.";
-                fDetails.pbEndeudamiento.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgEndeudamiento.png");
+                fDetails.pbEndeudamiento.Image = Image.FromFile(mainPath +"imgEndeudamiento.png");
             }
             #endregion
 
@@ -538,19 +538,19 @@ namespace FITD_Demo.Forms
             if (PASIVOCAPITAL > 1)
             {
                 fDetails.txtPasivoCapital.Text = "¡Advertencia!, con un " + PASIVOCAPITAL + " se encuentra financiado en mayor medida por terceros, lo que se traduce en menor autonomia financiera o un mayor apalancamiento financiero.";
-                fDetails.pbPasivoCapital.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgCapital.png");
+                fDetails.pbPasivoCapital.Image = Image.FromFile(mainPath +"imgCapital.png");
             }
             else if (PASIVOCAPITAL == 1 || PASIVOCAPITAL < 1)
             {
                 fDetails.txtPasivoCapital.Text = "Cuenta con un " + PASIVOCAPITAL + " de porporcion entre sus activos que fueron financiados por socios y los que fueron financiados por otros terceros.\nPor lo que su apalancamiento financiero es bajo.";
-                fDetails.pbPasivoCapital.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgCapital.png");
+                fDetails.pbPasivoCapital.Image = Image.FromFile(mainPath + "imgCapital.png");
             }
             #endregion
 
             #region Margen Bruto de Utilidad
             double MBU = Convert.ToDouble(txtMBU.Text);
             fDetails.txtMub.Text = "Cuentas con un margen del " + (MBU * 100) + "% luego de haber cancelado los inventarios.";
-            fDetails.pbMBU.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgMBU.png");
+            fDetails.pbMBU.Image = Image.FromFile(mainPath+"imgMBU.png");
             #endregion
 
             #region Margen de Utilidades Operacionales
@@ -558,25 +558,25 @@ namespace FITD_Demo.Forms
             if (MUP >= 0)
             {
                 fDetails.txtMup.Text = "Sus utilidades netas obtenidas por cada venta que se realiza es de " + MUP + "";
-                fDetails.pbMUP.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgMUP.png");
+                fDetails.pbMUP.Image = Image.FromFile(mainPath+"imgMUP.png");
             }
             else
             {
                 fDetails.txtMup.Text = "¡Alerta!, no tiene utilidades obtenidas, con un MUP de: " + MUP + "% esta generando perdidas, recomendado tomar acciones lo antes posible";
-                fDetails.pbMUP.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgMUP.png");
+                fDetails.pbMUP.Image = Image.FromFile(mainPath+"imgMUP.png");
             }
             #endregion
 
             #region Rotacion de Activos a Largo Plazo
             double ROTACIONACTIVOSALP = Convert.ToDouble(txtRotacionActivoALP.Text);
             fDetails.txtRotacionActivosALP.Text = "¡Notificacion!, sus activos tardan en generar beneficios (ingresos) en aproximadamente: " + ROTACIONACTIVOSALP;
-            fDetails.pbRotacionActivosALP.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgRALP.png");
+            fDetails.pbRotacionActivosALP.Image = Image.FromFile(mainPath+"imgRALP.png");
             #endregion
 
             #region Rendimiento de la Inversio ó Retorno sobre los activos (ROA)
             double ROA = Convert.ToDouble(txtRoa.Text);
             fDetails.txtRoa.Text = "¡Notificacion!, sus activos reflejan una rentabilidad aproximada de un " + (ROA * 100);
-            fDetails.pbROA.Image = Image.FromFile(@"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\imgInversion.png");
+            fDetails.pbROA.Image = Image.FromFile(mainPath + "imgInversion.png");
             #endregion
         }
     }

@@ -12,6 +12,7 @@ namespace FITD_Demo.Forms
 {
     public partial class frmCobertura : Form
     {
+        private Form activeForm = null;
         public frmCobertura()
         {
             InitializeComponent();
@@ -19,7 +20,24 @@ namespace FITD_Demo.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+           //OpenChildForm(new Forms.frmEndeudamiento());
         }
+
+        //private void OpenChildForm(Form childForm)
+        //{
+        //    if (activeForm != null)
+        //    {
+        //        activeForm.Close();
+        //    }
+        //    activeForm = childForm;
+        //    childForm.TopLevel = false;
+        //    childForm.FormBorderStyle = FormBorderStyle.None;
+        //    childForm.Dock = DockStyle.Fill;
+        //    pnlChildForm.Controls.Add(childForm);
+        //    pnlChildForm.Tag = childForm;
+        //    childForm.BringToFront();
+        //    childForm.Show();
+        //}
+
     }
 }

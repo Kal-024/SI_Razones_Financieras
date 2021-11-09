@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FITD_Demo.Method;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +14,10 @@ namespace FITD_Demo.Forms
 {
     public partial class frmLiquidez : Form
     {
-        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION; Initial Catalog = FITD; Integrated Security = true");
+
+        private ValidateTextBox validator = new ValidateTextBox();
+
+        SqlConnection cmd = new SqlConnection("Data Source = TV-236; Initial Catalog = FITD; Integrated Security = true");
         
         public frmLiquidez()
         {
@@ -67,5 +71,77 @@ namespace FITD_Demo.Forms
             txtVentasCredito.Text = "";
             txtInventario.Text = "";
         }
+
+        private void txtActivoC_KeyPress(object sender, KeyPressEventArgs e)
+        { validator.ValidateForKeyPressed(sender, e);}
+
+        private void txtActivoC_TextChanged(object sender, EventArgs e)
+        { validator.ValidateForTextChanged(sender, e); }
+
+        private void txtPasivoC_KeyPress(object sender, KeyPressEventArgs e)
+        { validator.ValidateForKeyPressed(sender, e); }
+
+        private void txtPasivoC_TextChanged(object sender, EventArgs e)
+        { validator.ValidateForTextChanged(sender, e); }
+
+        private void txtInventario_KeyPress(object sender, KeyPressEventArgs e)
+        { validator.ValidateForKeyPressed(sender, e); }
+
+        private void txtInventario_TextChanged(object sender, EventArgs e)
+        { validator.ValidateForTextChanged(sender, e); }
+
+        private void txtInventarioI_KeyPress(object sender, KeyPressEventArgs e)
+        { validator.ValidateForKeyPressed(sender, e); }
+
+        private void txtInventarioI_TextChanged(object sender, EventArgs e)
+        { validator.ValidateForTextChanged(sender, e); }
+
+        private void txtInventarioF_KeyPress(object sender, KeyPressEventArgs e)
+        { validator.ValidateForKeyPressed(sender, e);}
+
+        private void txtInventarioF_TextChanged(object sender, EventArgs e)
+        { validator.ValidateForTextChanged(sender, e); }
+
+        private void txtCMVendidas_KeyPress(object sender, KeyPressEventArgs e)
+        { validator.ValidateForKeyPressed(sender, e); }
+
+        private void txtCMVendidas_TextChanged(object sender, EventArgs e)
+        { validator.ValidateForTextChanged(sender, e); }
+
+        private void txtVentasCredito_KeyPress(object sender, KeyPressEventArgs e)
+        { validator.ValidateForKeyPressed(sender, e); }
+
+        private void txtVentasCredito_TextChanged(object sender, EventArgs e)
+        { validator.ValidateForTextChanged(sender, e); }
+
+        private void txtCuentasCobrarI_KeyPress(object sender, KeyPressEventArgs e)
+        { validator.ValidateForKeyPressed(sender, e); }
+
+        private void txtCuentasCobrarI_TextChanged(object sender, EventArgs e)
+        { validator.ValidateForTextChanged(sender, e); }
+
+        private void txtCuentasCobrarF_KeyPress(object sender, KeyPressEventArgs e)
+        { validator.ValidateForKeyPressed(sender, e); }
+
+        private void txtCuentasCobrarF_TextChanged(object sender, EventArgs e)
+        { validator.ValidateForTextChanged(sender, e); }
+
+        private void txtCuentasPagarI_KeyPress(object sender, KeyPressEventArgs e)
+        { validator.ValidateForKeyPressed(sender, e); }
+
+        private void txtCuentasPagarI_TextChanged(object sender, EventArgs e)
+        { validator.ValidateForTextChanged(sender, e); }
+
+        private void txtCuentasPagarF_KeyPress(object sender, KeyPressEventArgs e)
+        { validator.ValidateForKeyPressed(sender, e); }
+
+        private void txtCuentasPagarF_TextChanged(object sender, EventArgs e)
+        { validator.ValidateForTextChanged(sender, e); }
+
+        private void txtComprasCredito_KeyPress(object sender, KeyPressEventArgs e)
+        { validator.ValidateForKeyPressed(sender, e); }
+
+        private void txtComprasCredito_TextChanged(object sender, EventArgs e)
+        { validator.ValidateForTextChanged(sender, e); }
     }
 }

@@ -15,6 +15,9 @@ namespace FITD_Demo
 {
     public partial class MainForm : KryptonForm
     {
+        String docxPath = @"C:\Users\LENOVO\Desktop\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\";
+
+
         public MainForm()
         {
             InitializeComponent();
@@ -116,44 +119,27 @@ namespace FITD_Demo
 
         private void OpenDoc()
         {
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                //string path = @"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources";
-                string path = openFileDialog.FileName;
+            
+          
+                string path = docxPath + "DatosRazones.docx";
                 ProcessStartInfo psi = new ProcessStartInfo();
                 psi.FileName = "WINWORD.EXE";
                 psi.Arguments = path;
                 Process.Start(psi);
-            }
-            /*
-            int id = 1;
-            string sql = "SELECT D.CONTENIDO FROM DOCUMENTOS as D WHERE D.ID = '" + id + "'";
-            SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION; Initial Catalog = FITD; Integrated Security = true");
-            cmd.Open();
-            try
-            {
-                SqlCommand command = new SqlCommand(sql, cmd);
-                SqlDataReader reader = command.ExecuteReader();
-                if (reader.HasRows)
-                {
-                    reader.Read();
-                    MemoryStream ms = new MemoryStream((byte[])reader["CONTENIDO"]);
-                    Bitmap bm = new Bitmap(ms);
-                    picBLogo.Image = bm;
-                }
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }*/
+         
         }
 #endregion
 
         private void btnGenerateReport_Click(object sender, EventArgs e)
         {
             Forms.frmRegister frmR = new Forms.frmRegister();
-            frmR.Show();
+            frmR.ShowDialog();
+        }
+
+        private void btnBalanceG_Click(object sender, EventArgs e)
+        { 
+           OpenChildForm(new Forms.frmBalanceG());
+           HideSubMenu();
         }
     }
 }

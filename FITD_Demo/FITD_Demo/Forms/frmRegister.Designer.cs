@@ -170,17 +170,19 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblTitle.Location = new System.Drawing.Point(77, 33);
+            this.lblTitle.Location = new System.Drawing.Point(103, 41);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(247, 50);
+            this.lblTitle.Size = new System.Drawing.Size(312, 58);
             this.lblTitle.TabIndex = 7;
             this.lblTitle.Text = "The FITD Toolkit For\r\nYour Company is HERE!";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(82, 214);
+            this.txtNombre.Location = new System.Drawing.Point(109, 263);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(281, 32);
+            this.txtNombre.Size = new System.Drawing.Size(375, 38);
             this.txtNombre.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtNombre.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtNombre.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -201,18 +203,20 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblNombre.Location = new System.Drawing.Point(23, 179);
+            this.lblNombre.Location = new System.Drawing.Point(31, 220);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(118, 17);
+            this.lblNombre.Size = new System.Drawing.Size(141, 20);
             this.lblNombre.TabIndex = 11;
             this.lblNombre.Text = "¿Es primera vez?";
             // 
             // cmbProyects
             // 
             this.cmbProyects.FormattingEnabled = true;
-            this.cmbProyects.Location = new System.Drawing.Point(118, 402);
+            this.cmbProyects.Location = new System.Drawing.Point(157, 495);
+            this.cmbProyects.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbProyects.Name = "cmbProyects";
-            this.cmbProyects.Size = new System.Drawing.Size(191, 21);
+            this.cmbProyects.Size = new System.Drawing.Size(253, 24);
             this.cmbProyects.TabIndex = 12;
             this.cmbProyects.Text = "Si, tengo uno guardado";
             // 
@@ -221,15 +225,17 @@
             this.lblProyecto.AutoSize = true;
             this.lblProyecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblProyecto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblProyecto.Location = new System.Drawing.Point(23, 373);
+            this.lblProyecto.Location = new System.Drawing.Point(31, 459);
+            this.lblProyecto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProyecto.Name = "lblProyecto";
-            this.lblProyecto.Size = new System.Drawing.Size(145, 17);
+            this.lblProyecto.Size = new System.Drawing.Size(168, 20);
             this.lblProyecto.TabIndex = 13;
             this.lblProyecto.Text = "Ya tengo un Proyecto";
             // 
             // btnStarted
             // 
-            this.btnStarted.Location = new System.Drawing.Point(118, 274);
+            this.btnStarted.Location = new System.Drawing.Point(157, 337);
+            this.btnStarted.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnStarted.Name = "btnStarted";
             this.btnStarted.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.btnStarted.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
@@ -244,7 +250,7 @@
             this.btnStarted.OverrideDefault.Border.Rounding = 20;
             this.btnStarted.OverrideDefault.Border.Width = 1;
             this.btnStarted.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnStarted.Size = new System.Drawing.Size(155, 43);
+            this.btnStarted.Size = new System.Drawing.Size(207, 53);
             this.btnStarted.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.btnStarted.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
             this.btnStarted.StateCommon.Back.ColorAngle = 45F;
@@ -297,16 +303,19 @@
             // 
             // frmRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 450);
+            this.ClientSize = new System.Drawing.Size(533, 554);
             this.Controls.Add(this.btnStarted);
             this.Controls.Add(this.lblProyecto);
             this.Controls.Add(this.cmbProyects);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "frmRegister";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;

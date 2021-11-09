@@ -82,6 +82,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\frmBalanceG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBalanceG.Designer.cs">
+      <DependentUpon>frmBalanceG.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Method\ValidateTextBox.cs" />
     <Compile Include="Storage\SqlConection.cs" />
     <Compile Include="TrialForm.cs">
       <SubType>Form</SubType>
@@ -139,6 +146,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frmBalanceG.resx">
+      <DependentUpon>frmBalanceG.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmDetails.resx">
       <DependentUpon>frmDetails.cs</DependentUpon>
     </EmbeddedResource>

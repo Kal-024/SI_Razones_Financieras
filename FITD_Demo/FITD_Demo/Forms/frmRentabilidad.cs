@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FITD_Demo.Method;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +14,9 @@ namespace FITD_Demo.Forms
 {
     public partial class frmRentabilidad : Form
     {
-        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION; Initial Catalog = FITD; Integrated Security = true");
+        ValidateTextBox validator = new ValidateTextBox();
+
+        SqlConnection cmd = new SqlConnection("Data Source = TV-236; Initial Catalog = FITD; Integrated Security = true");
         public frmRentabilidad()
         {
             InitializeComponent();
@@ -51,5 +54,29 @@ namespace FITD_Demo.Forms
             txtTotalActivos.Text = "";
             txtUtilidadNeta.Text = "";
         }
+
+        private void txtVentas_KeyPress(object sender, KeyPressEventArgs e)
+        { validator.ValidateForKeyPressed(sender, e);}
+
+        private void txtVentas_TextChanged(object sender, EventArgs e)
+        { validator.ValidateForTextChanged(sender, e); }
+
+        private void txtCostos_KeyPress(object sender, KeyPressEventArgs e)
+        { validator.ValidateForKeyPressed(sender, e); }
+
+        private void txtCostos_TextChanged(object sender, EventArgs e)
+        { validator.ValidateForTextChanged(sender, e); }
+
+        private void txtTotalActivos_KeyPress(object sender, KeyPressEventArgs e)
+        { validator.ValidateForKeyPressed(sender, e); }
+
+        private void txtTotalActivos_TextChanged(object sender, EventArgs e)
+        { validator.ValidateForTextChanged(sender, e); }
+
+        private void txtUtilidadNeta_KeyPress(object sender, KeyPressEventArgs e)
+        { validator.ValidateForKeyPressed(sender, e); }
+
+        private void txtUtilidadNeta_TextChanged(object sender, EventArgs e)
+        { validator.ValidateForTextChanged(sender, e); }
     }
 }

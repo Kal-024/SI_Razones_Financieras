@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ComponentFactory.Krypton.Toolkit;
+using FITD_Demo.Method;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,6 +8,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,10 +16,14 @@ namespace FITD_Demo.Forms
 {
     public partial class frmEndeudamiento : Form
     {
-        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION; Initial Catalog = FITD; Integrated Security = true");
+        private ValidateTextBox validator = new ValidateTextBox();
+
+
+        SqlConnection cmd = new SqlConnection("Data Source = TV-236; Initial Catalog = FITD; Integrated Security = true");
         public frmEndeudamiento()
         {
             InitializeComponent();
+            
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -51,5 +58,30 @@ namespace FITD_Demo.Forms
             txtPasivoLP.Text = "";
             txtCapital.Text = "";
         }
+
+        private void txtActivoT_KeyPress(object sender, KeyPressEventArgs e)
+        {validator.ValidateForKeyPressed(sender, e);}
+
+        private void txtActivoT_TextChanged(object sender, EventArgs e)
+        {validator.ValidateForTextChanged(sender, e);}
+
+        private void txtPasivoLP_KeyPress(object sender, KeyPressEventArgs e)
+        {validator.ValidateForKeyPressed(sender,e);}
+
+        private void txtPasivoLP_TextChanged(object sender, EventArgs e)
+        {validator.ValidateForTextChanged(sender, e);}
+
+        private void txtPasivoT_KeyPress(object sender, KeyPressEventArgs e)
+        {validator.ValidateForKeyPressed(sender, e); }
+
+        private void txtPasivoT_TextChanged(object sender, EventArgs e)
+        { validator.ValidateForTextChanged(sender, e); }
+
+        private void txtCapital_KeyPress(object sender, KeyPressEventArgs e)
+        { validator.ValidateForKeyPressed(sender, e); }
+
+        private void txtCapital_TextChanged(object sender, EventArgs e)
+        { validator.ValidateForTextChanged(sender, e); }
+
     }
 }

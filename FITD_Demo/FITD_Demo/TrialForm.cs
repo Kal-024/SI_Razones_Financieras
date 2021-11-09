@@ -26,7 +26,8 @@ namespace FITD_Demo
         private void btnStarted_Click(object sender, EventArgs e)
         {            
             MainForm mainF = new MainForm();
-            mainF.ShowDialog();
+            mainF.Show();
+            //this.Hide();
         }
     }
 }
