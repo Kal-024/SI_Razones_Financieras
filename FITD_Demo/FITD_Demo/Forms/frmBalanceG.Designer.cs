@@ -38,7 +38,6 @@ namespace FITD_Demo.Forms
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -51,6 +50,18 @@ namespace FITD_Demo.Forms
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.cmbProyects = new System.Windows.Forms.ComboBox();
+            this.lblCuentasC = new System.Windows.Forms.Label();
+            this.lblInventario = new System.Windows.Forms.Label();
+            this.lblTotalActivoC = new System.Windows.Forms.Label();
+            this.lblCuentasP = new System.Windows.Forms.Label();
+            this.lblTotalPasivoC = new System.Windows.Forms.Label();
+            this.lblTotalPasivoLp = new System.Windows.Forms.Label();
+            this.lblSumaPasivo = new System.Windows.Forms.Label();
+            this.lblSumaActivo = new System.Windows.Forms.Label();
+            this.lblSumaCC = new System.Windows.Forms.Label();
+            this.lblSumaPC = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -61,9 +72,9 @@ namespace FITD_Demo.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(4, 1);
+            this.panel1.Location = new System.Drawing.Point(-5, 33);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(738, 33);
+            this.panel1.Size = new System.Drawing.Size(747, 33);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -72,7 +83,7 @@ namespace FITD_Demo.Forms
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(275, 5);
+            this.label1.Location = new System.Drawing.Point(279, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(190, 24);
             this.label1.TabIndex = 2;
@@ -84,9 +95,9 @@ namespace FITD_Demo.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(4, 58);
+            this.panel2.Location = new System.Drawing.Point(-5, 90);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(738, 24);
+            this.panel2.Size = new System.Drawing.Size(747, 24);
             this.panel2.TabIndex = 2;
             // 
             // label2
@@ -95,7 +106,7 @@ namespace FITD_Demo.Forms
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label2.Location = new System.Drawing.Point(166, 0);
+            this.label2.Location = new System.Drawing.Point(165, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(426, 24);
             this.label2.TabIndex = 3;
@@ -104,7 +115,7 @@ namespace FITD_Demo.Forms
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(331, 98);
+            this.label3.Location = new System.Drawing.Point(331, 129);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 17);
             this.label3.TabIndex = 3;
@@ -145,15 +156,6 @@ namespace FITD_Demo.Forms
             this.label7.Size = new System.Drawing.Size(70, 17);
             this.label7.TabIndex = 7;
             this.label7.Text = "Inventario";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(558, 149);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(16, 17);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "$";
             // 
             // label9
             // 
@@ -263,12 +265,135 @@ namespace FITD_Demo.Forms
             this.label20.TabIndex = 20;
             this.label20.Text = "Suma del Pasivo + Capital Contable";
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(2, -1);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(103, 24);
+            this.label21.TabIndex = 22;
+            this.label21.Text = "Proyectos :";
+            // 
+            // cmbProyects
+            // 
+            this.cmbProyects.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProyects.FormattingEnabled = true;
+            this.cmbProyects.Location = new System.Drawing.Point(112, 1);
+            this.cmbProyects.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbProyects.Name = "cmbProyects";
+            this.cmbProyects.Size = new System.Drawing.Size(253, 24);
+            this.cmbProyects.TabIndex = 23;
+            this.cmbProyects.SelectedIndexChanged += new System.EventHandler(this.cmbProyects_SelectedIndexChanged);
+            // 
+            // lblCuentasC
+            // 
+            this.lblCuentasC.AutoSize = true;
+            this.lblCuentasC.Location = new System.Drawing.Point(549, 179);
+            this.lblCuentasC.Name = "lblCuentasC";
+            this.lblCuentasC.Size = new System.Drawing.Size(16, 17);
+            this.lblCuentasC.TabIndex = 24;
+            this.lblCuentasC.Text = "$";
+            // 
+            // lblInventario
+            // 
+            this.lblInventario.AutoSize = true;
+            this.lblInventario.Location = new System.Drawing.Point(549, 200);
+            this.lblInventario.Name = "lblInventario";
+            this.lblInventario.Size = new System.Drawing.Size(16, 17);
+            this.lblInventario.TabIndex = 25;
+            this.lblInventario.Text = "$";
+            // 
+            // lblTotalActivoC
+            // 
+            this.lblTotalActivoC.AutoSize = true;
+            this.lblTotalActivoC.Location = new System.Drawing.Point(549, 227);
+            this.lblTotalActivoC.Name = "lblTotalActivoC";
+            this.lblTotalActivoC.Size = new System.Drawing.Size(16, 17);
+            this.lblTotalActivoC.TabIndex = 26;
+            this.lblTotalActivoC.Text = "$";
+            // 
+            // lblCuentasP
+            // 
+            this.lblCuentasP.AutoSize = true;
+            this.lblCuentasP.Location = new System.Drawing.Point(549, 369);
+            this.lblCuentasP.Name = "lblCuentasP";
+            this.lblCuentasP.Size = new System.Drawing.Size(16, 17);
+            this.lblCuentasP.TabIndex = 27;
+            this.lblCuentasP.Text = "$";
+            // 
+            // lblTotalPasivoC
+            // 
+            this.lblTotalPasivoC.AutoSize = true;
+            this.lblTotalPasivoC.Location = new System.Drawing.Point(549, 400);
+            this.lblTotalPasivoC.Name = "lblTotalPasivoC";
+            this.lblTotalPasivoC.Size = new System.Drawing.Size(16, 17);
+            this.lblTotalPasivoC.TabIndex = 28;
+            this.lblTotalPasivoC.Text = "$";
+            // 
+            // lblTotalPasivoLp
+            // 
+            this.lblTotalPasivoLp.AutoSize = true;
+            this.lblTotalPasivoLp.Location = new System.Drawing.Point(549, 463);
+            this.lblTotalPasivoLp.Name = "lblTotalPasivoLp";
+            this.lblTotalPasivoLp.Size = new System.Drawing.Size(16, 17);
+            this.lblTotalPasivoLp.TabIndex = 29;
+            this.lblTotalPasivoLp.Text = "$";
+            // 
+            // lblSumaPasivo
+            // 
+            this.lblSumaPasivo.AutoSize = true;
+            this.lblSumaPasivo.Location = new System.Drawing.Point(549, 496);
+            this.lblSumaPasivo.Name = "lblSumaPasivo";
+            this.lblSumaPasivo.Size = new System.Drawing.Size(16, 17);
+            this.lblSumaPasivo.TabIndex = 30;
+            this.lblSumaPasivo.Text = "$";
+            // 
+            // lblSumaActivo
+            // 
+            this.lblSumaActivo.AutoSize = true;
+            this.lblSumaActivo.Location = new System.Drawing.Point(549, 253);
+            this.lblSumaActivo.Name = "lblSumaActivo";
+            this.lblSumaActivo.Size = new System.Drawing.Size(16, 17);
+            this.lblSumaActivo.TabIndex = 31;
+            this.lblSumaActivo.Text = "$";
+            // 
+            // lblSumaCC
+            // 
+            this.lblSumaCC.AutoSize = true;
+            this.lblSumaCC.Location = new System.Drawing.Point(549, 544);
+            this.lblSumaCC.Name = "lblSumaCC";
+            this.lblSumaCC.Size = new System.Drawing.Size(16, 17);
+            this.lblSumaCC.TabIndex = 32;
+            this.lblSumaCC.Text = "$";
+            // 
+            // lblSumaPC
+            // 
+            this.lblSumaPC.AutoSize = true;
+            this.lblSumaPC.Location = new System.Drawing.Point(549, 598);
+            this.lblSumaPC.Name = "lblSumaPC";
+            this.lblSumaPC.Size = new System.Drawing.Size(16, 17);
+            this.lblSumaPC.TabIndex = 33;
+            this.lblSumaPC.Text = "$";
+            // 
             // frmBalanceG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(742, 768);
             this.ControlBox = false;
+            this.Controls.Add(this.lblSumaPC);
+            this.Controls.Add(this.lblSumaCC);
+            this.Controls.Add(this.lblSumaActivo);
+            this.Controls.Add(this.lblSumaPasivo);
+            this.Controls.Add(this.lblTotalPasivoLp);
+            this.Controls.Add(this.lblTotalPasivoC);
+            this.Controls.Add(this.lblCuentasP);
+            this.Controls.Add(this.lblTotalActivoC);
+            this.Controls.Add(this.lblInventario);
+            this.Controls.Add(this.lblCuentasC);
+            this.Controls.Add(this.cmbProyects);
+            this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
@@ -281,7 +406,6 @@ namespace FITD_Demo.Forms
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -310,7 +434,6 @@ namespace FITD_Demo.Forms
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
@@ -323,5 +446,17 @@ namespace FITD_Demo.Forms
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.ComboBox cmbProyects;
+        private System.Windows.Forms.Label lblCuentasC;
+        private System.Windows.Forms.Label lblInventario;
+        private System.Windows.Forms.Label lblTotalActivoC;
+        private System.Windows.Forms.Label lblCuentasP;
+        private System.Windows.Forms.Label lblTotalPasivoC;
+        private System.Windows.Forms.Label lblTotalPasivoLp;
+        private System.Windows.Forms.Label lblSumaPasivo;
+        private System.Windows.Forms.Label lblSumaActivo;
+        private System.Windows.Forms.Label lblSumaCC;
+        private System.Windows.Forms.Label lblSumaPC;
     }
 }

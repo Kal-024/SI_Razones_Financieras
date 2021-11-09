@@ -180,7 +180,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(109, 263);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(375, 38);
             this.txtNombre.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -212,13 +212,13 @@
             // 
             // cmbProyects
             // 
+            this.cmbProyects.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProyects.FormattingEnabled = true;
             this.cmbProyects.Location = new System.Drawing.Point(157, 495);
-            this.cmbProyects.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbProyects.Margin = new System.Windows.Forms.Padding(4);
             this.cmbProyects.Name = "cmbProyects";
             this.cmbProyects.Size = new System.Drawing.Size(253, 24);
             this.cmbProyects.TabIndex = 12;
-            this.cmbProyects.Text = "Si, tengo uno guardado";
             // 
             // lblProyecto
             // 
@@ -235,7 +235,7 @@
             // btnStarted
             // 
             this.btnStarted.Location = new System.Drawing.Point(157, 337);
-            this.btnStarted.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStarted.Margin = new System.Windows.Forms.Padding(4);
             this.btnStarted.Name = "btnStarted";
             this.btnStarted.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(174)))), ((int)(((byte)(244)))));
             this.btnStarted.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(142)))), ((int)(((byte)(254)))));
@@ -314,7 +314,7 @@
             this.Controls.Add(this.lblTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frmRegister";
             this.Palette = this.kryptonPalette1;
