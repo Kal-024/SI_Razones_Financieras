@@ -19,7 +19,7 @@ namespace FITD_Demo.Forms
         private ValidateTextBox validator = new ValidateTextBox();
 
 
-        SqlConnection cmd = new SqlConnection("Data Source = TV-236; Initial Catalog = FITD; Integrated Security = true");
+        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION = FITD; Integrated Security = true");
         public frmEndeudamiento()
         {
             InitializeComponent();

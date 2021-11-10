@@ -74,3 +74,5 @@ C:\Users\LENOVO\Desktop\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FIT
 C:\Users\LENOVO\Desktop\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.exe
 C:\Users\LENOVO\Desktop\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.pdb
 C:\Users\LENOVO\Desktop\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.Forms.frmBalanceG.resources
+C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.Forms.frmBalanceG.resources
+C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.csproj.CopyComplete

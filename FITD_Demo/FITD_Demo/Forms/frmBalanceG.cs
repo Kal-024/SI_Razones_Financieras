@@ -8,13 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//
+using ComponentFactory.Krypton.Toolkit;
 
 namespace FITD_Demo.Forms
 {
-    public partial class frmBalanceG : Form
+    public partial class frmBalanceG : KryptonForm
     {
 
-        SqlConnection cmd = new SqlConnection("Data Source = TV-236; Initial Catalog = FITD; Integrated Security = true");
+        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION = FITD; Integrated Security = true");
 
         public frmBalanceG()
         {

@@ -127,18 +127,23 @@ Select R.UtilidadNeta, R.TotalActivos from Rentabilidad as R inner join Report a
 
 EXEC SP_ROA 1
 
-
+/*
 CREATE PROCEDURE SP_RendimientoCapitalComun @ReportID int as
 Select R. from Rentabilidad as R
 
 select * from Rentabilidad
-
+*/
 
 
 SELECT MAX(L.LiquidezID) as LiquidezID FROM Liquidez as L
 SELECT MAX(R.RentabilidadID) as RentabilidadID FROM Rentabilidad AS R
 SELECT MAX(E.EndeudamientoID) as EndeudamientoID FROM Endeudamiento AS E
 select * from Report
+select * from Liquidez
+select * from Rentabilidad
+Select * from Endeudamiento
+
+SELECT R.Ventas, R.Costos FROM Rentabilidad AS R
 
 
 --Agregando el archivo docx para el programa

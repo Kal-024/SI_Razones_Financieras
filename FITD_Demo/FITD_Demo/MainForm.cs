@@ -15,7 +15,7 @@ namespace FITD_Demo
 {
     public partial class MainForm : KryptonForm
     {
-        String docxPath = @"C:\Users\LENOVO\Desktop\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\";
+        String docxPath = @"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\";
 
 
         public MainForm()
@@ -49,7 +49,7 @@ namespace FITD_Demo
                 subMenu.Visible = false;
             }
         }
-#endregion
+        #endregion
 
         #region Add Report
         private void btnAddReport_Click(object sender, EventArgs e)
@@ -86,11 +86,7 @@ namespace FITD_Demo
 
         private void btnCobertura_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.frmCobertura());
-            //..
-            //My Codes
-            //..
-            HideSubMenu();
+            
         }
         #endregion
 
@@ -140,6 +136,12 @@ namespace FITD_Demo
         { 
            OpenChildForm(new Forms.frmBalanceG());
            HideSubMenu();
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.frmEstadoR());
+            HideSubMenu();
         }
     }
 }
