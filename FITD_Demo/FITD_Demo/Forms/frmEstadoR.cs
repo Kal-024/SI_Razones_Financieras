@@ -55,10 +55,10 @@ namespace FITD_Demo.Forms
             }
             cmd.Close();
 
-            SqlCommand query = new SqlCommand("SELECT R.Ventas, R.Costos FROM Rentabilidad AS R WHERE R.RentabilidadID = '" + rentabilidadID + "'");
+            SqlCommand query = new SqlCommand("SELECT R.Ventas, R.Costos FROM Rentabilidad AS R WHERE R.RentabilidadID = '" + rentabilidadID + "'",cmd);
             cmd.Open();
 
-            SqlDataReader readerRentabilidad = loadSelected.ExecuteReader();
+            SqlDataReader readerRentabilidad = query.ExecuteReader();
             while (readerRentabilidad.Read())
             {
                 //Ventas

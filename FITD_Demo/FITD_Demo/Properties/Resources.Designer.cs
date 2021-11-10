@@ -81,16 +81,6 @@ namespace FITD_Demo.Properties {
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap capitalTrabajo {
-            get {
-                object obj = ResourceManager.GetObject("capitalTrabajo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Byte[].
         /// </summary>
         public static byte[] DATOSDERAZONESDELIQUIDEZPARAPROYECTODECURSO {
@@ -106,16 +96,6 @@ namespace FITD_Demo.Properties {
         public static System.Drawing.Bitmap f_logoMedium {
             get {
                 object obj = ResourceManager.GetObject("f_logoMedium", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap indiceSolvencia {
-            get {
-                object obj = ResourceManager.GetObject("indiceSolvencia", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,66 +136,6 @@ namespace FITD_Demo.Properties {
         public static System.Drawing.Bitmap mc_yellw {
             get {
                 object obj = ResourceManager.GetObject("mc-yellw", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap pruebaAcida {
-            get {
-                object obj = ResourceManager.GetObject("pruebaAcida", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap razonEndeudamiento {
-            get {
-                object obj = ResourceManager.GetObject("razonEndeudamiento", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap razonPasivoCapital {
-            get {
-                object obj = ResourceManager.GetObject("razonPasivoCapital", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap rotacionCartera {
-            get {
-                object obj = ResourceManager.GetObject("rotacionCartera", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap rotacionCuentasCobrar {
-            get {
-                object obj = ResourceManager.GetObject("rotacionCuentasCobrar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap rotacionInventario {
-            get {
-                object obj = ResourceManager.GetObject("rotacionInventario", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

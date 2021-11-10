@@ -38,7 +38,7 @@ namespace FITD_Demo.Forms
         }
 
         int reportID;
-        String mainPath = @"C:\\Users\\LENOVO\\Desktop\\SI_Razones_Financieras\\FITD_Demo\\FITD_Demo\\Resources\\Formulas\\";
+        String mainPath = @"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\";
         #region Razones de Liquidez
 
         public void CapitalTrabajo()
