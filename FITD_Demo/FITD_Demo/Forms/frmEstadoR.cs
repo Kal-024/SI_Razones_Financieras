@@ -15,7 +15,7 @@ namespace FITD_Demo.Forms
 {
     public partial class frmEstadoR : KryptonForm
     {
-        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION = FITD; Integrated Security = true");
+        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION; Initial Catalog = FITD; Integrated Security = true");
         public frmEstadoR()
         {
             InitializeComponent();
@@ -51,7 +51,7 @@ namespace FITD_Demo.Forms
             while (reader.Read())
             {
                 int reportID = int.Parse(reader["ReportID"].ToString());
-                rentabilidadID = int.Parse(reader["LiquidezID"].ToString());
+                rentabilidadID = int.Parse(reader["RentabilidadID"].ToString());
             }
             cmd.Close();
 

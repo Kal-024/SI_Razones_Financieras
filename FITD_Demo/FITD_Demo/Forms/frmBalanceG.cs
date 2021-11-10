@@ -16,7 +16,7 @@ namespace FITD_Demo.Forms
     public partial class frmBalanceG : KryptonForm
     {
 
-        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION = FITD; Integrated Security = true");
+        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION; Initial Catalog = FITD; Integrated Security = true");
 
         public frmBalanceG()
         {
