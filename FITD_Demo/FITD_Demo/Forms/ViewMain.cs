@@ -528,7 +528,7 @@ namespace FITD_Demo.Forms
             }
             else
             {
-                fDetails.txtEndeudamiento.Text = "Usted dispone de un nivel de endeudamiento del " + txtRazonE.Text + " frente a sus activos.\nEsto quiere decir que el apalancamiento no es muy elevado.";
+                fDetails.txtEndeudamiento.Text = "Usted dispone de un nivel de endeudamiento del " + txtRazonE.Text + "% frente a sus activos.\nEsto quiere decir que el apalancamiento no es muy elevado.";
                 fDetails.pbEndeudamiento.Image = Image.FromFile(mainPath +"imgEndeudamiento.png");
             }
             #endregion
@@ -575,7 +575,7 @@ namespace FITD_Demo.Forms
 
             #region Rendimiento de la Inversio ó Retorno sobre los activos (ROA)
             double ROA = Convert.ToDouble(txtRoa.Text);
-            fDetails.txtRoa.Text = "¡Notificacion!, sus activos reflejan una rentabilidad aproximada de un " + (ROA * 100);
+            fDetails.txtRoa.Text = "¡Notificacion!, sus activos reflejan una rentabilidad aproximada de un " + (ROA) +"%";
             fDetails.pbROA.Image = Image.FromFile(mainPath + "imgInversion.png");
             #endregion
         }
