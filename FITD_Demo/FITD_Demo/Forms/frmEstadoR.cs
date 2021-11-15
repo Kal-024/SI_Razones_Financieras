@@ -15,7 +15,7 @@ namespace FITD_Demo.Forms
 {
     public partial class frmEstadoR : KryptonForm
     {
-        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION; Initial Catalog = FITD; Integrated Security = true");
+        SqlConnection cmd = new SqlConnection("Data Source = TV-236; Initial Catalog = FITD; Integrated Security = true");
         public frmEstadoR()
         {
             InitializeComponent();
@@ -92,6 +92,16 @@ namespace FITD_Demo.Forms
             }
 
             cmd.Close();
+        }
+
+        private void frmEstadoR_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

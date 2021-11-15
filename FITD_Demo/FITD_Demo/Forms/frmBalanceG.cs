@@ -16,7 +16,7 @@ namespace FITD_Demo.Forms
     public partial class frmBalanceG : KryptonForm
     {
 
-        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION; Initial Catalog = FITD; Integrated Security = true");
+        SqlConnection cmd = new SqlConnection("Data Source = TV-236; Initial Catalog = FITD; Integrated Security = true");
 
         public frmBalanceG()
         {
@@ -88,10 +88,12 @@ namespace FITD_Demo.Forms
                 lblSumaCC.Text += decimal.Parse(readerEndeuda["Capital"].ToString());
             }
             cmd.Close();
+
             lblSumaPasivo.Text = "$     ";
             decimal totalPasivo = Convert.ToDecimal(lblTotalPasivoC.Text.Substring(6)) + Convert.ToDecimal(lblTotalPasivoLp.Text.Substring(6));
             lblSumaPasivo.Text += totalPasivo.ToString();
-            
+
+            lblCapitalS.Text = lblSumaCC.Text;
 
             lblSumaPC.Text = "$     ";
             decimal sumaPC = Convert.ToDecimal(lblSumaCC.Text.Substring(6)) + Convert.ToDecimal(lblSumaPasivo.Text.Substring(6));
@@ -101,6 +103,11 @@ namespace FITD_Demo.Forms
         private void cmbProyects_SelectedIndexChanged(object sender, EventArgs e)
         {
             LoadSelected();
+        }
+
+        private void frmBalanceG_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

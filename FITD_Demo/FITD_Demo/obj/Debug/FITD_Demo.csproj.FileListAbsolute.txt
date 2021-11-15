@@ -59,7 +59,6 @@ C:\Users\LENOVO\Desktop\SI_Razones_Financieras\FITD_Demo\FITD_Demo\bin\Debug\Com
 C:\Users\LENOVO\Desktop\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.csproj.AssemblyReference.cache
 C:\Users\LENOVO\Desktop\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.Forms.frmDetails.resources
 C:\Users\LENOVO\Desktop\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.Forms.frmEndeudamiento.resources
-C:\Users\LENOVO\Desktop\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.Forms.frmCobertura.resources
 C:\Users\LENOVO\Desktop\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.Forms.frmLiquidez.resources
 C:\Users\LENOVO\Desktop\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.Forms.frmRegister.resources
 C:\Users\LENOVO\Desktop\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.Forms.frmRentabilidad.resources
@@ -76,3 +75,4 @@ C:\Users\LENOVO\Desktop\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FIT
 C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.Forms.frmBalanceG.resources
 C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.csproj.CopyComplete
 C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.Forms.frmEstadoR.resources
+C:\Users\LENOVO\Desktop\SI_Razones_Financieras\FITD_Demo\FITD_Demo\obj\Debug\FITD_Demo.Forms.frmEstadoR.resources

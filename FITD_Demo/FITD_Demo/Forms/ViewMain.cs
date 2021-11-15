@@ -16,7 +16,7 @@ namespace FITD_Demo.Forms
 {
     public partial class ViewMain : KryptonForm
     {
-        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-JBS2MU8\\PAVILION; Initial Catalog = FITD; Integrated Security = true");
+        SqlConnection cmd = new SqlConnection("Data Source = TV-236; Initial Catalog = FITD; Integrated Security = true");
 
         public ViewMain(int reportID)
         {
@@ -38,7 +38,7 @@ namespace FITD_Demo.Forms
         }
 
         int reportID;
-        String mainPath = @"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\";
+        String mainPath = @"C:\Users\LENOVO\Desktop\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\";
         #region Razones de Liquidez
 
         public void CapitalTrabajo()
@@ -472,7 +472,7 @@ namespace FITD_Demo.Forms
             }
             else if (CAPITALTRABAJO > 100)
             {
-                fDetails.txtCapitalTrabajo.Text = "¡Enhorabuena!, su capital de trabajo de " + txtCapitalT.Text + " afirma cuentas con los activos suficientes para cubrir su apalancamiento a corto plazo";
+                fDetails.txtCapitalTrabajo.Text = "¡Enhorabuena!, su capital de trabajo es de " + txtCapitalT.Text +" !"+ " Cuentas con los activos suficientes para cubrir su apalancamiento a corto plazo";
                 fDetails.pbCapitaTrabajo.Image = Image.FromFile(mainPath + "imgLiquidez.png");
             }
             #endregion
@@ -509,7 +509,7 @@ namespace FITD_Demo.Forms
 
             #region Rotacion de Cartera
             double ROTACIONCARTERA = Convert.ToDouble(txtRotacionC.Text);
-            fDetails.txtRotacionCartera.Text = "En promedio todas tus cuentas por cobrar tardan " + txtRotacionC.Text + "en convertirse en efectivo.\nEs el tiempo promedio en el que tus clientes pagaran su deuda.";
+            fDetails.txtRotacionCartera.Text = "En promedio todas tus cuentas por cobrar tardan " + txtRotacionC.Text + " días en convertirse en efectivo.\n Es el tiempo promedio en el que tus clientes pagaran su deuda.";
             fDetails.pbRotacionCartera.Image = Image.FromFile(mainPath+ "imgCuentasCobrar.png");
             #endregion
 
@@ -569,7 +569,7 @@ namespace FITD_Demo.Forms
 
             #region Rotacion de Activos a Largo Plazo
             double ROTACIONACTIVOSALP = Convert.ToDouble(txtRotacionActivoALP.Text);
-            fDetails.txtRotacionActivosALP.Text = "¡Notificacion!, sus activos tardan en generar beneficios (ingresos) en aproximadamente: " + ROTACIONACTIVOSALP;
+            fDetails.txtRotacionActivosALP.Text = "¡Notificacion!, sus activos tardan en generar beneficios (ingresos) en aproximadamente: " + ROTACIONACTIVOSALP+" días";
             fDetails.pbRotacionActivosALP.Image = Image.FromFile(mainPath+"imgRALP.png");
             #endregion
 
