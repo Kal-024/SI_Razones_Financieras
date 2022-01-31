@@ -15,7 +15,7 @@ namespace FITD_Demo
 {
     public partial class MainForm : KryptonForm
     {
-        String docxPath = @"C:\Users\Usuario\Documents\MyData\workstation\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\";
+        String docxPath = @"D:\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\";
 
 
         public MainForm()

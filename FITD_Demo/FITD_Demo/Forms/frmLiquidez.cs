@@ -17,7 +17,7 @@ namespace FITD_Demo.Forms
 
         private ValidateTextBox validator = new ValidateTextBox();
 
-        SqlConnection cmd = new SqlConnection("Data Source = TV-236; Initial Catalog = FITD; Integrated Security = true");
+        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-N7H71KN; Initial Catalog = FITD; Integrated Security = true");
         
         public frmLiquidez()
         {

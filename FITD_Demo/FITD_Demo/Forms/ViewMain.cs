@@ -16,7 +16,7 @@ namespace FITD_Demo.Forms
 {
     public partial class ViewMain : KryptonForm
     {
-        SqlConnection cmd = new SqlConnection("Data Source = TV-236; Initial Catalog = FITD; Integrated Security = true");
+        SqlConnection cmd = new SqlConnection("Data Source = DESKTOP-N7H71KN; Initial Catalog = FITD; Integrated Security = true");
 
         public ViewMain(int reportID)
         {
@@ -38,7 +38,7 @@ namespace FITD_Demo.Forms
         }
 
         int reportID;
-        String mainPath = @"C:\Users\LENOVO\Desktop\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\";
+        String mainPath = @"D:\SI_Razones_Financieras\FITD_Demo\FITD_Demo\Resources\Formulas\";
         #region Razones de Liquidez
 
         public void CapitalTrabajo()
@@ -444,7 +444,7 @@ namespace FITD_Demo.Forms
         #endregion
 
 
-        private void btnVerInforme_Click(object sender, EventArgs e)
+        private void BtnA_Click(object sender, EventArgs e)
         {
             frmDetails fDetails = new frmDetails
             {
@@ -579,5 +579,9 @@ namespace FITD_Demo.Forms
             fDetails.pbROA.Image = Image.FromFile(mainPath + "imgInversion.png");
             #endregion
         }
+
+        
+
+      
     }
 }
